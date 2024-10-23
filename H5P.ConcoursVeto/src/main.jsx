@@ -33,7 +33,7 @@ H5P.CompetVet = class {
             startAction: this.start.bind(this),
             resizeAction: this.resize.bind(this),
           }}>
-            <App {...params}/>
+            <App surveyDefinition={params.settings.surveyDefinition}/>
           </H5PContext.Provider>
         </TranslationsContext.Provider>
       );

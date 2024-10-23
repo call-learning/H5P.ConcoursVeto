@@ -12,9 +12,16 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.5",
+    "@mui/styled-engine-sc": "^6.1.5",
     "material-design-icons": "^3.0.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13",
+    "survey-core": "^1.12.7",
+    "survey-react-ui": "^1.12.7"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
