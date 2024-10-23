@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+</head>
+<body>
+<div id="root"></div>
+<script src="H5P.mock.js"></script>
+<script type="module">
+  import './src/main.jsx';
+  function initializeH5P() {
+    if (window.H5P) {
+      let h5p = new H5P.CompetVet([], 1322432, {});
+      const element = document.getElementById('root');
+      // Emulate jquery behavior
+      const jQElement = {
+        get: () => element,
+      }
+      h5p.attach(jQElement);
+    } else {
+      setTimeout(initializeH5P, 100);
+    }
+  }
+
+  initializeH5P();
+</script>
+</body>
