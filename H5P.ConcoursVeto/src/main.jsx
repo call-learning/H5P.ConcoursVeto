@@ -33,7 +33,7 @@ H5P.ConcoursVeto = class {
             startAction: this.start.bind(this),
             resizeAction: this.resize.bind(this),
           }}>
-            <App surveyDefinition={params.settings.surveyDefinition}/>
+            <App surveyDefinition={params.surveyDefinition} settings={params.settings}/>
           </H5PContext.Provider>
         </TranslationsContext.Provider>
       );
