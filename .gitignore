@@ -5,4 +5,5 @@ npm-debug.log*
 .idea/
 *.h5p
 *.zip
-
+/temp
+/libraries

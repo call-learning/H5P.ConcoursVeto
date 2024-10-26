@@ -1,0 +1,152 @@
+[
+  {
+    "name": "settings",
+    "type": "group",
+    "label": "Settings",
+    "fields": [
+      {
+        "name": "surveyDefinition",
+        "type": "group",
+        "label": "Survey Definition",
+        "fields": [
+          {
+            "name": "title",
+            "type": "text",
+            "label": "Survey Title",
+            "default": "Etape 1 - J'évalue mes performances"
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "label": "Survey Description",
+            "default": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac."
+          },
+          {
+            "name": "pages",
+            "type": "list",
+            "label": "Pages",
+            "field": {
+              "name": "page",
+              "type": "group",
+              "label": "Page",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "text",
+                  "label": "Page Name"
+                },
+                {
+                  "name": "elements",
+                  "type": "list",
+                  "label": "Page Elements",
+                  "field": {
+                    "name": "element",
+                    "type": "group",
+                    "label": "Element",
+                    "fields": [
+                      {
+                        "name": "type",
+                        "type": "text",
+                        "label": "Element Type"
+                      },
+                      {
+                        "name": "name",
+                        "type": "text",
+                        "label": "Element Name"
+                      },
+                      {
+                        "name": "title",
+                        "type": "text",
+                        "label": "Element Title"
+                      },
+                      {
+                        "name": "choices",
+                        "type": "list",
+                        "label": "Choices (Dropdown only)",
+                        "field": {
+                          "name": "choice",
+                          "type": "text",
+                          "label": "Choice"
+                        },
+                        "optional": true
+                      },
+                      {
+                        "name": "columns",
+                        "type": "list",
+                        "label": "Columns (Matrix only)",
+                        "field": {
+                          "name": "column",
+                          "type": "group",
+                          "label": "Column",
+                          "fields": [
+                            {
+                              "name": "value",
+                              "type": "number",
+                              "label": "Column Value"
+                            },
+                            {
+                              "name": "text",
+                              "type": "text",
+                              "label": "Column Text"
+                            }
+                          ]
+                        },
+                        "optional": true
+                      },
+                      {
+                        "name": "rows",
+                        "type": "list",
+                        "label": "Rows (Matrix only)",
+                        "field": {
+                          "name": "row",
+                          "type": "group",
+                          "label": "Row",
+                          "fields": [
+                            {
+                              "name": "value",
+                              "type": "text",
+                              "label": "Row Value"
+                            },
+                            {
+                              "name": "text",
+                              "type": "text",
+                              "label": "Row Text"
+                            }
+                          ]
+                        },
+                        "optional": true
+                      },
+                      {
+                        "name": "rateValues",
+                        "type": "list",
+                        "label": "Rating Scale Values (Rating only)",
+                        "field": {
+                          "name": "rateValue",
+                          "type": "group",
+                          "label": "Rate Value",
+                          "fields": [
+                            {
+                              "name": "value",
+                              "type": "number",
+                              "label": "Rate Value"
+                            },
+                            {
+                              "name": "text",
+                              "type": "text",
+                              "label": "Rate Text"
+                            }
+                          ]
+                        },
+                        "optional": true
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

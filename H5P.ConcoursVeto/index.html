@@ -8,11 +8,8 @@
 <body>
 <div id="root"></div>
 <script src="H5P.mock.js"></script>
+<script src="dist/h5pconcoursveto.js"></script>
 <script type="module">
-
-  import './src/main.jsx';
-  import './src/main.jsx';
-
   async function loadSampleData() {
     const response = await fetch('/sampleData.json');
     if (!response.ok) {
@@ -24,7 +21,7 @@
   async function initializeH5P() {
     const sampleData = await loadSampleData();
     if (window.H5P) {
-      let h5p = new H5P.CompetVet(sampleData, 1322432, {});
+      let h5p = new H5P.ConcoursVeto(sampleData, 1322432, {});
       const element = document.getElementById('root');
       // Emulate jquery behavior
       const jQElement = {

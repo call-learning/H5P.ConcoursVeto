@@ -6,7 +6,7 @@ import { H5PContext } from './contexts/H5PContext';
 import App from './App.jsx';
 
 let H5P = window.H5P || {};
-H5P.CompetVet = class {
+H5P.ConcoursVeto = class {
   /**
    * @param {Object}        params.l10n
    * @constructor
@@ -14,8 +14,8 @@ H5P.CompetVet = class {
   constructor (params, contentId, extras) {
 
     H5P.EventDispatcher.call(this);
-    Object.setPrototypeOf(H5P.CompetVet.prototype, H5P.EventDispatcher.prototype);
-    H5P.CompetVet.prototype.constructor = H5P.CompetVet;
+    Object.setPrototypeOf(H5P.ConcoursVeto.prototype, H5P.EventDispatcher.prototype);
+    H5P.ConcoursVeto.prototype.constructor = H5P.ConcoursVeto;
 
     /**
      * Required function H5P uses to attach library to wrapper.
@@ -64,4 +64,4 @@ H5P.CompetVet = class {
   }
 };
 
-export default H5P.CompetVet;
+export default H5P.ConcoursVeto;

@@ -7,17 +7,20 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
+      sourceMap: 'inline',
       input: {
         h5pconcoursveto: './src/main.jsx',
       },
       output: {
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
-        // globals: {
-        //   'react': 'React',
-        //   'react-dom': 'ReactDOM'
-        // }
+        format: 'umd',
+        name: 'H5P.ConcoursVeto',
+        entryFileNames: '[name].js',
+        chunkFileNames: '[name].js',
+        assetFileNames: '[name].[ext]',
+        globals: {
+          'react': 'React',
+          'react-dom': 'ReactDOM'
+        }
       }
     }
   }

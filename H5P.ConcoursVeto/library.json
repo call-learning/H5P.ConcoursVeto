@@ -1,9 +1,9 @@
 {
   "title": "Questionnaire for Concours Véto PostBac",
   "description": "Questionnaire for Concours Véto PostBac",
-  "majorVersion": 3,
-  "minorVersion": 1,
-  "patchVersion": 11,
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 2,
   "author": "CALL Learning 2024 (laurent@call-learning.fr)",
   "license": "MIT",
   "machineName": "H5P.ConcoursVeto",
@@ -11,12 +11,7 @@
   "runnable": 1,
   "preloadedJs": [
     {
-      "path": "dist/assets/h5pconcoursveto.js"
-    }
-  ],
-  "preloadedCss": [
-    {
-      "path": "dist/assets/h5pconcoursveto.css"
+      "path": "dist/h5pconcoursveto.js"
     }
   ],
   "editorDependencies": [

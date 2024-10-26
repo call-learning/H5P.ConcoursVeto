@@ -4,8 +4,6 @@ import { Model, Survey } from 'survey-react-ui';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './settings/theme';
 import { StylesManager } from 'survey-core';
-import { themeConfig } from './settings/themeConfig';
-// Customize SurveyJS theme colors using themeConfig
 
 StylesManager.applyTheme('defaultV2');
 
