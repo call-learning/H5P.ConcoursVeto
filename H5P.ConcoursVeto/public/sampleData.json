@@ -1,7 +1,12 @@
 {
   "l10n": {
     "back": "Retour",
-    "survey_results": "Résultats de l'auto-évaluation"
+    "survey_results": "Résultats de l'auto-évaluation",
+    "download_certificate": "Télécharger l'attestation",
+    "restart_survey": "Recommencer l'auto-évaluation",
+    "generate_pdf": "Générer un PDF",
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
   },
   "settings": {
   },

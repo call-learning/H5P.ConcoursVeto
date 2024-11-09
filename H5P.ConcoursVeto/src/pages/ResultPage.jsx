@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Box, Typography, Button } from '@mui/material';
 import Section from '../components/Section';
 import { useTranslations } from '../hooks/useTranslation.js';
 import RadarChart from '../components/RadarChart.jsx';
+import DownloadCertificateDialog from '../components/DownloadCertificateDialog.jsx';
 
 function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
-  const downloadPDF = () => {
-    // Logic to generate and download PDF
-    console.log('PDF downloaded');
-  };
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const handleOpenDialog = () => setDialogOpen(true);
+  const handleCloseDialog = () => setDialogOpen(false);
+
   const { translate } = useTranslations();
   return (
     <Container>
@@ -29,14 +30,19 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
           <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults}/>
         ))}
         <Box mt={2} display="flex" justifyContent="center">
-          <Button variant="contained" color="primary" onClick={downloadPDF}>
-            Download PDF
+          <Button variant="contained" color="primary" onClick={handleOpenDialog}>
+            {translate('download_certificate')}
           </Button>
           <Button variant="outlined" color="secondary" onClick={onRestart} style={{ marginLeft: '10px' }}>
-            Restart Survey
+            {translate('restart_survey')}
           </Button>
         </Box>
       </Box>
+      <DownloadCertificateDialog
+        open={dialogOpen}
+        onClose={handleCloseDialog}
+        surveyFeedback={surveyFeedback}
+      />
     </Container>
   );
 }
