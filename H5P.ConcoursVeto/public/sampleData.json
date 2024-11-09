@@ -1,6 +1,41 @@
 {
   "settings": {
   },
+  "feedback": {
+    "global": "<p style=\"text-align: left;\" dir=\"ltr\">Ce questionnaire a pour seule vocation\n  de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir  une vocation prédictive précise sur vos chances de succès à un concours\n    d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong>\n</p>\n<p style=\"text-align: left;\" dir=\"ltr\">Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n  <li><span style=\"font-size: 1rem;\">sont différents du score qui servira de\n      base pour déterminer le classement d'admissibilité aux épreuves du\n      concours ;</span></li>\n  <li><span style=\"font-size: 1rem;\">ne seront pas conservés, ni communiqués à\n      qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous\n      téléverserez dans Parcoursup.</span></li>\n</ul>",
+    "section": {
+      "title": "Vos résultats scolaires",
+      "label": "Vos résultats scolaires",
+      "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent.",
+      "questions_weight" : [
+        {
+          "bac_french_average": 1,
+          "common_subjects_terminal": 0.7,
+          "common_subjects_prem": 0.5,
+          "performance_specialities_first": 1,
+          "performance_specialities_terminal": 0.7
+        }
+      ],
+      "feedback_ranges": [
+        {
+          "min": 100,
+          "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !"
+        },
+        {
+          "min": 80,
+          "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s’améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d’admissibilité. Il y aura donc de nombreux candidats à avoir d’excellentes notes!"
+        },
+        {
+          "min": 60,
+          "feedback": "Selon votre dossier scolaire, vous avez des notes moyennes qui risquent d'être insuffisantes pour devenir vétérinaire."
+        },
+        {
+          "min": 40,
+          "feedback": "Selon votre dossier scolaire, vous ne semblez pas suffisamment armé(e) avoir de réelles chances d'aborder des études vétérinaires."
+        }
+      ]
+    }
+  },
   "surveyDefinition": {
     "title": "Etape 1 - J'évalue mes performances",
     "description": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac.",
@@ -54,7 +89,7 @@
         "elements": [
           {
             "type": "matrix",
-            "name": "performance_specialities_first",
+            "name": "performance_specialities_prem",
             "title": "Mes résultats dans les enseignements de spécialité en première :",
             "columns": [
               {
@@ -137,7 +172,7 @@
         "elements": [
           {
             "type": "matrix",
-            "name": "common_subjects_first",
+            "name": "common_subjects_prem",
             "title": "Mes résultats dans les enseignements communs en première :",
             "columns": [
               {

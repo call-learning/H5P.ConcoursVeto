@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -46,7 +45,7 @@
     "globals": "^15.9.0",
     "prop-types": "^15.8.1",
     "storybook": "^8.3.6",
-    "vite": "^5.4.9"
+    "vite": "^5.4.10"
   },
   "eslintConfig": {
     "extends": [
