@@ -2,8 +2,9 @@ import React from 'react';
 import { Container, Box, Typography, Button } from '@mui/material';
 import Section from '../components/Section';
 import { useTranslations } from '../hooks/useTranslation.js';
+import RadarChart from '../components/RadarChart.jsx';
 
-function ResultPage({ onRestart, surveyResults, surveyConfig }) {
+function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
   const downloadPDF = () => {
     // Logic to generate and download PDF
     console.log('PDF downloaded');
@@ -15,9 +16,17 @@ function ResultPage({ onRestart, surveyResults, surveyConfig }) {
         <Typography variant="h4" component="h1" gutterBottom>
           {translate('survey_results')}
         </Typography>
-        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyConfig?.global }} />
-        {surveyConfig.sections.map((sectionConfig, index) => (
-            <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults} />
+        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyFeedback?.global }}/>
+        <div>
+          {surveyDefinition.pages.map((page) => (
+            <div key={page.name}>
+              <h2>{page.name}</h2>
+              <RadarChart page={page} results={surveyResults}/>
+            </div>
+          ))}
+        </div>
+        {surveyFeedback.sections.map((sectionConfig, index) => (
+          <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults}/>
         ))}
         <Box mt={2} display="flex" justifyContent="center">
           <Button variant="contained" color="primary" onClick={downloadPDF}>

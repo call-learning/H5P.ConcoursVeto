@@ -36,7 +36,11 @@ function App(props) {
     <ThemeProvider theme={theme}>
       {page === 'welcome' && <WelcomePage onContinue={handleContinue} />}
       {page === 'survey' && <Survey model={survey} />}
-      {page === 'result' && <ResultPage onRestart={handleRestart} surveyResults={surveyResults}  surveyConfig={props.feedback}/>}
+      {page === 'result' && <ResultPage
+        onRestart={handleRestart}
+        surveyResults={surveyResults}
+        surveyDefinition={props.surveyDefinition}
+        surveyFeedback={props.feedback}/>}
     </ThemeProvider>
   );
 }
