@@ -52,11 +52,11 @@ function calculateSectionScore(results, weights, max_range) {
       }
     }
 
-    score += value/max_range * weight;
+    score += value/max_range * weight/100;
     totalWeight += weight;
   });
 
-  return totalWeight > 0 ? (score / totalWeight) * 100 : 0;
+  return totalWeight > 0 ? (score / (totalWeight/100)) * 100 : 0;
 }
 
 export default Section;

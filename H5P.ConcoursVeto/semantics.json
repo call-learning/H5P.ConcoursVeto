@@ -1,5 +1,103 @@
 [
   {
+    "name": "feedback",
+    "type": "group",
+    "label": "Feedback",
+    "fields": [
+      {
+        "name": "global",
+        "type": "text",
+        "widget": "html",
+        "label": "Global Feedback",
+        "default": "<p style=\"text-align: left;\" dir=\"ltr\">Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong></p><p style=\"text-align: left;\" dir=\"ltr\">Les \"scores\" indiqués ci-dessous :</p><ul><li><span style=\"font-size: 1rem;\">sont différents du score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li><li><span style=\"font-size: 1rem;\">ne seront pas conservés, ni communiqués à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li></ul>"
+      },
+      {
+        "name": "sections",
+        "type": "list",
+        "label": "Feedback Sections",
+        "field": {
+          "name": "section",
+          "type": "group",
+          "label": "Section",
+          "fields": [
+            {
+              "name": "title",
+              "type": "text",
+              "label": "Section Title",
+              "default": "Vos résultats scolaires"
+            },
+            {
+              "name": "label",
+              "type": "text",
+              "label": "Section Label",
+              "default": "Vos résultats scolaires"
+            },
+            {
+              "name": "feedback",
+              "type": "text",
+              "label": "Section Feedback",
+              "default": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %."
+            },
+            {
+              "name": "questions_weight",
+              "type": "list",
+              "label": "Questions Weight",
+              "field": {
+                "name": "weight",
+                "type": "group",
+                "label": "Weight Item",
+                "fields": [
+                  {
+                    "name": "label",
+                    "type": "text",
+                    "label": "Weight Label",
+                    "default": "Example Label"
+                  },
+                  {
+                    "name": "value",
+                    "type": "number",
+                    "label": "Weight Value",
+                    "default": 50
+                  }
+                ]
+              }
+            },
+            {
+              "name": "question_max_range",
+              "type": "number",
+              "label": "Question Max Range",
+              "default": 5
+            },
+            {
+              "name": "feedback_ranges",
+              "type": "list",
+              "label": "Feedback Ranges",
+              "field": {
+                "name": "range",
+                "type": "group",
+                "label": "Range",
+                "fields": [
+                  {
+                    "name": "min",
+                    "type": "number",
+                    "label": "Minimum Range",
+                    "default": 100
+                  },
+                  {
+                    "name": "feedback",
+                    "type": "text",
+                    "label": "Feedback Text",
+                    "default": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "surveyDefinition",
     "type": "group",
     "label": "Survey Definition",
