@@ -6,6 +6,9 @@ export const theme = createTheme({
     background: {
       default: themeConfig.colors.background
     },
+    primary: {
+      main: themeConfig.colors.text
+    },
     text: {
       primary: themeConfig.colors.text
     }

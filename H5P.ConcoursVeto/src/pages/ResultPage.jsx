@@ -3,6 +3,7 @@ import { Container, Box, Typography, Button } from '@mui/material';
 import Section from '../components/Section';
 import { useTranslations } from '../hooks/useTranslation.js';
 import DownloadCertificateDialog from '../components/DownloadCertificateDialog.jsx';
+import WaveBackground from '../components/WaveBackground.jsx';
 
 function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -12,11 +13,12 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
   const { translate } = useTranslations();
   return (
     <Container>
+      <WaveBackground />
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>
           {translate('survey_results')}
         </Typography>
-        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyFeedback?.global }}/>
+        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyFeedback?.global }} textAlign={'left'}/>
         {surveyFeedback.sections.map((sectionConfig, index) => (
           <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults} surveyDefinition={surveyDefinition}/>
         ))}
