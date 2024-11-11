@@ -18,11 +18,11 @@
         "label": "Vos résultats scolaires",
         "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
         "questions_weight": {
-          "bac_french_average": 50,
-          "common_subjects_terminal": 10,
-          "common_subjects_prem": 20,
-          "performance_specialities_prem": 10,
-          "performance_specialities_terminal": 10
+          "bac_french_average": 0.5,
+          "common_subjects_terminal": 0.1,
+          "common_subjects_prem": 0.2,
+          "performance_specialities_prem": 0.1,
+          "performance_specialities_terminal": 0.1
         },
         "question_max_range": 5,
         "feedback_ranges": [
