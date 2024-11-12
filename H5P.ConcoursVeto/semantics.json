@@ -55,7 +55,7 @@
                 "label": "Weight Item",
                 "fields": [
                   {
-                    "name": "label",
+                    "id": "label",
                     "type": "text",
                     "label": "Weight Label",
                     "default": "Example Label"
@@ -118,6 +118,12 @@
       {
         "name": "description",
         "type": "text",
+        "widget": "html",
+        "tags": [
+          "strong",
+          "em",
+          "sub"
+        ],
         "label": "Survey Description",
         "default": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac."
       },

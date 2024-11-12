@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Container, Box, Typography, Button } from '@mui/material';
 import Section from '../components/Section';
 import { useTranslations } from '../hooks/useTranslation.js';
-import RadarChart from '../components/RadarChart.jsx';
 import DownloadCertificateDialog from '../components/DownloadCertificateDialog.jsx';
 
 function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
@@ -18,16 +17,8 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
           {translate('survey_results')}
         </Typography>
         <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyFeedback?.global }}/>
-        <div>
-          {surveyDefinition.pages.map((page) => (
-            <div key={page.name}>
-              <h2>{page.name}</h2>
-              <RadarChart page={page} results={surveyResults}/>
-            </div>
-          ))}
-        </div>
         {surveyFeedback.sections.map((sectionConfig, index) => (
-          <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults}/>
+          <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults} surveyDefinition={surveyDefinition}/>
         ))}
         <Box mt={2} display="flex" justifyContent="center">
           <Button variant="contained" color="primary" onClick={handleOpenDialog}>

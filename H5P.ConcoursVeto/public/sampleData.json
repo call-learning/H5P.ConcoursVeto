@@ -17,14 +17,11 @@
         "title": "Vos résultats scolaires",
         "label": "Vos résultats scolaires",
         "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
-        "questions_weight": {
-          "bac_french_average": 50,
-          "common_subjects_terminal": 10,
-          "common_subjects_prem": 20,
-          "performance_specialities_prem": 10,
-          "performance_specialities_terminal": 10
-        },
-        "question_max_range": 5,
+        "questions_weight": [
+          {"id":  "speciality1", "value": 50 },
+          {"id" : "common_subjects_first", "value": 30},
+          {"id" : "bac_french_average", "value": 20}
+        ],
         "feedback_ranges": [
           {
             "min": 100,
@@ -47,88 +44,73 @@
     ]
   },
   "surveyDefinition": {
-    "title": "Etape 1 - J'évalue mes performances",
-    "description": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac.",
+    "title": "J'évalue mes performances",
+    "description": "Auto-\u00e9valuation des connaissances et comp\u00e9tences pour le concours v\u00e9to post-bac.",
     "pages": [
       {
-        "name": "speciality_performance",
+        "name": "specialities",
         "elements": [
           {
-            "type": "matrix",
-            "name": "performance_specialities_prem",
-            "title": "Mes résultats dans les enseignements de spécialité en première :",
+            "type": "dropdown",
+            "name": "speciality1",
+            "title": "Sp\u00e9cialit\u00e9 1 conserv\u00e9e en terminale",
+            "choices": [
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
+              "Autre"
+            ],
             "columns": [
-              {
-                "value": 1,
-                "text": "≤10"
-              },
-              {
-                "value": 2,
-                "text": ">10 et ≤11"
-              },
-              {
-                "value": 3,
-                "text": ">11 et ≤14"
-              },
-              {
-                "value": 4,
-                "text": ">14 et ≤16"
-              },
-              {
-                "value": 5,
-                "text": ">16"
-              }
+              {}
             ],
             "rows": [
-              {
-                "value": "speciality1",
-                "text": "Spécialité 1"
-              },
-              {
-                "value": "speciality2",
-                "text": "Spécialité 2"
-              },
-              {
-                "value": "speciality3",
-                "text": "Spécialité 3"
-              }
+              {}
+            ],
+            "rateValues": [
+              {}
             ]
           },
           {
-            "type": "matrix",
-            "name": "performance_specialities_terminal",
-            "title": "Mes résultats dans les enseignements de spécialité en terminale :",
+            "type": "dropdown",
+            "name": "speciality2",
+            "title": "Sp\u00e9cialit\u00e9 2 conserv\u00e9e en terminale",
+            "choices": [
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
+              "Autre sp\u00e9cialit\u00e9"
+            ],
             "columns": [
-              {
-                "value": 1,
-                "text": "≤10"
-              },
-              {
-                "value": 2,
-                "text": ">10 et ≤11"
-              },
-              {
-                "value": 3,
-                "text": ">11 et ≤14"
-              },
-              {
-                "value": 4,
-                "text": ">14 et ≤16"
-              },
-              {
-                "value": 5,
-                "text": ">16"
-              }
+              {}
             ],
             "rows": [
-              {
-                "value": "speciality1",
-                "text": "Spécialité 1"
-              },
-              {
-                "value": "speciality2",
-                "text": "Spécialité 2"
-              }
+              {}
+            ],
+            "rateValues": [
+              {}
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "speciality3",
+            "title": "Sp\u00e9cialit\u00e9 3 abandonn\u00e9e en terminale",
+            "choices": [
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
+              "Autre sp\u00e9cialit\u00e9"
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -138,111 +120,75 @@
         "elements": [
           {
             "type": "matrix",
-            "name": "common_subjects_prem",
-            "title": "Mes résultats dans les enseignements communs en première :",
+            "name": "common_subjects_first",
+            "title": "Ma moyenne g\u00e9n\u00e9rale",
             "columns": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 10\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
             ],
             "rows": [
               {
                 "value": "history_geography",
-                "text": "Histoire-Géographie"
+                "text": "En classe de premi\u00e8re"
               },
               {
                 "value": "lvA",
-                "text": "Langue Vivante A"
-              },
-              {
-                "value": "lvB",
-                "text": "Langue Vivante B"
-              }
-            ]
-          },
-          {
-            "type": "matrix",
-            "name": "common_subjects_terminal",
-            "title": "Mes résultats dans les enseignements communs en terminale :",
-            "columns": [
-              {
-                "value": 1,
-                "text": "≤10"
-              },
-              {
-                "value": 2,
-                "text": ">10 et ≤11"
-              },
-              {
-                "value": 3,
-                "text": ">11 et ≤14"
-              },
-              {
-                "value": 4,
-                "text": ">14 et ≤16"
-              },
-              {
-                "value": 5,
-                "text": ">16"
+                "text": "En classe de terminale"
               }
             ],
-            "rows": [
-              {
-                "value": "history_geography",
-                "text": "Histoire-Géographie"
-              },
-              {
-                "value": "lvA",
-                "text": "Langue Vivante A"
-              },
-              {
-                "value": "lvB",
-                "text": "Langue Vivante B"
-              }
+            "rateValues": [
+              {}
             ]
           },
           {
             "type": "rating",
             "name": "bac_french_average",
-            "title": "Mes résultats au bac de français (Moyenne de l'écrit et de l'oral)",
+            "title": "Mes r\u00e9sultats au bac de fran\u00e7ais (Moyenne de l&#039;\u00e9crit et de l&#039;oral)",
             "rateValues": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 10\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
             ]
           }
         ]

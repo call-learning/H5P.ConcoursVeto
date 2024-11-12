@@ -1,4 +1,13 @@
 {
+  "l10n": {
+    "back": "Retour",
+    "survey_results": "Résultats de l'auto-évaluation",
+    "download_certificate": "Télécharger l'attestation",
+    "restart_survey": "Recommencer l'auto-évaluation",
+    "generate_pdf": "Générer un PDF",
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
+  },
   "settings": {
   },
   "feedback": {
@@ -7,15 +16,13 @@
       {
         "title": "Vos résultats scolaires",
         "label": "Vos résultats scolaires",
-        "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent.",
+        "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
         "questions_weight": [
-          {
-            "bac_french_average": 1,
-            "common_subjects_terminal": 0.7,
-            "common_subjects_prem": 0.5,
-            "performance_specialities_prem": 1,
-            "performance_specialities_terminal": 0.7
-          }
+          {"id":  "speciality1", "value": 50 },
+          {"id" : "common_subjects_terminal", "value": 10},
+          {"id" : "common_subjects_prem", "value": 20},
+          {"id" : "performance_specialities_prem", "value": 10},
+          {"id" : "performance_specialities_terminal", "value": 10}
         ],
         "feedback_ranges": [
           {
@@ -39,50 +46,73 @@
     ]
   },
   "surveyDefinition": {
-    "title": "Etape 1 - J'évalue mes performances",
-    "description": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac.",
+    "title": "J'évalue mes performances",
+    "description": "Auto-\u00e9valuation des connaissances et comp\u00e9tences pour le concours v\u00e9to post-bac.",
     "pages": [
       {
         "name": "specialities",
-        "title": "Mes spécialités en terminale",
         "elements": [
           {
             "type": "dropdown",
             "name": "speciality1",
-            "title": "Spécialité 1 conservée en terminale",
+            "title": "Sp\u00e9cialit\u00e9 1 conserv\u00e9e en terminale",
             "choices": [
-              "Mathématiques",
-              "Physique",
-              "Biologie",
-              "Chimie",
-              "Informatique",
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
               "Autre"
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
+            ],
+            "rateValues": [
+              {}
             ]
           },
           {
             "type": "dropdown",
             "name": "speciality2",
-            "title": "Spécialité 2 conservée en terminale",
+            "title": "Sp\u00e9cialit\u00e9 2 conserv\u00e9e en terminale",
             "choices": [
-              "Mathématiques",
-              "Physique",
-              "Biologie",
-              "Chimie",
-              "Informatique",
-              "Autre"
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
+              "Autre sp\u00e9cialit\u00e9"
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
+            ],
+            "rateValues": [
+              {}
             ]
           },
           {
             "type": "dropdown",
             "name": "speciality3",
-            "title": "Spécialité 3 abandonnée en terminale",
+            "title": "Sp\u00e9cialit\u00e9 3 abandonn\u00e9e en terminale",
             "choices": [
-              "Mathématiques",
-              "Physique",
-              "Biologie",
-              "Chimie",
-              "Informatique",
-              "Autre"
+              "Math\u00e9matiques",
+              "Physique\/Chimie",
+              "SVT ou Biologie\/Ecologie",
+              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
+              "Autre sp\u00e9cialit\u00e9"
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -92,80 +122,82 @@
         "elements": [
           {
             "type": "matrix",
-            "name": "performance_specialities_prem",
-            "title": "Mes résultats dans les enseignements de spécialité en première :",
+            "name": "performance_specialities_first",
+            "title": "Mes r\u00e9sultats dans les enseignements de sp\u00e9cialit\u00e9 en premi\u00e8re :",
             "columns": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
-              },
-              {
-                "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
             ],
             "rows": [
               {
                 "value": "speciality1",
-                "text": "Spécialité 1"
+                "text": "Sp\u00e9cialit\u00e9 1"
               },
               {
                 "value": "speciality2",
-                "text": "Spécialité 2"
+                "text": "Sp\u00e9cialit\u00e9 2"
               },
               {
                 "value": "speciality3",
-                "text": "Spécialité 3"
+                "text": "Sp\u00e9cialit\u00e9 3"
               }
+            ],
+            "rateValues": [
+              {}
             ]
           },
           {
             "type": "matrix",
             "name": "performance_specialities_terminal",
-            "title": "Mes résultats dans les enseignements de spécialité en terminale :",
+            "title": "Mes r\u00e9sultats dans les enseignements de sp\u00e9cialit\u00e9 en terminale :",
             "columns": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 10\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
             ],
             "rows": [
               {
                 "value": "speciality1",
-                "text": "Spécialité 1"
+                "text": "Sp\u00e9cialit\u00e9 1"
               },
               {
                 "value": "speciality2",
-                "text": "Spécialité 2"
+                "text": "Sp\u00e9cialit\u00e9 2"
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -175,111 +207,75 @@
         "elements": [
           {
             "type": "matrix",
-            "name": "common_subjects_prem",
-            "title": "Mes résultats dans les enseignements communs en première :",
+            "name": "common_subjects_first",
+            "title": "Ma moyenne g\u00e9n\u00e9rale",
             "columns": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 10\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
             ],
             "rows": [
               {
                 "value": "history_geography",
-                "text": "Histoire-Géographie"
+                "text": "En classe de premi\u00e8re"
               },
               {
                 "value": "lvA",
-                "text": "Langue Vivante A"
-              },
-              {
-                "value": "lvB",
-                "text": "Langue Vivante B"
-              }
-            ]
-          },
-          {
-            "type": "matrix",
-            "name": "common_subjects_terminal",
-            "title": "Mes résultats dans les enseignements communs en terminale :",
-            "columns": [
-              {
-                "value": 1,
-                "text": "≤10"
-              },
-              {
-                "value": 2,
-                "text": ">10 et ≤11"
-              },
-              {
-                "value": 3,
-                "text": ">11 et ≤14"
-              },
-              {
-                "value": 4,
-                "text": ">14 et ≤16"
-              },
-              {
-                "value": 5,
-                "text": ">16"
+                "text": "En classe de terminale"
               }
             ],
-            "rows": [
-              {
-                "value": "history_geography",
-                "text": "Histoire-Géographie"
-              },
-              {
-                "value": "lvA",
-                "text": "Langue Vivante A"
-              },
-              {
-                "value": "lvB",
-                "text": "Langue Vivante B"
-              }
+            "rateValues": [
+              {}
             ]
           },
           {
             "type": "rating",
             "name": "bac_french_average",
-            "title": "Mes résultats au bac de français (Moyenne de l'écrit et de l'oral)",
+            "title": "Mes r\u00e9sultats au bac de fran\u00e7ais (Moyenne de l&#039;\u00e9crit et de l&#039;oral)",
             "rateValues": [
               {
                 "value": 1,
-                "text": "≤10"
+                "text": "Moins de 10\/20"
               },
               {
                 "value": 2,
-                "text": ">10 et ≤11"
+                "text": "Moins de 12\/20"
               },
               {
                 "value": 3,
-                "text": ">11 et ≤14"
+                "text": "Entre 12\/20 et 14\/20"
               },
               {
                 "value": 4,
-                "text": ">14 et ≤16"
+                "text": "Entre 14\/20 et 16\/20"
               },
               {
                 "value": 5,
-                "text": ">16"
+                "text": "Plus de 16\/20"
               }
+            ],
+            "columns": [
+              {}
+            ],
+            "rows": [
+              {}
             ]
           }
         ]
@@ -290,58 +286,61 @@
           {
             "type": "matrix",
             "name": "work_skills_matrix",
-            "title": "Mes capacités de travail et d'organisation :",
+            "title": "J&#039;\u00e9value mes comp\u00e9tences au travail ...",
             "columns": [
               {
                 "value": 1,
-                "text": "Insuffisante"
+                "text": "Insuffisantes"
               },
               {
                 "value": 2,
-                "text": "Moyenne"
+                "text": "Moyennes"
               },
               {
                 "value": 3,
-                "text": "Bonne"
+                "text": "Bonnes"
               },
               {
                 "value": 4,
-                "text": "Excellente"
+                "text": "Excellentes"
               }
             ],
             "rows": [
               {
+                "value": "reading_summary",
+                "text": "Je travaille sans \u00eatre stimul\u00e9-e."
+              },
+              {
                 "value": "autonomy",
-                "text": "Travailler régulièrement de façon autonome"
+                "text": "Je travaille r\u00e9guli\u00e8rement et de fa\u00e7on autonome"
+              },
+              {
+                "value": "Noise-ambiant",
+                "text": "Je sais m&#039;extraire des bruits ambiants pour rester concentr\u00e9-e."
+              },
+              {
+                "value": "perseverance",
+                "text": "Je suis pers\u00e9v\u00e9rant-e."
               },
               {
                 "value": "note_taking",
-                "text": "Prendre des notes en séance"
+                "text": "Je sais prendre des notes en s\u00e9ance."
               },
               {
                 "value": "computer_use",
-                "text": "Utiliser un ordinateur pour des applications bureautiques"
-              },
-              {
-                "value": "reading_summary",
-                "text": "Réaliser une fiche de lecture"
-              },
-              {
-                "value": "text_structure",
-                "text": "Identifier la structure d'un texte à partir de sa lecture"
+                "text": "Je sais utiliser un ordinateur pour des applications bureautiques."
               },
               {
                 "value": "synthesis",
-                "text": "Réaliser un travail de synthèse"
-              },
-              {
-                "value": "concentration",
-                "text": "Rester concentré lorsqu'il le faut"
+                "text": "Je sais r\u00e9aliser un travail de synth\u00e8se."
               },
               {
                 "value": "group_work",
-                "text": "Travailler efficacement quand je suis en groupe"
+                "text": "Je travaille efficacement en groupe."
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -352,58 +351,65 @@
           {
             "type": "matrix",
             "name": "intellectual_aptitudes_matrix",
-            "title": "Mes aptitudes intellectuelles :",
+            "title": "J&#039;\u00e9value mes qualit\u00e9s ...",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout à l'aise"
+                "text": "Pas \u00e0 l&#039;aise"
               },
               {
                 "value": 2,
-                "text": "Un peu"
+                "text": "Moyennement \u00e0 l&#039;aise"
               },
               {
                 "value": 3,
-                "text": "Beaucoup"
+                "text": "A l&#039;aise"
               },
               {
                 "value": 4,
-                "text": "Très à l'aise"
+                "text": "Tr\u00e8s \u00e0 l&#039;aise"
               }
             ],
             "rows": [
               {
                 "value": "observation",
-                "text": "Être observateur"
+                "text": "Je suis observateur\/observatrice."
               },
               {
                 "value": "focus",
-                "text": "Me concentrer facilement sur un problème"
+                "text": "Je me concentre facilement sur un probl\u00e8me."
               },
               {
-                "value": "ignore_noise",
-                "text": "M’extraire des bruits ambiants pour travailler"
+                "value": "creativity",
+                "text": "Je suis cr\u00e9atif\/cr\u00e9ative."
               },
               {
                 "value": "memorization",
-                "text": "Mémoriser facilement"
+                "text": "J&#039;apprends facilement par coeur."
               },
               {
                 "value": "handle_numbers",
-                "text": "Manipuler les chiffres avec aisance (ex. : produits en croix)"
+                "text": "Je calcule rapidement et sans erreur."
               },
               {
                 "value": "identify_data",
-                "text": "Identifier rapidement les données importantes et inutiles"
+                "text": "J&#039;identifie rapidement les donn\u00e9es importantes et inutiles d&#039;un probl\u00e8me."
               },
               {
                 "value": "problem_analysis",
-                "text": "Analyser les différents aspects d’un problème"
+                "text": "Je sais probl\u00e9matiser une demande."
               },
               {
                 "value": "prioritization",
-                "text": "Hiérarchiser facilement des priorités"
+                "text": "Je hi\u00e9rachise les priorit\u00e9s."
+              },
+              {
+                "text": "Je sais m&#039;organiser.",
+                "value": "organization"
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -414,58 +420,61 @@
           {
             "type": "matrix",
             "name": "manual_relational_skills_matrix",
-            "title": "Mes compétences manuelles et relationnelles :",
+            "title": "J&#039;\u00e9value mes comp\u00e9tences manuelles et relationnelles",
             "columns": [
               {
                 "value": 1,
-                "text": "Insuffisante"
+                "text": "Pas \u00e0 l&#039;aise"
               },
               {
                 "value": 2,
-                "text": "Moyenne"
+                "text": "Moyennement \u00e0 l&#039;aise"
               },
               {
                 "value": 3,
-                "text": "Bonne"
+                "text": "A l&#039;aise"
               },
               {
                 "value": 4,
-                "text": "Excellente"
+                "text": "Tr\u00e8s \u00e0 l&#039;aise"
               }
             ],
             "rows": [
               {
                 "value": "manual_precision",
-                "text": "Réaliser un travail précis avec mes mains"
+                "text": "Je sais r\u00e9aliser un travail pr\u00e9cis avec mes mains."
               },
               {
                 "value": "tool_precision",
-                "text": "Réaliser un travail précis avec des outils"
+                "text": "Je sais r\u00e9aliser un travail pr\u00e9cis avec des outils."
               },
               {
                 "value": "respect_rules",
-                "text": "Respecter les consignes et les règles"
+                "text": "Je respecte les consignes et les r\u00e8gles lorsque je suis en groupe."
               },
               {
                 "value": "listen_to_others",
-                "text": "Écouter l'avis des autres"
+                "text": "Je sais \u00e9couter l&#039;avis des autres."
               },
               {
                 "value": "clear_expression",
-                "text": "M'exprimer clairement"
+                "text": "Je m&#039;exprime clairement."
               },
               {
                 "value": "make_understand",
-                "text": "Me faire comprendre"
+                "text": "Je sais me faire comprendre."
               },
               {
                 "value": "consider_opinions",
-                "text": "Tenir compte de l'opinion des autres"
+                "text": "J&#039;accepte les id\u00e9es des autres."
               },
               {
                 "value": "assert_viewpoint",
-                "text": "Faire valoir mon point de vue personnel"
+                "text": "J&#039;ose exprimer et partager mes id\u00e9es."
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -476,50 +485,53 @@
           {
             "type": "matrix",
             "name": "work_experience_matrix",
-            "title": "Mon expérience du monde du travail :",
+            "title": "Mon exp\u00e9rience du monde du travail avec les animaux.",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout"
+                "text": "Pas du tout d&#039;accord"
               },
               {
                 "value": 2,
-                "text": "Un peu"
+                "text": "Pas d&#039;accord"
               },
               {
                 "value": 3,
-                "text": "Beaucoup"
+                "text": "D&#039;accord"
               },
               {
                 "value": 4,
-                "text": "Souvent"
+                "text": "Tout \u00e0 fait d&#039;accord"
               }
             ],
             "rows": [
               {
                 "value": "media_exposure",
-                "text": "Par les médias internet ou audiovisuels"
+                "text": "Je connais le monde v\u00e9t\u00e9rinaire au travers des m\u00e9dias."
               },
               {
                 "value": "veterinary_experience",
-                "text": "Chez un vétérinaire"
+                "text": "J&#039;ai d\u00e9j\u00e0 suivi un v\u00e9t\u00e9rinaire dans son travail quotidien."
               },
               {
                 "value": "breeder_experience",
-                "text": "Chez un éleveur"
+                "text": "J&#039;ai une exp\u00e9rience de travail chez un \u00e9leveur."
               },
               {
                 "value": "equestrian_center",
-                "text": "Dans un centre équestre"
+                "text": "Je participe r\u00e9guli\u00e8rement aux soins des chevaux\/poneys dans mon centre \u00e9questre."
               },
               {
                 "value": "animal_related",
-                "text": "Dans une autre structure en rapport avec l'animal"
+                "text": "J&#039;ai une exp\u00e9rience de travail dans une  structure en rapport avec l&#039;animal (SPA ...)."
               },
               {
                 "value": "non_animal_related",
-                "text": "Dans une structure sans rapport avec l'animal"
+                "text": "J&#039;ai une exp\u00e9rience de travail dans une  structure en lien avec la sant\u00e9 animale (recherche, industrie ...)."
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -530,78 +542,81 @@
           {
             "type": "matrix",
             "name": "profession_representation_matrix",
-            "title": "Mes représentations du métier de vétérinaire :",
+            "title": "En tant que v\u00e9t\u00e9rinaire, je pourrai \u00eatre amen\u00e9-e \u00e0 ...",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout d'accord"
+                "text": "Pas du tout d&#039;accord"
               },
               {
                 "value": 2,
-                "text": "Pas d'accord"
+                "text": "Pas d&#039;accord"
               },
               {
                 "value": 3,
-                "text": "D'accord"
+                "text": "D&#039;accord"
               },
               {
                 "value": 4,
-                "text": "Tout à fait d'accord"
+                "text": "Tout \u00e0 fait d&#039;accord"
               }
             ],
             "rows": [
               {
                 "value": "treat_domestic_animals",
-                "text": "Soigner des animaux domestiques"
+                "text": "Soigner des animaux domestiques."
               },
               {
                 "value": "animal_euthanasia",
-                "text": "Euthanasier des animaux"
+                "text": "Euthanasier des animaux domestiques."
               },
               {
                 "value": "health_preservation",
-                "text": "Préserver la santé des élevages"
+                "text": "Pr\u00e9server la sant\u00e9 des \u00e9levages."
               },
               {
                 "value": "advise_owners",
-                "text": "Conseiller les propriétaires d'animaux"
+                "text": "Conseiller les propri\u00e9taires d&#039;animaux."
               },
               {
                 "value": "public_health_role",
-                "text": "Représenter l'Etat pour préserver la santé publique"
+                "text": "Pr\u00e9server  la sant\u00e9 publique."
               },
               {
                 "value": "pharma_industry",
-                "text": "Travailler dans l'industrie pharmaceutique ou d'aliments pour animaux"
+                "text": "Travailler dans l&#039;industrie pharmaceutique."
               },
               {
                 "value": "public_sector",
-                "text": "Travailler dans la fonction publique"
+                "text": "Travailler dans la fonction publique."
               },
               {
                 "value": "business_management",
-                "text": "Participer à la gestion d'une entreprise vétérinaire"
+                "text": "Participer \u00e0 la gestion d&#039;une entreprise v\u00e9t\u00e9rinaire."
               },
               {
                 "value": "slaughterhouse_work",
-                "text": "Travailler dans un abattoir"
+                "text": "Travailler dans un abattoir."
               },
               {
                 "value": "research",
-                "text": "Faire de la recherche"
+                "text": "Faire de la recherche."
               },
               {
                 "value": "wild_animal_care",
-                "text": "Soigner des animaux sauvages"
+                "text": "Soigner des animaux sauvages."
               },
               {
                 "value": "animal_welfare",
-                "text": "S'investir dans le bien-être animal"
+                "text": "M&#039;investir dans le bien-\u00eatre animal."
               },
               {
                 "value": "work_nights_weekends",
-                "text": "Travailler la nuit, les dimanches et les jours fériés"
+                "text": "Participer au d\u00e9veloppement durable et \u00e0 la transition \u00e9cologique."
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -612,54 +627,65 @@
           {
             "type": "matrix",
             "name": "education_representation_matrix",
-            "title": "Les idées que je me fais des études vétérinaires :",
+            "title": "Au sujet des \u00e9tudes v\u00e9t\u00e9rinaires ...",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout d'accord"
+                "text": "Pas du tout d&#039;accord"
               },
               {
                 "value": 2,
-                "text": "Pas d'accord"
+                "text": "Pas d&#039;accord"
               },
               {
                 "value": 3,
-                "text": "D'accord"
+                "text": "D&#039;accord"
               },
               {
                 "value": 4,
-                "text": "Tout à fait d'accord"
+                "text": "Tout \u00e0 fait d&#039;accord"
               }
             ],
             "rows": [
               {
                 "value": "studies_difficult",
-                "text": "Les études sont longues et difficiles."
+                "text": "Les \u00e9tudes sont longues et exigent beaucoup de travail."
               },
               {
                 "value": "identical_programs",
-                "text": "Le programme et le niveau sont identiques dans toutes les écoles vétérinaires."
+                "text": "Le programme et le niveau sont identiques dans les quatre \u00e9coles nationales v\u00e9t\u00e9rinaires."
               },
               {
                 "value": "evaluated_on_knowledge",
-                "text": "Les étudiants sont évalués selon leurs connaissances, leurs savoir-faire et leurs savoir-être."
+                "text": "Les \u00e9tudiants sont \u00e9valu\u00e9s selon leurs connaissances, leurs savoir-faire et leurs savoir-\u00eatre."
               },
               {
                 "value": "all_species",
-                "text": "Les études portent obligatoirement sur toutes les espèces animales."
+                "text": "Les \u00e9tudes portent obligatoirement sur toutes les esp\u00e8ces animales."
               },
               {
-                "value": "abattoir_visits",
-                "text": "Pendant les études, des visites en abattoir sont obligatoires."
+                "value": "slaughter_house",
+                "text": "Pendant les \u00e9tudes, des visites et\/ou des stages en abattoir sont obligatoires."
               },
               {
                 "value": "mandatory_learning",
-                "text": "Les études comprennent des apprentissages obligatoires qui peuvent ne pas me correspondre."
+                "text": "Les \u00e9tudes comprennent des apprentissages obligatoires qui pourraient ne pas me correspondre."
               },
               {
                 "value": "less_vacation",
-                "text": "J'aurai moins de semaines de vacances."
+                "text": "J&#039;aurai moins de vacances."
+              },
+              {
+                "text": "Il faudra parfois que je r\u00e9alise des gardes de nuit.",
+                "value": "night_guards"
+              },
+              {
+                "text": "Il faudra parfois que je travaille pendant les jours f\u00e9ri\u00e9s.",
+                "value": "Bank holidays"
               }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -670,18 +696,45 @@
           {
             "type": "matrix",
             "name": "vocation_statements",
-            "title": "C'est une vocation. Chacune des affirmations ci-dessous me correspond :",
+            "title": "Pourquoi souhaitez-vous devenir v\u00e9t\u00e9rinaire ?",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              },
+              {
+                "value": 2,
+                "text": "Pas du tout"
+              },
+              {
+                "value": 3,
+                "text": "plut\u00f4t oui"
+              },
+              {
+                "value": 4,
+                "text": "Oui"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait"
+              }
             ],
             "rows": [
-              { "value": "always_veterinarian", "text": "J'ai toujours voulu devenir vétérinaire." },
-              { "value": "childhood_dream", "text": "C'était un rêve d'enfant de devenir vétérinaire." },
-              { "value": "only_career_choice", "text": "C'est le seul métier que j'envisage d'exercer." }
+              {
+                "value": "always_veterinarian",
+                "text": "J&#039;ai toujours voulu devenir v\u00e9t\u00e9rinaire."
+              },
+              {
+                "value": "childhood_dream",
+                "text": "C&#039;est un m\u00e9tier pour lequel je me sens pr\u00e9par\u00e9-e."
+              },
+              {
+                "value": "only_career_choice",
+                "text": "C&#039;est le seul m\u00e9tier que j&#039;envisage d&#039;exercer."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -692,19 +745,49 @@
           {
             "type": "matrix",
             "name": "stimulation_statements",
-            "title": "C'est un métier stimulant. Chacune des affirmations ci-dessous me correspond :",
+            "title": "V\u00e9t\u00e9rinaire est un m\u00e9tier stimulant. Indiquez quelles sont les  affirmations qui vous correspondent ...",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              },
+              {
+                "value": 2,
+                "text": "Pas du tout"
+              },
+              {
+                "value": 3,
+                "text": "Plut\u00f4t oui"
+              },
+              {
+                "value": 4,
+                "text": "Oui"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait"
+              }
             ],
             "rows": [
-              { "value": "like_challenge", "text": "J'aime le défi que représente le travail de vétérinaire." },
-              { "value": "like_learning", "text": "J'aime apprendre de nouvelles choses." },
-              { "value": "like_problem_solving", "text": "J'aime résoudre des problèmes." },
-              { "value": "like_variety", "text": "J'aime la variété des activités vétérinaires." }
+              {
+                "value": "like_challenge",
+                "text": "J&#039;aime le d\u00e9fi que repr\u00e9sente le travail de v\u00e9t\u00e9rinaire."
+              },
+              {
+                "value": "like_learning",
+                "text": "J&#039;aime apprendre de nouvelles choses."
+              },
+              {
+                "value": "like_problem_solving",
+                "text": "J&#039;aime r\u00e9soudre des probl\u00e8mes."
+              },
+              {
+                "value": "like_variety",
+                "text": "J&#039;aime la diversit\u00e9 des activit\u00e9s v\u00e9t\u00e9rinaires."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -715,21 +798,53 @@
           {
             "type": "matrix",
             "name": "animal_contact_statements",
-            "title": "Le contact avec les animaux. Chacune des affirmations ci-dessous me correspond :",
+            "title": "Concernant le contact avec les animaux, comment vous positionnez-vous ?",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              },
+              {
+                "value": 2,
+                "text": "Pas du tout"
+              },
+              {
+                "value": 3,
+                "text": "Plut\u00f4t oui"
+              },
+              {
+                "value": 4,
+                "text": "Oui"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait"
+              }
             ],
             "rows": [
-              { "value": "like_working_with_animals", "text": "J'aime travailler avec des animaux." },
-              { "value": "want_to_help_animals", "text": "Je veux aider les animaux." },
-              { "value": "enjoy_interacting_with_animals", "text": "J'aime interagir avec les animaux." },
-              { "value": "love_animals", "text": "J'adore les animaux." },
-              { "value": "avoid_animal_suffering", "text": "Je veux éviter la souffrance animale." },
-              { "value": "protect_environment", "text": "Je veux protéger l'environnement et la biodiversité." }
+              {
+                "value": "like_working_with_animals",
+                "text": "J&#039;aime travailler avec des animaux."
+              },
+              {
+                "value": "want_to_help_animals",
+                "text": "Je veux aider les animaux."
+              },
+              {
+                "value": "animal_suffering",
+                "text": "Je vais \u00eatre confront\u00e9-e \u00e0 la souffrance animale."
+              },
+              {
+                "value": "dangerous_animal",
+                "text": "Je peux \u00eatre bless\u00e9-e lors de la manipulation d\u2019animaux agressifs ou dangereux."
+              },
+              {
+                "value": "protect_environment",
+                "text": "Je veux prot\u00e9ger la faune sauvage."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -740,18 +855,45 @@
           {
             "type": "matrix",
             "name": "human_contact_statements",
-            "title": "Le contact humain. Chacune des affirmations ci-dessous me correspond :",
+            "title": "Concernant le contact humain, comment vous positionnez-vous ?",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              },
+              {
+                "value": 2,
+                "text": "Pas du tout"
+              },
+              {
+                "value": 3,
+                "text": "Plut\u00f4t oui"
+              },
+              {
+                "value": 4,
+                "text": "Oui"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait"
+              }
             ],
             "rows": [
-              { "value": "like_working_with_people", "text": "J'aime travailler avec les gens." },
-              { "value": "enjoy_client_interaction", "text": "J'aime l'idée d'interagir avec des clients." },
-              { "value": "want_to_help_people", "text": "Je veux aider les gens." }
+              {
+                "value": "like_team_working",
+                "text": "J&#039;aime le travail en \u00e9quipe."
+              },
+              {
+                "value": "enjoy_client_interaction",
+                "text": "J&#039;aime interagir avec des clients, des \u00e9leveurs."
+              },
+              {
+                "value": "unsatisfied_client",
+                "text": "Je peux \u00eatre confront\u00e9-e \u00e0 des clients m\u00e9contents."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -762,18 +904,45 @@
           {
             "type": "matrix",
             "name": "social_integration_statements",
-            "title": "L'insertion sociale. Chacune des affirmations ci-dessous me correspond :",
+            "title": "V\u00e9t\u00e9rinaire et soci\u00e9t\u00e9.  Indiquez ce que vous pensez des affirmations suivantes :",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              },
+              {
+                "value": 2,
+                "text": "Pas d&#039;accord"
+              },
+              {
+                "value": 3,
+                "text": "Plut\u00f4t d&#039;accord"
+              },
+              {
+                "value": 4,
+                "text": "D&#039;accord"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait d&#039;accord"
+              }
             ],
             "rows": [
-              { "value": "want_to_contribute", "text": "Je veux contribuer à la société." },
-              { "value": "want_to_be_recognized", "text": "Je pourrai être reconnu dans la société." },
-              { "value": "want_to_integrate", "text": "Je pourrai m'intégrer à la collectivité." }
+              {
+                "value": "want_to_contribute",
+                "text": "Un v\u00e9t\u00e9rinaire contribue au d\u00e9veloppement de  la soci\u00e9t\u00e9."
+              },
+              {
+                "value": "want_to_be_recognized",
+                "text": "Un v\u00e9t\u00e9rinaire est reconnu dans la soci\u00e9t\u00e9."
+              },
+              {
+                "value": "want_to_integrate",
+                "text": "Un v\u00e9t\u00e9rinaire participe \u00e0 l&#039;action collective."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
@@ -784,19 +953,45 @@
           {
             "type": "matrix",
             "name": "career_opportunities_statements",
-            "title": "Les opportunités de carrière. Chacune des affirmations ci-dessous me correspond :",
+            "title": "Les opportunit\u00e9s de carri\u00e8re. Indiquez ce que vous pensez des affirmations suivantes :",
             "columns": [
-              { "value": 1, "text": "Absolument pas" },
-              { "value": 2, "text": "Plutôt mal" },
-              { "value": 3, "text": "Moyennement" },
-              { "value": 4, "text": "Plutôt bien" },
-              { "value": 5, "text": "Très bien" }
+              {
+                "value": 2,
+                "text": "Pas d&#039;accord"
+              },
+              {
+                "value": 3,
+                "text": "Plut\u00f4t d&#039;accord"
+              },
+              {
+                "value": 4,
+                "text": "D&#039;accord"
+              },
+              {
+                "value": 5,
+                "text": "Tout \u00e0 fait d&#039;accord"
+              },
+              {
+                "value": 1,
+                "text": "Je ne sais pas"
+              }
             ],
             "rows": [
-              { "value": "reasonable_income", "text": "Ce métier fournit un revenu raisonnable." },
-              { "value": "respected_profession", "text": "C'est une profession respectée." },
-              { "value": "many_opportunities", "text": "Un vétérinaire peut avoir de nombreuses opportunités de carrière." },
-              { "value": "job_availability", "text": "Dans ce métier, il est facile de trouver un emploi." }
+              {
+                "value": "reasonable_income",
+                "text": "Ce m\u00e9tier fournit un revenu raisonnable."
+              },
+              {
+                "value": "many_opportunities",
+                "text": "Un v\u00e9t\u00e9rinaire peut avoir de nombreuses opportunit\u00e9s de carri\u00e8re."
+              },
+              {
+                "value": "job_availability",
+                "text": "Dans ce m\u00e9tier, il est facile de trouver un emploi."
+              }
+            ],
+            "rateValues": [
+              {}
             ]
           }
         ]
