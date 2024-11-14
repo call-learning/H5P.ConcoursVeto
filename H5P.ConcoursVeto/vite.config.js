@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
@@ -21,5 +22,10 @@ export default defineConfig(({ mode }) => ({
         },
       },
     }
-  }
+  },
+  resolve: {
+    alias: {
+      '@data': path.resolve(__dirname, 'data'),
+    },
+  },
 }))

@@ -6,7 +6,7 @@ ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, 
 
 function shortenTitle(title) {
   // Simple function to shorten the title for display
-  return title.split(' ')[0]; // You can improve this based on your shortening preference
+  return title.substring(0, 12); // You can improve this based on your shortening preference
 }
 
 function calculateAverage(scores) {
@@ -18,11 +18,12 @@ function calculateAverage(scores) {
 const RadarChart = ({ pageIds, results , definition}) => {
   const labels = [];
   const data = [];
+  const fullLabels = [];
 
   pageIds.forEach((id) => {
     const title = getPageTitle(id, definition);
-    const titleShort = shortenTitle(title);
-    labels.push(titleShort);
+    fullLabels.push(title);
+    labels.push(''); // Empty labels for hiding
 
     // Retrieve the score for this element from results
     let score;
@@ -49,6 +50,11 @@ const RadarChart = ({ pageIds, results , definition}) => {
         backgroundColor: 'rgba(54, 162, 235, 0.2)',
         borderColor: 'rgba(54, 162, 235, 1)',
         borderWidth: 1,
+        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+        pointBorderColor: '#fff',
+        pointHoverRadius: 10,
+        pointRadius: 6,
+        pointHitRadius: 10,
       },
     ],
   };
@@ -57,15 +63,25 @@ const RadarChart = ({ pageIds, results , definition}) => {
     scales: {
       r: {
         angleLines: {
-          display: false,
+          display: true,
         },
         suggestedMin: 0,
         suggestedMax: 5, // Adjust according to your rating range
+        pointLabels: {
+          display: false, // Hide point labels
+        },
       },
     },
     plugins: {
       legend: {
-        display: false
+        display: false,
+      },
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            return `${fullLabels[context.dataIndex]}: ${context.raw}`;
+          },
+        },
       },
     },
   };
@@ -82,7 +98,7 @@ function getPageTitle(pageId, surveyDefinition) {
   for (const page of surveyDefinition.pages) {
     for (const element of page.elements) {
       if (element.name === pageId) {
-        return page.title ??'';
+        return element.title ??'';
       }
     }
   }

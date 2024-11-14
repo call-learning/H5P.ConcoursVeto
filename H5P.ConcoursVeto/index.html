@@ -10,8 +10,9 @@
 <script src="H5P.mock.js"></script>
 <script src="dist/h5pconcoursveto.js"></script>
 <script type="module">
+  import sampleData from '@data/sampleData.json';
   async function loadSampleData() {
-    const response = await fetch('/sampleData.json');
+    const response = await fetch('@data/sampleData.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -19,7 +20,6 @@
   }
 
   async function initializeH5P() {
-    const sampleData = await loadSampleData();
     if (window.H5P) {
       let h5p = new H5P.ConcoursVeto(sampleData, 1322432, {});
       const element = document.getElementById('root');

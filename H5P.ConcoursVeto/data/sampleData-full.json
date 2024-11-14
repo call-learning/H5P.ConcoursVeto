@@ -55,64 +55,37 @@
           {
             "type": "dropdown",
             "name": "speciality1",
-            "title": "Sp\u00e9cialit\u00e9 1 conserv\u00e9e en terminale",
+            "title": "Spécialité 1 conservée en terminale",
             "choices": [
-              "Math\u00e9matiques",
-              "Physique\/Chimie",
-              "SVT ou Biologie\/Ecologie",
-              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
-              "Autre"
-            ],
-            "columns": [
-              {}
-            ],
-            "rows": [
-              {}
-            ],
-            "rateValues": [
-              {}
+              { "value": 1, "text": "Mathématiques" },
+              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 3, "text": "SVT ou Biologie/Ecologie" },
+              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 5, "text": "Autre" }
             ]
           },
           {
             "type": "dropdown",
             "name": "speciality2",
-            "title": "Sp\u00e9cialit\u00e9 2 conserv\u00e9e en terminale",
+            "title": "Spécialité 2 conservée en terminale",
             "choices": [
-              "Math\u00e9matiques",
-              "Physique\/Chimie",
-              "SVT ou Biologie\/Ecologie",
-              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
-              "Autre sp\u00e9cialit\u00e9"
-            ],
-            "columns": [
-              {}
-            ],
-            "rows": [
-              {}
-            ],
-            "rateValues": [
-              {}
+              { "value": 1, "text": "Mathématiques" },
+              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 3, "text": "SVT ou Biologie/Ecologie" },
+              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 5, "text": "Autre spécialité" }
             ]
           },
           {
             "type": "dropdown",
             "name": "speciality3",
-            "title": "Sp\u00e9cialit\u00e9 3 abandonn\u00e9e en terminale",
+            "title": "Spécialité 3 abandonnée en terminale",
             "choices": [
-              "Math\u00e9matiques",
-              "Physique\/Chimie",
-              "SVT ou Biologie\/Ecologie",
-              "Informatique\/Sciences de l&#039;Ing\u00e9nieur",
-              "Autre sp\u00e9cialit\u00e9"
-            ],
-            "columns": [
-              {}
-            ],
-            "rows": [
-              {}
-            ],
-            "rateValues": [
-              {}
+              { "value": 1, "text": "Mathématiques" },
+              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 3, "text": "SVT ou Biologie/Ecologie" },
+              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 5, "text": "Autre spécialité" }
             ]
           }
         ]
