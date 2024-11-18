@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Dialog, DialogActions, DialogContent, DialogTitle, TextField, Button } from '@mui/material';
 import { useTranslations } from '../hooks/useTranslation.js';
 import { handleDownloadPDF } from '../helpers/pdfGenerator.js';
+import { H5PContext } from '../contexts/H5PContext.js';
 
 function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
   const [firstName, setFirstName] = useState('');
@@ -9,7 +10,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
   const [psupId, setPsupId] = useState('');
   const [confirmed, setConfirmed] = useState(false);
   const { translate } = useTranslations();
-
+  const {contentId} =  useContext(H5PContext);
   const handleConfirm = () => {
     if (firstName && lastName && psupId) {
       setConfirmed(true);
@@ -53,7 +54,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
             {translate('confirm')}
           </Button>
         ) : (
-          <Button onClick={() => handleDownloadPDF(firstName, lastName, psupId, onClose)} color="primary">
+          <Button onClick={() => handleDownloadPDF(firstName, lastName, psupId, onClose, contentId)} color="primary">
             {translate('download_certificate')}
           </Button>
         )}

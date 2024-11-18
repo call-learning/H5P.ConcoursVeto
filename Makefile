@@ -18,7 +18,7 @@ concours-veto: H5P.ConcoursVeto
 	cp $@/h5p.json  ${TEMP_DIR}/h5p-$@
 	cp $@/icon.svg ${TEMP_DIR}/h5p-$@
 	cp ${TEMP_DIR}/h5p-concoursveto-libs.h5p ${TEMP_DIR}/h5p-$@/h5p-concoursveto.h5p
-	cd ${TEMP_DIR}/h5p-$@ && $(ZIP_COMMAND) -urD h5p-concoursveto.h5p h5p.json icon.svg content/content.json
+	cd ${TEMP_DIR}/h5p-$@ && $(ZIP_COMMAND) -urD h5p-concoursveto.h5p h5p.json icon.svg content/content.json content/images/*
 	cp ${TEMP_DIR}/h5p-concoursveto-libs.h5p .
 	cp ${TEMP_DIR}/h5p-$@/h5p-concoursveto.h5p .
 

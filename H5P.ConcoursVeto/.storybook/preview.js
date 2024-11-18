@@ -1,6 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
 import themeDecorator from './themeDecorator.jsx';
 import translationDecorator from './translationDecorator.jsx';
+import contextDecorator from './contextDecorator.jsx';
 
 const preview = {
   parameters: {
@@ -11,7 +12,7 @@ const preview = {
       },
     },
   },
-  decorators: [themeDecorator, translationDecorator],
+  decorators: [themeDecorator, translationDecorator, contextDecorator],
 };
 
 export default preview;

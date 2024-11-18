@@ -1,5 +1,12 @@
 import { jsPDF } from 'jspdf';
+import { getAbsoluteURL } from './utils.js';
 
+/**
+ * Load an image from a URL and convert it to a base64 string.
+ *
+ * @param url
+ * @param callback
+ */
 export function loadImageAsBase64(url, callback) {
   const img = new Image();
   img.crossOrigin = 'anonymous';
@@ -15,19 +22,42 @@ export function loadImageAsBase64(url, callback) {
   };
 }
 
+/**
+ * Generate a unique key based on the user's first name, last name, and Parcoursup ID.
+ *
+ * @param firstName
+ * @param lastName
+ * @param pSupId
+ * @returns {string}
+ */
 export function generateUniqueKey(firstName, lastName, pSupId) {
   const timestamp = Date.now().toString();
   const uniqueString = `${firstName}${lastName}${pSupId}${timestamp}`;
   return btoa(uniqueString);
 }
 
+/**
+ * Get the current date and time in a human-readable format.
+ *
+ * @returns {string}
+ */
 export function getCurrentDateTime() {
   const date = new Date();
   return date.toLocaleDateString();
 }
 
-export function handleDownloadPDF(firstName, lastName, pSupId, onClose) {
-  loadImageAsBase64('/background-cert.jpg', (backgroundImage) => {
+/**
+ * Generate a PDF document with the user's information and download it.
+ *
+ * @param firstName
+ * @param lastName
+ * @param pSupId
+ * @param onClose
+ * @param contentId
+ */
+export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentId) {
+  const imagePath = getAbsoluteURL('/images/background-cert.jpg', contentId);
+  loadImageAsBase64(imagePath, (backgroundImage) => {
     // Create a jsPDF document in landscape mode
     const doc = new jsPDF('landscape');
     const currentDate = getCurrentDateTime();
