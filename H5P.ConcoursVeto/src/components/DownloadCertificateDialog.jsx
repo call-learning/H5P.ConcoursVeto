@@ -15,7 +15,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
       setConfirmed(true);
     }
   };
-
+  const disableConfirm = !firstName || !lastName || !psupId;
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>Enter Your Information</DialogTitle>
@@ -49,7 +49,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
       </DialogContent>
       <DialogActions>
         {!confirmed ? (
-          <Button onClick={handleConfirm} color="primary" disabled={!firstName || !lastName}>
+          <Button onClick={handleConfirm} color="primary" disabled={disableConfirm}>
             {translate('confirm')}
           </Button>
         ) : (

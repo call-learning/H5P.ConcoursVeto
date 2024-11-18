@@ -6,7 +6,10 @@
     "restart_survey": "Recommencer l'auto-évaluation",
     "generate_pdf": "Générer un PDF",
     "cancel": "Annuler",
-    "confirm": "Confirmer"
+    "confirm": "Confirmer",
+    "firstname": "Prénom",
+    "lastname": "Nom",
+    "psupid": "Identifiant Parcoursup"
   },
   "settings": {
   },

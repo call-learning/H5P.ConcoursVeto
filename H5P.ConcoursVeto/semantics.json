@@ -172,8 +172,20 @@
                     "label": "Choices (Dropdown only)",
                     "field": {
                       "name": "choice",
-                      "type": "text",
-                      "label": "Choice"
+                      "type": "group",
+                      "label": "Choice",
+                      "fields": [
+                        {
+                          "name": "value",
+                          "type": "number",
+                          "label": "Choice Value"
+                        },
+                        {
+                          "name": "text",
+                          "type": "text",
+                          "label": "Choice Text"
+                        }
+                      ]
                     },
                     "optional": true
                   },
