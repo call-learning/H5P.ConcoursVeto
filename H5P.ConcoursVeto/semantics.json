@@ -55,10 +55,10 @@
                 "label": "Weight Item",
                 "fields": [
                   {
-                    "id": "label",
+                    "id": "id",
                     "type": "text",
-                    "label": "Weight Label",
-                    "default": "Example Label"
+                    "label": "Weight Id",
+                    "default": "speciality1"
                   },
                   {
                     "name": "value",
@@ -88,13 +88,13 @@
                     "name": "min",
                     "type": "number",
                     "label": "Minimum Range",
-                    "default": 100
+                    "default": 50
                   },
                   {
                     "name": "feedback",
                     "type": "text",
                     "label": "Feedback Text",
-                    "default": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires."
+                    "default": "Si vous avez réellement obtenu les notes que vous mentionnez..."
                   }
                 ]
               }
