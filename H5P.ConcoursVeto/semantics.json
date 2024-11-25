@@ -55,7 +55,7 @@
                 "label": "Weight Item",
                 "fields": [
                   {
-                    "id": "id",
+                    "name": "id",
                     "type": "text",
                     "label": "Weight Id",
                     "default": "speciality1"
@@ -178,12 +178,14 @@
                         {
                           "name": "value",
                           "type": "number",
-                          "label": "Choice Value"
+                          "label": "Choice Value",
+                          "optional": true
                         },
                         {
                           "name": "text",
                           "type": "text",
-                          "label": "Choice Text"
+                          "label": "Choice Text",
+                          "optional": true
                         }
                       ]
                     },
@@ -201,12 +203,14 @@
                         {
                           "name": "value",
                           "type": "number",
-                          "label": "Column Value"
+                          "label": "Column Value",
+                          "optional": true
                         },
                         {
                           "name": "text",
                           "type": "text",
-                          "label": "Column Text"
+                          "label": "Column Text",
+                          "optional": true
                         }
                       ]
                     },
@@ -224,12 +228,14 @@
                         {
                           "name": "value",
                           "type": "text",
-                          "label": "Row Value"
+                          "label": "Row Value",
+                          "optional": true
                         },
                         {
                           "name": "text",
                           "type": "text",
-                          "label": "Row Text"
+                          "label": "Row Text",
+                          "optional": true
                         }
                       ]
                     },
@@ -247,12 +253,14 @@
                         {
                           "name": "value",
                           "type": "number",
-                          "label": "Rate Value"
+                          "label": "Rate Value",
+                          "optional": true
                         },
                         {
                           "name": "text",
                           "type": "text",
-                          "label": "Rate Text"
+                          "label": "Rate Text",
+                          "optional": true
                         }
                       ]
                     },
@@ -282,9 +290,37 @@
           "em",
           "code"
         ],
-        "label": "Page title",
+        "label": "Welcome Page title",
         "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
       }
     ]
+  },
+  {
+    "name": "l10n",
+    "type": "list",
+    "label": "Localize",
+    "importance": "low",
+    "common": true,
+    "optional": true,
+    "default": [],
+    "field": {
+      "name": "item",
+      "type": "group",
+      "label": "Item",
+      "fields": [
+        {
+          "name": "key",
+          "type": "text",
+          "label": "Key",
+          "default": "example_key"
+        },
+        {
+          "name": "text",
+          "type": "text",
+          "label": "Value",
+          "default": "Example Value"
+        }
+      ]
+    }
   }
 ]

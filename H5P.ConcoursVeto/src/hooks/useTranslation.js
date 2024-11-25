@@ -12,7 +12,8 @@ export const useTranslations = () => {
    */
   const translate = (key, args = {}) => {
     // Get the translation or fall back to showing the key in brackets
-    let text = allTranslations && key in allTranslations ? allTranslations[key] : `[${key}]`;
+    let translation = allTranslations?.find(item => item.key === key);
+    let text = translation ? translation.text : `[${key}]`;
 
     // Replace arguments if provided
     Object.keys(args).forEach(arg => {

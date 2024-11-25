@@ -1,17 +1,48 @@
 {
-  "l10n": {
-    "back": "Retour",
-    "survey_results": "Résultats de l'auto-évaluation",
-    "download_certificate": "Télécharger l'attestation",
-    "restart_survey": "Recommencer l'auto-évaluation",
-    "generate_pdf": "Générer un PDF",
-    "cancel": "Annuler",
-    "confirm": "Confirmer",
-    "firstname": "Prénom",
-    "lastname": "Nom",
-    "psupid": "Identifiant Parcoursup"
-  },
+  "l10n": [
+    {
+      "key": "back",
+      "text": "Retour"
+    },
+    {
+      "key": "survey_results",
+      "text": "Résultats de l'auto-évaluation"
+    },
+    {
+      "key": "download_certificate",
+      "text": "Télécharger l'attestation"
+    },
+    {
+      "key": "restart_survey",
+      "text": "Recommencer l'auto-évaluation"
+    },
+    {
+      "key": "generate_pdf",
+      "text": "Générer un PDF"
+    },
+    {
+      "key": "cancel",
+      "text": "Annuler"
+    },
+    {
+      "key": "confirm",
+      "text": "Confirmer"
+    },
+    {
+      "key": "firstname",
+      "text": "Prénom"
+    },
+    {
+      "key": "lastname",
+      "text": "Nom"
+    },
+    {
+      "key": "psupid",
+      "text": "Identifiant Parcoursup"
+    }
+  ],
   "settings": {
+    "welcomeTitle": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
   },
   "feedback": {
     "global": "<p style=\"text-align: left;\" dir=\"ltr\">Ce questionnaire a pour seule vocation\n  de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir  une vocation prédictive précise sur vos chances de succès à un concours\n    d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong>\n</p>\n<p style=\"text-align: left;\" dir=\"ltr\">Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n  <li><span style=\"font-size: 1rem;\">sont différents du score qui servira de\n      base pour déterminer le classement d'admissibilité aux épreuves du\n      concours ;</span></li>\n  <li><span style=\"font-size: 1rem;\">ne seront pas conservés, ni communiqués à\n      qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous\n      téléverserez dans Parcoursup.</span></li>\n</ul>",
