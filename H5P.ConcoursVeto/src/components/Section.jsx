@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Typography, Collapse, IconButton, Card, CardContent } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FoldableSection from './FoldableSection';
-import RadarChart from './RadarChart.jsx';
 import { calculateSectionScore } from '../helpers/score.js';
 
 
@@ -24,13 +23,6 @@ function Section({ sectionConfig, surveyResults, surveyDefinition }) {
             </IconButton>
           </Box>
           <Collapse in={open}>
-            {!!sectionConfig.questions_weight && (
-              <Box display="flex" justifyContent="center" alignItems="center">
-                <RadarChart pageIds={
-                  sectionConfig.questions_weight?.map((weight) => weight.id)
-                } results={surveyResults} definition={surveyDefinition}/>
-              </Box>
-            )}
             <FoldableSection feedbackText={feedbackText} feedbackRange={feedbackRange?.feedback}/>
           </Collapse>
         </CardContent>
