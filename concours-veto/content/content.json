@@ -6,19 +6,19 @@
     },
     {
       "key": "survey_results",
-      "text": "Résultats de l'auto-évaluation"
+      "text": "R\u00e9sultats de l'auto-\u00e9valuation"
     },
     {
       "key": "download_certificate",
-      "text": "Télécharger l'attestation"
+      "text": "T\u00e9l\u00e9charger l'attestation"
     },
     {
       "key": "restart_survey",
-      "text": "Recommencer l'auto-évaluation"
+      "text": "Recommencer l'auto-\u00e9valuation"
     },
     {
       "key": "generate_pdf",
-      "text": "Générer un PDF"
+      "text": "G\u00e9n\u00e9rer un PDF"
     },
     {
       "key": "cancel",
@@ -30,7 +30,7 @@
     },
     {
       "key": "firstname",
-      "text": "Prénom"
+      "text": "Pr\u00e9nom"
     },
     {
       "key": "lastname",
@@ -39,10 +39,15 @@
     {
       "key": "psupid",
       "text": "Identifiant Parcoursup"
+    },
+    {
+      "key": "continue",
+      "text": "Continuer"
     }
   ],
   "settings": {
-    "welcomeTitle": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
+    "welcomeTitle": "Bienvenue sur le\nTest d'auto-positionnement pour le concours Véto.",
+    "welcomeText": "<p>Ce test a pour objectif de vous aider à évaluer vos chances de réussite au concours d'entrée aux écoles vétérinaires</p>. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles."
   },
   "feedback": {
     "global": "<p style=\"text-align: left;\" dir=\"ltr\">Ce questionnaire a pour seule vocation\n  de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir  une vocation prédictive précise sur vos chances de succès à un concours\n    d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong>\n</p>\n<p style=\"text-align: left;\" dir=\"ltr\">Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n  <li><span style=\"font-size: 1rem;\">sont différents du score qui servira de\n      base pour déterminer le classement d'admissibilité aux épreuves du\n      concours ;</span></li>\n  <li><span style=\"font-size: 1rem;\">ne seront pas conservés, ni communiqués à\n      qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous\n      téléverserez dans Parcoursup.</span></li>\n</ul>",
@@ -50,7 +55,7 @@
       {
         "title": "Vos résultats scolaires",
         "label": "Vos résultats scolaires",
-        "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
+        "feedback": "Vos résultats scolaires : votre score global est de $scorepercent %.",
         "questions_weight": [
           {"id":  "speciality1", "value": 50 },
           {"id" : "common_subjects_terminal", "value": 10},
@@ -61,11 +66,11 @@
         "feedback_ranges": [
           {
             "min": 100,
-            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !"
+            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d'admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d'excellentes notes !"
           },
           {
             "min": 80,
-            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s’améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d’admissibilité. Il y aura donc de nombreux candidats à avoir d’excellentes notes!"
+            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s'améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d'admissibilité. Il y aura donc de nombreux candidats à avoir d'excellentes notes!"
           },
           {
             "min": 60,
@@ -91,11 +96,11 @@
             "name": "speciality1",
             "title": "Spécialité 1 conservée en terminale",
             "choices": [
-              { "value": 1, "text": "Mathématiques" },
-              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 5, "text": "Mathématiques" },
+              { "value": 4, "text": "Physique/Chimie" },
               { "value": 3, "text": "SVT ou Biologie/Ecologie" },
-              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
-              { "value": 5, "text": "Autre" }
+              { "value": 1, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 0, "text": "Autre" }
             ]
           },
           {
@@ -103,11 +108,11 @@
             "name": "speciality2",
             "title": "Spécialité 2 conservée en terminale",
             "choices": [
-              { "value": 1, "text": "Mathématiques" },
-              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 5, "text": "Mathématiques" },
+              { "value": 4, "text": "Physique/Chimie" },
               { "value": 3, "text": "SVT ou Biologie/Ecologie" },
-              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
-              { "value": 5, "text": "Autre spécialité" }
+              { "value": 1, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 0, "text": "Autre spécialité" }
             ]
           },
           {
@@ -115,11 +120,11 @@
             "name": "speciality3",
             "title": "Spécialité 3 abandonnée en terminale",
             "choices": [
-              { "value": 1, "text": "Mathématiques" },
-              { "value": 2, "text": "Physique/Chimie" },
+              { "value": 5, "text": "Mathématiques" },
+              { "value": 4, "text": "Physique/Chimie" },
               { "value": 3, "text": "SVT ou Biologie/Ecologie" },
-              { "value": 4, "text": "Informatique/Sciences de l'Ingénieur" },
-              { "value": 5, "text": "Autre spécialité" }
+              { "value": 1, "text": "Informatique/Sciences de l'Ingénieur" },
+              { "value": 0, "text": "Autre spécialité" }
             ]
           }
         ]
@@ -173,10 +178,6 @@
             "title": "Mes r\u00e9sultats dans les enseignements de sp\u00e9cialit\u00e9 en terminale :",
             "columns": [
               {
-                "value": 1,
-                "text": "Moins de 10\/20"
-              },
-              {
                 "value": 2,
                 "text": "Moins de 12\/20"
               },
@@ -218,10 +219,6 @@
             "title": "Ma moyenne g\u00e9n\u00e9rale",
             "columns": [
               {
-                "value": 1,
-                "text": "Moins de 10\/20"
-              },
-              {
                 "value": 2,
                 "text": "Moins de 12\/20"
               },
@@ -255,12 +252,8 @@
           {
             "type": "rating",
             "name": "bac_french_average",
-            "title": "Mes r\u00e9sultats au bac de fran\u00e7ais (Moyenne de l&#039;\u00e9crit et de l&#039;oral)",
+            "title": "Mes r\u00e9sultats au bac de fran\u00e7ais (Moyenne de l'\u00e9crit et de l'oral)",
             "rateValues": [
-              {
-                "value": 1,
-                "text": "Moins de 10\/20"
-              },
               {
                 "value": 2,
                 "text": "Moins de 12\/20"
@@ -293,7 +286,7 @@
           {
             "type": "matrix",
             "name": "work_skills_matrix",
-            "title": "J&#039;\u00e9value mes comp\u00e9tences au travail ...",
+            "title": "J'\u00e9value mes comp\u00e9tences au travail ...",
             "columns": [
               {
                 "value": 1,
@@ -323,7 +316,7 @@
               },
               {
                 "value": "Noise-ambiant",
-                "text": "Je sais m&#039;extraire des bruits ambiants pour rester concentr\u00e9-e."
+                "text": "Je sais m'extraire des bruits ambiants pour rester concentr\u00e9-e."
               },
               {
                 "value": "perseverance",
@@ -358,23 +351,23 @@
           {
             "type": "matrix",
             "name": "intellectual_aptitudes_matrix",
-            "title": "J&#039;\u00e9value mes qualit\u00e9s ...",
+            "title": "J'\u00e9value mes qualit\u00e9s ...",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas \u00e0 l&#039;aise"
+                "text": "Pas \u00e0 l'aise"
               },
               {
                 "value": 2,
-                "text": "Moyennement \u00e0 l&#039;aise"
+                "text": "Moyennement \u00e0 l'aise"
               },
               {
                 "value": 3,
-                "text": "A l&#039;aise"
+                "text": "A l'aise"
               },
               {
                 "value": 4,
-                "text": "Tr\u00e8s \u00e0 l&#039;aise"
+                "text": "Tr\u00e8s \u00e0 l'aise"
               }
             ],
             "rows": [
@@ -392,7 +385,7 @@
               },
               {
                 "value": "memorization",
-                "text": "J&#039;apprends facilement par coeur."
+                "text": "J'apprends facilement par coeur."
               },
               {
                 "value": "handle_numbers",
@@ -400,7 +393,7 @@
               },
               {
                 "value": "identify_data",
-                "text": "J&#039;identifie rapidement les donn\u00e9es importantes et inutiles d&#039;un probl\u00e8me."
+                "text": "J'identifie rapidement les donn\u00e9es importantes et inutiles d'un probl\u00e8me."
               },
               {
                 "value": "problem_analysis",
@@ -411,7 +404,7 @@
                 "text": "Je hi\u00e9rachise les priorit\u00e9s."
               },
               {
-                "text": "Je sais m&#039;organiser.",
+                "text": "Je sais m'organiser.",
                 "value": "organization"
               }
             ],
@@ -427,23 +420,23 @@
           {
             "type": "matrix",
             "name": "manual_relational_skills_matrix",
-            "title": "J&#039;\u00e9value mes comp\u00e9tences manuelles et relationnelles",
+            "title": "J'\u00e9value mes comp\u00e9tences manuelles et relationnelles",
             "columns": [
               {
                 "value": 1,
-                "text": "Pas \u00e0 l&#039;aise"
+                "text": "Pas \u00e0 l'aise"
               },
               {
                 "value": 2,
-                "text": "Moyennement \u00e0 l&#039;aise"
+                "text": "Moyennement \u00e0 l'aise"
               },
               {
                 "value": 3,
-                "text": "A l&#039;aise"
+                "text": "A l'aise"
               },
               {
                 "value": 4,
-                "text": "Tr\u00e8s \u00e0 l&#039;aise"
+                "text": "Tr\u00e8s \u00e0 l'aise"
               }
             ],
             "rows": [
@@ -461,11 +454,11 @@
               },
               {
                 "value": "listen_to_others",
-                "text": "Je sais \u00e9couter l&#039;avis des autres."
+                "text": "Je sais \u00e9couter l'avis des autres."
               },
               {
                 "value": "clear_expression",
-                "text": "Je m&#039;exprime clairement."
+                "text": "Je m'exprime clairement."
               },
               {
                 "value": "make_understand",
@@ -473,11 +466,11 @@
               },
               {
                 "value": "consider_opinions",
-                "text": "J&#039;accepte les id\u00e9es des autres."
+                "text": "J'accepte les id\u00e9es des autres."
               },
               {
                 "value": "assert_viewpoint",
-                "text": "J&#039;ose exprimer et partager mes id\u00e9es."
+                "text": "J'ose exprimer et partager mes id\u00e9es."
               }
             ],
             "rateValues": [
@@ -496,19 +489,19 @@
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout d&#039;accord"
+                "text": "Pas du tout d'accord"
               },
               {
                 "value": 2,
-                "text": "Pas d&#039;accord"
+                "text": "Pas d'accord"
               },
               {
                 "value": 3,
-                "text": "D&#039;accord"
+                "text": "D'accord"
               },
               {
                 "value": 4,
-                "text": "Tout \u00e0 fait d&#039;accord"
+                "text": "Tout \u00e0 fait d'accord"
               }
             ],
             "rows": [
@@ -518,11 +511,11 @@
               },
               {
                 "value": "veterinary_experience",
-                "text": "J&#039;ai d\u00e9j\u00e0 suivi un v\u00e9t\u00e9rinaire dans son travail quotidien."
+                "text": "J'ai d\u00e9j\u00e0 suivi un v\u00e9t\u00e9rinaire dans son travail quotidien."
               },
               {
                 "value": "breeder_experience",
-                "text": "J&#039;ai une exp\u00e9rience de travail chez un \u00e9leveur."
+                "text": "J'ai une exp\u00e9rience de travail chez un \u00e9leveur."
               },
               {
                 "value": "equestrian_center",
@@ -530,11 +523,11 @@
               },
               {
                 "value": "animal_related",
-                "text": "J&#039;ai une exp\u00e9rience de travail dans une  structure en rapport avec l&#039;animal (SPA ...)."
+                "text": "J'ai une exp\u00e9rience de travail dans une  structure en rapport avec l'animal (SPA ...)."
               },
               {
                 "value": "non_animal_related",
-                "text": "J&#039;ai une exp\u00e9rience de travail dans une  structure en lien avec la sant\u00e9 animale (recherche, industrie ...)."
+                "text": "J'ai une exp\u00e9rience de travail dans une  structure en lien avec la sant\u00e9 animale (recherche, industrie ...)."
               }
             ],
             "rateValues": [
@@ -553,19 +546,19 @@
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout d&#039;accord"
+                "text": "Pas du tout d'accord"
               },
               {
                 "value": 2,
-                "text": "Pas d&#039;accord"
+                "text": "Pas d'accord"
               },
               {
                 "value": 3,
-                "text": "D&#039;accord"
+                "text": "D'accord"
               },
               {
                 "value": 4,
-                "text": "Tout \u00e0 fait d&#039;accord"
+                "text": "Tout \u00e0 fait d'accord"
               }
             ],
             "rows": [
@@ -583,7 +576,7 @@
               },
               {
                 "value": "advise_owners",
-                "text": "Conseiller les propri\u00e9taires d&#039;animaux."
+                "text": "Conseiller les propri\u00e9taires d'animaux."
               },
               {
                 "value": "public_health_role",
@@ -591,7 +584,7 @@
               },
               {
                 "value": "pharma_industry",
-                "text": "Travailler dans l&#039;industrie pharmaceutique."
+                "text": "Travailler dans l'industrie pharmaceutique."
               },
               {
                 "value": "public_sector",
@@ -599,7 +592,7 @@
               },
               {
                 "value": "business_management",
-                "text": "Participer \u00e0 la gestion d&#039;une entreprise v\u00e9t\u00e9rinaire."
+                "text": "Participer \u00e0 la gestion d'une entreprise v\u00e9t\u00e9rinaire."
               },
               {
                 "value": "slaughterhouse_work",
@@ -615,7 +608,7 @@
               },
               {
                 "value": "animal_welfare",
-                "text": "M&#039;investir dans le bien-\u00eatre animal."
+                "text": "M'investir dans le bien-\u00eatre animal."
               },
               {
                 "value": "work_nights_weekends",
@@ -638,19 +631,19 @@
             "columns": [
               {
                 "value": 1,
-                "text": "Pas du tout d&#039;accord"
+                "text": "Pas du tout d'accord"
               },
               {
                 "value": 2,
-                "text": "Pas d&#039;accord"
+                "text": "Pas d'accord"
               },
               {
                 "value": 3,
-                "text": "D&#039;accord"
+                "text": "D'accord"
               },
               {
                 "value": 4,
-                "text": "Tout \u00e0 fait d&#039;accord"
+                "text": "Tout \u00e0 fait d'accord"
               }
             ],
             "rows": [
@@ -680,7 +673,7 @@
               },
               {
                 "value": "less_vacation",
-                "text": "J&#039;aurai moins de vacances."
+                "text": "J'aurai moins de vacances."
               },
               {
                 "text": "Il faudra parfois que je r\u00e9alise des gardes de nuit.",
@@ -729,15 +722,15 @@
             "rows": [
               {
                 "value": "always_veterinarian",
-                "text": "J&#039;ai toujours voulu devenir v\u00e9t\u00e9rinaire."
+                "text": "J'ai toujours voulu devenir v\u00e9t\u00e9rinaire."
               },
               {
                 "value": "childhood_dream",
-                "text": "C&#039;est un m\u00e9tier pour lequel je me sens pr\u00e9par\u00e9-e."
+                "text": "C'est un m\u00e9tier pour lequel je me sens pr\u00e9par\u00e9-e."
               },
               {
                 "value": "only_career_choice",
-                "text": "C&#039;est le seul m\u00e9tier que j&#039;envisage d&#039;exercer."
+                "text": "C'est le seul m\u00e9tier que j'envisage d'exercer."
               }
             ],
             "rateValues": [
@@ -778,19 +771,19 @@
             "rows": [
               {
                 "value": "like_challenge",
-                "text": "J&#039;aime le d\u00e9fi que repr\u00e9sente le travail de v\u00e9t\u00e9rinaire."
+                "text": "J'aime le d\u00e9fi que repr\u00e9sente le travail de v\u00e9t\u00e9rinaire."
               },
               {
                 "value": "like_learning",
-                "text": "J&#039;aime apprendre de nouvelles choses."
+                "text": "J'aime apprendre de nouvelles choses."
               },
               {
                 "value": "like_problem_solving",
-                "text": "J&#039;aime r\u00e9soudre des probl\u00e8mes."
+                "text": "J'aime r\u00e9soudre des probl\u00e8mes."
               },
               {
                 "value": "like_variety",
-                "text": "J&#039;aime la diversit\u00e9 des activit\u00e9s v\u00e9t\u00e9rinaires."
+                "text": "J'aime la diversit\u00e9 des activit\u00e9s v\u00e9t\u00e9rinaires."
               }
             ],
             "rateValues": [
@@ -831,7 +824,7 @@
             "rows": [
               {
                 "value": "like_working_with_animals",
-                "text": "J&#039;aime travailler avec des animaux."
+                "text": "J'aime travailler avec des animaux."
               },
               {
                 "value": "want_to_help_animals",
@@ -888,11 +881,11 @@
             "rows": [
               {
                 "value": "like_team_working",
-                "text": "J&#039;aime le travail en \u00e9quipe."
+                "text": "J'aime le travail en \u00e9quipe."
               },
               {
                 "value": "enjoy_client_interaction",
-                "text": "J&#039;aime interagir avec des clients, des \u00e9leveurs."
+                "text": "J'aime interagir avec des clients, des \u00e9leveurs."
               },
               {
                 "value": "unsatisfied_client",
@@ -919,19 +912,19 @@
               },
               {
                 "value": 2,
-                "text": "Pas d&#039;accord"
+                "text": "Pas d'accord"
               },
               {
                 "value": 3,
-                "text": "Plut\u00f4t d&#039;accord"
+                "text": "Plut\u00f4t d'accord"
               },
               {
                 "value": 4,
-                "text": "D&#039;accord"
+                "text": "D'accord"
               },
               {
                 "value": 5,
-                "text": "Tout \u00e0 fait d&#039;accord"
+                "text": "Tout \u00e0 fait d'accord"
               }
             ],
             "rows": [
@@ -945,7 +938,7 @@
               },
               {
                 "value": "want_to_integrate",
-                "text": "Un v\u00e9t\u00e9rinaire participe \u00e0 l&#039;action collective."
+                "text": "Un v\u00e9t\u00e9rinaire participe \u00e0 l'action collective."
               }
             ],
             "rateValues": [
@@ -964,19 +957,19 @@
             "columns": [
               {
                 "value": 2,
-                "text": "Pas d&#039;accord"
+                "text": "Pas d'accord"
               },
               {
                 "value": 3,
-                "text": "Plut\u00f4t d&#039;accord"
+                "text": "Plut\u00f4t d'accord"
               },
               {
                 "value": 4,
-                "text": "D&#039;accord"
+                "text": "D'accord"
               },
               {
                 "value": 5,
-                "text": "Tout \u00e0 fait d&#039;accord"
+                "text": "Tout \u00e0 fait d'accord"
               },
               {
                 "value": 1,

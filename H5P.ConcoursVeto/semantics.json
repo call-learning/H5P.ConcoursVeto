@@ -22,6 +22,12 @@
         "name": "sections",
         "type": "list",
         "label": "Feedback Sections",
+        "widgets": [
+          {
+            "name": "VerticalTabs",
+            "label": "Default"
+          }
+        ],
         "field": {
           "name": "section",
           "type": "group",
@@ -131,6 +137,12 @@
         "name": "pages",
         "type": "list",
         "label": "Pages",
+        "widgets": [
+          {
+            "name": "VerticalTabs",
+            "label": "Default"
+          }
+        ],
         "field": {
           "name": "page",
           "type": "group",
@@ -292,6 +304,20 @@
         ],
         "label": "Welcome Page title",
         "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
+      },
+      {
+        "name": "welcomeTitle",
+        "type": "text",
+        "widget": "html",
+        "tags": [
+          "p",
+          "br",
+          "strong",
+          "em",
+          "code"
+        ],
+        "label": "Welcome Page title",
+        "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
       }
     ]
   },
@@ -300,9 +326,13 @@
     "type": "list",
     "label": "Localize",
     "importance": "low",
-    "common": true,
     "optional": true,
-    "default": [],
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
     "field": {
       "name": "item",
       "type": "group",
