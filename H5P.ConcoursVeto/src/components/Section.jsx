@@ -1,11 +1,10 @@
 import React from 'react';
-import { Box, Typography, Collapse, IconButton, Card, CardContent } from '@mui/material';
+import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import FoldableSection from './FoldableSection';
+import SummarySection from './SummarySection.jsx';
 import { calculateSectionScore } from '../helpers/score.js';
 
-
-function Section({ sectionConfig, surveyResults, surveyDefinition }) {
+function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
   const [open, setOpen] = React.useState(false);
   const score = calculateSectionScore(surveyResults, sectionConfig.questions_weight,
     surveyDefinition);
@@ -15,19 +14,15 @@ function Section({ sectionConfig, surveyResults, surveyDefinition }) {
   return (
     <Box mb={3}>
       <Card>
-        <CardContent>
+        <CardContent sx={{my: 2}}>
           <Box display="flex" alignItems="center">
             <Typography variant="h6">{sectionConfig.title}</Typography>
-            <IconButton onClick={() => setOpen(!open)} aria-expanded={open}>
-              <ExpandMoreIcon/>
-            </IconButton>
           </Box>
-          <Collapse in={open}>
-            <FoldableSection feedbackText={feedbackText} feedbackRange={feedbackRange?.feedback}/>
-          </Collapse>
+          <SummarySection feedbackText={feedbackText} feedbackRange={feedbackRange?.feedback}/>
         </CardContent>
       </Card>
     </Box>
   );
 }
+
 export default Section;

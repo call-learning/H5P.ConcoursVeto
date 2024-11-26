@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography, Container, Box } from '@mui/material';
+import { Button, Typography, Container, Box, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import { useTranslations } from '../hooks/useTranslation.js';
 import { getAbsoluteURL } from '../helpers/utils.js';
@@ -24,22 +24,22 @@ const Logo = styled('img')({
   marginBottom: '10px',
 });
 
-function WelcomePage({ onContinue }) {
+function WelcomePage({ onContinue, welcomeTitle, welcomeText }) {
   const { translate } = useTranslations();
   const { contentId } = React.useContext(H5PContext);
+  const theme = useTheme();
   return (
     <Container>
       <WaveBackground />
-      <Header>
+
+      <Header sx={{py: 3}}>
         <Logo src={getAbsoluteURL("/images/logo.png", contentId)} alt="Logo"/>
         <Typography variant="h3" component="h1">
-          {translate('welcome.title')}
+          {welcomeTitle}
         </Typography>
       </Header>
-      <Typography>
-        {translate('welcome.help')}
-      </Typography>
-      <Box my={4}>
+      <div dangerouslySetInnerHTML={{ __html: welcomeText }} style={{color: theme.palette.grey[900]}}/>
+      <Box my={4} textAlign={"center"}>
         <Button variant="contained" color="primary" onClick={onContinue}>
           {translate('continue')}
         </Button>

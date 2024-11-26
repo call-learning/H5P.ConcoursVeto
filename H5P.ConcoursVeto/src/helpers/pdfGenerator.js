@@ -67,22 +67,31 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
     doc.addImage(backgroundImage, 'JPEG', 0, 0, doc.internal.pageSize.width, doc.internal.pageSize.height);
 
     // Header Title.
-    doc.setFontSize(26);
+    doc.setFontSize(30);
     doc.setTextColor(0, 0, 0);
+    doc.setFont('helvetica', 'bold');
     doc.text('Attestation', doc.internal.pageSize.width / 2, 30, { align: 'center' });
 
     // Subtitle.
-    doc.setFontSize(14);
+    doc.setFontSize(16);
+    doc.setFont('helvetica', 'bold');
     doc.setTextColor(14, 132, 123); // RGB equivalent of #0e847b
-    doc.text('Obligatoire pour la confirmation d’un voeu', doc.internal.pageSize.width / 2, 50, { align: 'center' });
-    doc.text('Pièce constitutive du dossier d\'admissibilité', doc.internal.pageSize.width / 2, 60, { align: 'center' });
-    doc.text('“Ecoles Nationales Vétérinaires : concours première année”', doc.internal.pageSize.width / 2, 70, { align: 'center' });
+    doc.text('Obligatoire pour la confirmation d’un voeu', doc.internal.pageSize.width / 2, 40, { align: 'center' });
+    doc.text('Pièce constitutive du dossier d\'admissibilité', doc.internal.pageSize.width / 2, 50, { align: 'center' });
+    doc.text('“Ecoles Nationales Vétérinaires : concours première année”', doc.internal.pageSize.width / 2, 60, { align: 'center' });
 
     // User Information.
     doc.setFontSize(12);
+    doc.setFont('helvetica', 'normal');
     doc.setTextColor(0, 0, 0);
-    doc.text(`Madame / Monsieur ${firstName} ${lastName}`, 20, 90);
-    doc.text(`Identifiant Parcoursup: ${pSupId}`, 20, 100);
+    doc.text("Madame / Monsieur:", 20, 90)
+    doc.setFont('helvetica', 'bold');
+    doc.text(`${firstName} ${lastName}`, 65, 90);
+    doc.setFont('helvetica', 'normal');
+    doc.text('Identifiant Parcoursup:', 20, 100);
+    doc.setFont('helvetica', 'bold');
+    doc.text(`${pSupId}`, 65, 100);
+    doc.setFont('helvetica', 'normal');
 
     // Confirmation Text.
     const confirmationText = [
@@ -92,13 +101,16 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
     ];
     let yPosition = 120;
     confirmationText.forEach(line => {
-      doc.text(line, 40, yPosition, { align: 'justify', maxWidth: doc.internal.pageSize.width - 40 });
-      yPosition += 10;
+      doc.text(line, 70, yPosition, { align: 'justify', maxWidth: doc.internal.pageSize.width - 40 });
+      yPosition += 7;
     });
 
     // Date and Signature.
-    doc.text(`Attestation délivrée le ${currentDate}`, 150, 160);
-    doc.text("Le responsable de la gestion du concours vétérinaire post-bac", 150, 170);
+    doc.text('Attestation délivrée le:', 20,160);
+    doc.setFont('helvetica', 'bold');
+    doc.text(`${currentDate}`, 65, 160);
+
+    doc.text("Le responsable de la gestion du concours vétérinaire post-bac", 140, 170);
 
     // Footer.
     doc.setFontSize(10);

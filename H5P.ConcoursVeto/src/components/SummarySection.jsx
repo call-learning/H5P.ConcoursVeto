@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography, Box } from '@mui/material';
 
-function FoldableSection({ feedbackText, feedbackRange }) {
+function SummarySection({ feedbackText, feedbackRange }) {
   return (
     <Box mt={2}>
-      <Typography variant="body1">{feedbackText}</Typography>
+      <Typography variant="body1" color={"textSecondary"}>{feedbackText}</Typography>
       {feedbackRange && (
         <Typography variant="body2" color="textSecondary">
           {feedbackRange}
@@ -14,4 +14,4 @@ function FoldableSection({ feedbackText, feedbackRange }) {
   );
 }
 
-export default FoldableSection;
+export default SummarySection;
