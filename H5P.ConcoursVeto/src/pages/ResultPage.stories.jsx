@@ -17,7 +17,7 @@ Default.args = {
   onRestart: action('Restart Survey'),
   surveyResults: sampleSurveyResults[0],
   surveyFeedback: sampleSurveyFeedback,
-  surveyDefinition: sampleSurveyData,
+  surveyDefinition: sampleSurveyData[0],
 };
 
 export const AnotherResult = Template.bind({});
@@ -25,5 +25,13 @@ AnotherResult.args = {
   onRestart: action('Restart Survey'),
   surveyResults: sampleSurveyResults[1],
   surveyFeedback: sampleSurveyFeedback,
-  surveyDefinition: sampleSurveyData,
+  surveyDefinition: sampleSurveyData[0],
+};
+
+export const FullResult = Template.bind({});
+FullResult.args = {
+  onRestart: action('Restart Survey'),
+  surveyResults: sampleSurveyResults[2],
+  surveyFeedback: sampleSurveyFeedback,
+  surveyDefinition: sampleSurveyData[1],
 };

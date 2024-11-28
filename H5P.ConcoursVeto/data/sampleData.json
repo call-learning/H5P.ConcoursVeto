@@ -58,15 +58,15 @@
         "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
         "questions_weight": [
           {
-            "id": "common_subjects",
+            "id": "common_subjects_first",
             "value": 50
           },
           {
-            "id": "speciality_terminale",
+            "id": "performance_specialities_first",
             "value": 20
           },
           {
-            "id": "speciality_premiere",
+            "id": "performance_specialities_terminal",
             "value": 15
           },
           {
@@ -76,7 +76,7 @@
         ],
         "feedback_ranges": [
           {
-            "min": 95,
+            "min": 100,
             "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !"
           },
           {
@@ -113,7 +113,7 @@
         ],
         "feedback_ranges": [
           {
-            "min": 95,
+            "min": 100,
             "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires."
           },
           {
@@ -125,7 +125,7 @@
             "feedback": "Vous avez des aptitudes, mais elles risquent d'être insuffisantes pour devenir vétérinaire."
           },
           {
-            "min": 25,
+            "min": 0,
             "feedback": "Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires."
           }
         ]
@@ -150,7 +150,7 @@
         ],
         "feedback_ranges": [
           {
-            "min": 95,
+            "min": 100,
             "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
           },
           {
@@ -162,7 +162,7 @@
             "feedback": "Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d'information en consultant le site de l'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires."
           },
           {
-            "min": 25,
+            "min": 0,
             "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
           }
         ]
@@ -183,7 +183,7 @@
         ],
         "feedback_ranges": [
           {
-            "min": 95,
+            "min": 100,
             "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">C'est bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Attention cependant, si vos notes sont insuffisantes, un autre candidat ayant fait d'autres choix mais avec de bien meilleurs notes peut vous passer devant.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Si vous avez choisi l'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours. Mais les notes obtenues dans les options ne sont pas prises en compte.<br></p>"
           },
           {

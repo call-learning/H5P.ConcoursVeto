@@ -23,6 +23,6 @@ Default.args = {
   onRestart: action('Restart Survey'),
   surveyResults: sampleSurveyResults[0],
   surveyFeedback: sampleSurveyFeedback,
-  surveyDefinition: JSON.stringify(sampleSurveyData),
+  surveyDefinition: JSON.stringify(sampleSurveyData[0]),
   settings
 };

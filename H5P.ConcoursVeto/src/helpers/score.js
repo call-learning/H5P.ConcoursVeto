@@ -4,18 +4,18 @@ export function calculateSectionScore (results, weights, surveyDefinition) {
   weights?.forEach((weightDef) => {
     let value;
     const { id: key, value: weight } = weightDef;
-    const max_range = findMaxRange(key, surveyDefinition);
+    const maxRange = findMaxRange(key, surveyDefinition);
     // TODO Handle compound key like 'common_subjects_terminal.history_geography'
     if (typeof results[key] === 'object' && results[key] !== null) {
       // If the result is an object, calculate the average of its values
       const values = Object.values(results[key]);
-      value = values.length > 0 ? values.reduce((sum, val) => sum + val, 0) / values.length : 0;
+      value = values.length > 0 ? values.reduce((sum, val) => sum + Number.parseInt(val), 0) / values.length : 0;
     } else {
       // If it's a direct value, use it as is
       value = results[key] !== undefined ? results[key] : 0;
     }
 
-    score += value / max_range * weight / 100;
+    score += value / maxRange * weight / 100;
     totalWeight += weight;
   });
   return totalWeight > 0 ? (score / (totalWeight / 100)) * 100 : 0;
@@ -30,7 +30,7 @@ function findMaxRange (key, surveyDefinition) {
         if (element.type === 'dropdown' || element.type === 'tagbox') {
           maxRange = Math.max(...element.choices.map(col => col.value));
         } else if (element.type === 'matrix') {
-          maxRange = Math.max(...element.columns.map(col => col.value));
+          maxRange = Math.max(...element.columns.map(col => col.value)) * element.rows.length;
         } else if (element.type === 'rating') {
           maxRange = Math.max(...element.rateValues.map(col => col.value));
         }
