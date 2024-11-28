@@ -27,10 +27,12 @@ function findMaxRange (key, surveyDefinition) {
   surveyDefinition.pages.forEach(page => {
     page.elements.forEach(element => {
       if (element.name === key) {
-        if (element.type === 'dropdown') {
+        if (element.type === 'dropdown' || element.type === 'tagbox') {
           maxRange = Math.max(...element.choices.map(col => col.value));
         } else if (element.type === 'matrix') {
           maxRange = Math.max(...element.columns.map(col => col.value));
+        } else if (element.type === 'rating') {
+          maxRange = Math.max(...element.rateValues.map(col => col.value));
         }
       }
     });

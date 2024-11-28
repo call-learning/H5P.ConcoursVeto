@@ -3,6 +3,7 @@
     "name": "feedback",
     "type": "group",
     "label": "Feedback",
+    "description": "Feedback messages for the user.",
     "fields": [
       {
         "name": "global",
@@ -112,184 +113,16 @@
   },
   {
     "name": "surveyDefinition",
-    "type": "group",
-    "label": "Survey Definition",
-    "fields": [
-      {
-        "name": "title",
-        "type": "text",
-        "label": "Survey Title",
-        "default": "Etape 1 - J'évalue mes performances"
-      },
-      {
-        "name": "description",
-        "type": "text",
-        "widget": "html",
-        "tags": [
-          "strong",
-          "em",
-          "sub"
-        ],
-        "label": "Survey Description",
-        "default": "Auto-évaluation des connaissances et compétences pour le concours véto post-bac."
-      },
-      {
-        "name": "pages",
-        "type": "list",
-        "label": "Pages",
-        "widgets": [
-          {
-            "name": "VerticalTabs",
-            "label": "Default"
-          }
-        ],
-        "field": {
-          "name": "page",
-          "type": "group",
-          "label": "Page",
-          "fields": [
-            {
-              "name": "name",
-              "type": "text",
-              "label": "Page Name"
-            },
-            {
-              "name": "elements",
-              "type": "list",
-              "label": "Page Elements",
-              "field": {
-                "name": "element",
-                "type": "group",
-                "label": "Element",
-                "fields": [
-                  {
-                    "name": "type",
-                    "type": "text",
-                    "label": "Element Type",
-                    "default": "dropdown"
-                  },
-                  {
-                    "name": "name",
-                    "type": "text",
-                    "label": "Element Name"
-                  },
-                  {
-                    "name": "title",
-                    "type": "text",
-                    "label": "Element Title"
-                  },
-                  {
-                    "name": "choices",
-                    "type": "list",
-                    "label": "Choices (Dropdown only)",
-                    "field": {
-                      "name": "choice",
-                      "type": "group",
-                      "label": "Choice",
-                      "fields": [
-                        {
-                          "name": "value",
-                          "type": "number",
-                          "label": "Choice Value",
-                          "optional": true
-                        },
-                        {
-                          "name": "text",
-                          "type": "text",
-                          "label": "Choice Text",
-                          "optional": true
-                        }
-                      ]
-                    },
-                    "optional": true
-                  },
-                  {
-                    "name": "columns",
-                    "type": "list",
-                    "label": "Columns (Matrix only)",
-                    "field": {
-                      "name": "column",
-                      "type": "group",
-                      "label": "Column",
-                      "fields": [
-                        {
-                          "name": "value",
-                          "type": "number",
-                          "label": "Column Value",
-                          "optional": true
-                        },
-                        {
-                          "name": "text",
-                          "type": "text",
-                          "label": "Column Text",
-                          "optional": true
-                        }
-                      ]
-                    },
-                    "optional": true
-                  },
-                  {
-                    "name": "rows",
-                    "type": "list",
-                    "label": "Rows (Matrix only)",
-                    "field": {
-                      "name": "row",
-                      "type": "group",
-                      "label": "Row",
-                      "fields": [
-                        {
-                          "name": "value",
-                          "type": "text",
-                          "label": "Row Value",
-                          "optional": true
-                        },
-                        {
-                          "name": "text",
-                          "type": "text",
-                          "label": "Row Text",
-                          "optional": true
-                        }
-                      ]
-                    },
-                    "optional": true
-                  },
-                  {
-                    "name": "rateValues",
-                    "type": "list",
-                    "label": "Rating Scale Values (Rating only)",
-                    "field": {
-                      "name": "rateValue",
-                      "type": "group",
-                      "label": "Rate Value",
-                      "fields": [
-                        {
-                          "name": "value",
-                          "type": "number",
-                          "label": "Rate Value",
-                          "optional": true
-                        },
-                        {
-                          "name": "text",
-                          "type": "text",
-                          "label": "Rate Text",
-                          "optional": true
-                        }
-                      ]
-                    },
-                    "optional": true
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      }
-    ]
+    "type": "text",
+    "label": "Survey Definition JSON Data",
+    "description": "This is the JSON data that defines the survey. It is used to generate the survey form.",
+    "widget": "textarea"
   },
   {
     "name": "settings",
     "type": "group",
     "label": "Settings",
+    "description": "Global Settings for the survey.",
     "fields": [
       {
         "name": "welcomeTitle",

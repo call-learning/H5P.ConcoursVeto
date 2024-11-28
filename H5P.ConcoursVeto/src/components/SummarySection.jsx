@@ -4,11 +4,9 @@ import { Typography, Box } from '@mui/material';
 function SummarySection({ feedbackText, feedbackRange }) {
   return (
     <Box mt={2}>
-      <Typography variant="body1" color={"textSecondary"}>{feedbackText}</Typography>
+      <Typography variant="body1" color={"textSecondary"} dangerouslySetInnerHTML={{ __html:feedbackText}}/>
       {feedbackRange && (
-        <Typography variant="body2" color="textSecondary">
-          {feedbackRange}
-        </Typography>
+        <Typography variant="body2" color="textSecondary" dangerouslySetInnerHTML={{ __html:feedbackRange}}/>
       )}
     </Box>
   );
