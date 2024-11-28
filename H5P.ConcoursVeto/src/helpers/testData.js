@@ -2,181 +2,181 @@
  * Sample data for testing
  */
 export const sampleSurveyFeedback = {
-  "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span style=\"font-size: 1rem;\">ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span style=\"font-size: 1rem;\">ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
-  "sections": [
+  'global': '<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d\'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les "scores" indiqués ci-dessous :</p>\n<ul>\n    <li><span style="font-size: 1rem;">ne correspondent pas au score qui servira de base pour déterminer le classement d\'admissibilité aux épreuves du concours ;</span></li>\n    <li><span style="font-size: 1rem;">ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l\'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>',
+  'sections': [
     {
-      "title": "Vos résultats scolaires",
-      "label": "Vos résultats scolaires",
-      "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
-      "questions_weight": [
+      'title': 'Vos résultats scolaires',
+      'label': 'Vos résultats scolaires',
+      'feedback': 'Vos résultats scolaires : votre "score" global est de $scorepercent %.',
+      'questions_weight': [
         {
-          "id": "common_subjects_first",
-          "value": 50
+          'id': 'common_subjects_first',
+          'value': 50
         },
         {
-          "id": "performance_specialities_first",
-          "value": 20
+          'id': 'performance_specialities_first',
+          'value': 20
         },
         {
-          "id": "performance_specialities_terminal",
-          "value": 15
+          'id': 'performance_specialities_terminal',
+          'value': 15
         },
         {
-          "id": "bac_french_average",
-          "value": 15
+          'id': 'bac_french_average',
+          'value': 15
         }
       ],
-      "feedback_ranges": [
+      'feedback_ranges': [
         {
-          "min": 100,
-          "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !"
+          'min': 100,
+          'feedback': 'Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !'
         },
         {
-          "min": 76,
-          "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s’améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d’admissibilité. Il y aura donc de nombreux candidats à avoir d’excellentes notes!"
+          'min': 76,
+          'feedback': 'Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s’améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d’admissibilité. Il y aura donc de nombreux candidats à avoir d’excellentes notes!'
         },
         {
-          "min": 61,
-          "feedback": "Selon votre dossier scolaire, vous avez des notes moyennes qui risquent d'être insuffisantes pour devenir vétérinaire."
+          'min': 61,
+          'feedback': 'Selon votre dossier scolaire, vous avez des notes moyennes qui risquent d\'être insuffisantes pour devenir vétérinaire.'
         },
         {
-          "min": 25,
-          "feedback": "Selon votre dossier scolaire, vous ne semblez pas suffisamment armé(e) avoir de réelles chances d'aborder des études vétérinaires."
+          'min': 25,
+          'feedback': 'Selon votre dossier scolaire, vous ne semblez pas suffisamment armé(e) avoir de réelles chances d\'aborder des études vétérinaires.'
         }
       ]
     },
     {
-      "title": "Vos aptitudes",
-      "label": "Vos aptitudes",
-      "feedback": "Vos aptitudes : votre \"score\" global est de $scorepercent %.",
-      "questions_weight": [
+      'title': 'Vos aptitudes',
+      'label': 'Vos aptitudes',
+      'feedback': 'Vos aptitudes : votre "score" global est de $scorepercent %.',
+      'questions_weight': [
         {
-          "id": "manual_relational_skills_matrix",
-          "value": 33
+          'id': 'manual_relational_skills_matrix',
+          'value': 33
         },
         {
-          "id": "intellectual_aptitudes_matrix",
-          "value": 33
+          'id': 'intellectual_aptitudes_matrix',
+          'value': 33
         },
         {
-          "id": "work_skills_matrix",
-          "value": 34
+          'id': 'work_skills_matrix',
+          'value': 34
         }
       ],
-      "feedback_ranges": [
+      'feedback_ranges': [
         {
-          "min": 100,
-          "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires."
+          'min': 100,
+          'feedback': 'Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu\'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires.'
         },
         {
-          "min": 76,
-          "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous avez des dispositions pour des études vétérinaires. Toutefois la concurrence sera rude, et il faudra travailler dur. Ce n'est pas gagné !"
+          'min': 76,
+          'feedback': 'Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu\'il faudrait être pour devenir vétérinaire, vous avez des dispositions pour des études vétérinaires. Toutefois la concurrence sera rude, et il faudra travailler dur. Ce n\'est pas gagné !'
         },
         {
-          "min": 51,
-          "feedback": "Vous avez des aptitudes, mais elles risquent d'être insuffisantes pour devenir vétérinaire."
+          'min': 51,
+          'feedback': 'Vous avez des aptitudes, mais elles risquent d\'être insuffisantes pour devenir vétérinaire.'
         },
         {
-          "min": 0,
-          "feedback": "Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires."
+          'min': 0,
+          'feedback': 'Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires.'
         }
       ]
     },
     {
-      "title": "Vos représentations",
-      "label": "Vos représentations",
-      "feedback": "Vos représentations des études et des métiers de vétérinaire: votre \"score\" global est de $scorepercent %.",
-      "questions_weight": [
+      'title': 'Vos représentations',
+      'label': 'Vos représentations',
+      'feedback': 'Vos représentations des études et des métiers de vétérinaire: votre "score" global est de $scorepercent %.',
+      'questions_weight': [
         {
-          "id": "work_experience_matrix",
-          "value": 33
+          'id': 'work_experience_matrix',
+          'value': 33
         },
         {
-          "id": "profession_representation",
-          "value": 33
+          'id': 'profession_representation',
+          'value': 33
         },
         {
-          "id": "education_representation",
-          "value": 34
+          'id': 'education_representation',
+          'value': 34
         }
       ],
-      "feedback_ranges": [
+      'feedback_ranges': [
         {
-          "min": 100,
-          "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          'min': 100,
+          'feedback': '<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href="https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html" target="_blank">site de l\'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>'
         },
         {
-          "min": 75,
-          "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent peuvent être affinées, mais vous vous approchez déjà de la réalité. Nous vous recommandons d'y consacrer un peu de temps si vous êtes admissibles aux entretiens oraux.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          'min': 75,
+          'feedback': '<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent peuvent être affinées, mais vous vous approchez déjà de la réalité. Nous vous recommandons d\'y consacrer un peu de temps si vous êtes admissibles aux entretiens oraux.&nbsp;Vous pouvez trouver des éléments d\'information en consultant le&nbsp;<a href="https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html" target="_blank">site de l\'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>'
         },
         {
-          "min": 50,
-          "feedback": "Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d'information en consultant le site de l'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires."
+          'min': 50,
+          'feedback': 'Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d\'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d\'information en consultant le site de l\'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires.'
         },
         {
-          "min": 0,
-          "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
+          'min': 0,
+          'feedback': '<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d\'information en consultant le&nbsp;<a href="https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html" target="_blank">site de l\'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href="https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires" target="_blank">la page présentant les études vétérinaires</a>.</p>'
         }
       ]
     },
     {
-      "title": "Vos choix de spécialités",
-      "label": "Vos choix de spécialités",
-      "feedback": "Vos choix de spécialités: votre \"score\" global est de $scorepercent %.",
-      "questions_weight": [
+      'title': 'Vos choix de spécialités',
+      'label': 'Vos choix de spécialités',
+      'feedback': 'Vos choix de spécialités: votre "score" global est de $scorepercent %.',
+      'questions_weight': [
         {
-          "id": "speciality_terminale",
-          "value": 33
+          'id': 'speciality_terminale',
+          'value': 33
         },
         {
-          "id": "speciality_premiere",
-          "value": 33
+          'id': 'speciality_premiere',
+          'value': 33
         }
       ],
-      "feedback_ranges": [
+      'feedback_ranges': [
         {
-          "min": 100,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">C'est bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Attention cependant, si vos notes sont insuffisantes, un autre candidat ayant fait d'autres choix mais avec de bien meilleurs notes peut vous passer devant.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Si vous avez choisi l'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours. Mais les notes obtenues dans les options ne sont pas prises en compte.<br></p>"
+          'min': 100,
+          'feedback': '<p dir="ltr" style="text-align: left;">C\'est bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires.</p>\n<p dir="ltr" style="text-align: left;">Attention cependant, si vos notes sont insuffisantes, un autre candidat ayant fait d\'autres choix mais avec de bien meilleurs notes peut vous passer devant.</p>\n<p dir="ltr" style="text-align: left;">Si vous avez choisi l\'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours. Mais les notes obtenues dans les options ne sont pas prises en compte.<br></p>'
         },
         {
-          "min": 59,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas fait de maths, ni en première, ni en terminale. Cela ne correspond pas aux recommandations des ENV. Cependant, si vos résultats sont excellents, vous pouvez toute de même réussir le concours.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">En revanche, ce sera assez dur de suivre les enseignements de maths de première année si vous êtes admis.<br></p>"
+          'min': 59,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous n\'avez pas fait de maths, ni en première, ni en terminale. Cela ne correspond pas aux recommandations des ENV. Cependant, si vos résultats sont excellents, vous pouvez toute de même réussir le concours.</p>\n<p dir="ltr" style="text-align: left;">En revanche, ce sera assez dur de suivre les enseignements de maths de première année si vous êtes admis.<br></p>'
         },
         {
-          "min": 56,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la physique-chimie en terminale.&nbsp;<span style=\"font-size: 1rem;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.</span></p>\n<p dir=\"ltr\" style=\"text-align: left;\"><span style=\"font-size: 1rem;\">Toutefois, sachez qu'en cas d'admission, vous aurez peut-être des difficultés à suivre les enseignements de physique-chimie en première année.</span></p>"
+          'min': 56,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous avez choisi la triplette recommandée en première, c\'est bien. Vous avez abandonné la physique-chimie en terminale.&nbsp;<span style="font-size: 1rem;">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.</span></p>\n<p dir="ltr" style="text-align: left;"><span style="font-size: 1rem;">Toutefois, sachez qu\'en cas d\'admission, vous aurez peut-être des difficultés à suivre les enseignements de physique-chimie en première année.</span></p>'
         },
         {
-          "min": 54,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Comme vous avez conservé deux spécialités recommandées en terminale, cela ne pénalisera pas complètement vos chances de réussir le concours, si vos notes sont suffisantes.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement des difficultés à suivre les enseignements de physique-chimie en première année.<br></p>"
+          'min': 54,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous n\'avez pas choisi la triplette recommandée en première. Vous n\'avez pas fait de physique-chimie.</p>\n<p dir="ltr" style="text-align: left;">Comme vous avez conservé deux spécialités recommandées en terminale, cela ne pénalisera pas complètement vos chances de réussir le concours, si vos notes sont suffisantes.</p>\n<p dir="ltr" style="text-align: left;">Toutefois, sachez qu\'en cas d\'admission, vous aurez certainement des difficultés à suivre les enseignements de physique-chimie en première année.<br></p>'
         },
         {
-          "min": 50,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie. De plus, vous avez abandonné les maths en terminale.&nbsp;<span style=\"font-size: 1rem;\">Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</span></p>\n<p dir=\"ltr\"><span style=\"font-size: 1rem;\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de physique-chimie et de mathématiques en première année.</span></p><br>\n<p></p>"
+          'min': 50,
+          'feedback': '<p dir="ltr" style="text-align: left;"></p>\n<p dir="ltr">Vous n\'avez pas choisi la triplette recommandée en première. Vous n\'avez pas fait de physique-chimie. De plus, vous avez abandonné les maths en terminale.&nbsp;<span style="font-size: 1rem;">Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</span></p>\n<p dir="ltr"><span style="font-size: 1rem;">Toutefois, sachez qu\'en cas d\'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de physique-chimie et de mathématiques en première année.</span></p><br>\n<p></p>'
         },
         {
-          "min": 47,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas fait de maths, ni de physique-chimie. Si vos notes de spécialités sont vraiment excellentes, vous pouvez tout de même réussir le concours.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Toutefois, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de maths et de physique-chimie en première année d'études.<br></p>"
+          'min': 47,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous n\'avez pas fait de maths, ni de physique-chimie. Si vos notes de spécialités sont vraiment excellentes, vous pouvez tout de même réussir le concours.</p>\n<p dir="ltr" style="text-align: left;">Toutefois, il faut être clair : ce sera difficile pour vous, en cas d\'admission, de suivre les enseignements de maths et de physique-chimie en première année d\'études.<br></p>'
         },
         {
-          "min": 45,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir=\"ltr\" style=\"text-align: left;\">En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
+          'min': 45,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous avez choisi la triplette recommandée en première, c\'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir="ltr" style="text-align: left;">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir="ltr" style="text-align: left;">En cas d\'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c\'est faisable sans problème.<br></p>'
         },
         {
-          "min": 43,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir=\"ltr\" style=\"text-align: left;\">En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
+          'min': 43,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous avez choisi la triplette recommandée en première, c\'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir="ltr" style="text-align: left;">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir="ltr" style="text-align: left;">En cas d\'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c\'est faisable sans problème.<br></p>'
         },
         {
-          "min": 30,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de mathématiques. De plus, vous avez abandonné la biologie en terminale.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir=\"ltr\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de biologie et de mathématiques en première année.</p><br>\n<p></p>"
+          'min': 30,
+          'feedback': '<p dir="ltr" style="text-align: left;"></p>\n<p dir="ltr">Vous n\'avez pas choisi la triplette recommandée en première. Vous n\'avez pas fait de mathématiques. De plus, vous avez abandonné la biologie en terminale.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir="ltr">Toutefois, sachez qu\'en cas d\'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de biologie et de mathématiques en première année.</p><br>\n<p></p>'
         },
         {
-          "min": 28,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Il vous manquera des notions de biologie.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir=\"ltr\">Toutefois, sachez qu'en cas d'admission, vous aurez à vous mettre à niveau en biologie en première année.</p><br>\n<p></p>"
+          'min': 28,
+          'feedback': '<p dir="ltr" style="text-align: left;"></p>\n<p dir="ltr">Vous n\'avez pas choisi la triplette recommandée en première. Il vous manquera des notions de biologie.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir="ltr">Toutefois, sachez qu\'en cas d\'admission, vous aurez à vous mettre à niveau en biologie en première année.</p><br>\n<p></p>'
         },
         {
-          "min": 20,
-          "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas suivi les combinaisons de spécialités recommandées en première et en terminale.&nbsp;</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Même s'il est mathématiquement possible de réussir le concours si vos notes de spécialités sont vraiment excellentes, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de première année d'études. Vous aurez besoin de vous remettre à niveau dans les matières manquantes.<br></p>"
+          'min': 20,
+          'feedback': '<p dir="ltr" style="text-align: left;">Vous n\'avez pas suivi les combinaisons de spécialités recommandées en première et en terminale.&nbsp;</p>\n<p dir="ltr" style="text-align: left;">Même s\'il est mathématiquement possible de réussir le concours si vos notes de spécialités sont vraiment excellentes, il faut être clair : ce sera difficile pour vous, en cas d\'admission, de suivre les enseignements de première année d\'études. Vous aurez besoin de vous remettre à niveau dans les matières manquantes.<br></p>'
         }
       ]
     }
@@ -197,73 +197,66 @@ export const sampleSurveyResults = [
     'bac_french_average': 5
   },
   {
-    'speciality3': 5,
-    'speciality2': 2,
-    'speciality1': 2,
-    'common_subjects_first': {
-      'history_geography': 2,
-      'lvA': 2
-    },
-    'bac_french_average': 5
-  },
-  {
-    'speciality_premiere': [
-      '4',
-      '5',
-      '2'
-    ],
     'speciality_terminale': [
       '5',
-      '3'
+      '0'
+    ],
+    'speciality_premiere': [
+      '5',
+      '3',
+      '2'
     ],
     'performance_specialities_first': {
-      'speciality1': 2,
-      'speciality2': 3,
-      'speciality3': 3
+      'speciality1': 1,
+      'speciality3': 2
     },
     'performance_specialities_terminal': {
-      'speciality1': 4,
-      'speciality2': 4
+      'speciality1': 3,
+      'speciality2': 3
     },
-    'common_subjects': {
+    'common_subjects_premiere': {
+      'history_geography': 2,
+      'lvA': 5
+    },
+    'common_subjects_terminale': {
       'history_geography': 3,
       'lvA': 3
     },
-    'bac_french_average': 5,
+    'bac_french_average': 4,
     'work_skills_matrix': {
-      'reading_summary': '1',
+      'reading_summary': '4',
       'autonomy': '4',
       'Noise-ambiant': '4',
       'perseverance': '1',
       'note_taking': '1',
-      'computer_use': '4',
-      'synthesis': '4',
+      'computer_use': '1',
+      'synthesis': '1',
       'group_work': '1'
     },
     'intellectual_aptitudes_matrix': {
-      'observation': '4',
-      'focus': '1',
-      'creativity': '4',
+      'observation': '1',
+      'focus': '4',
       'memorization': '1',
-      'handle_numbers': '4',
+      'creativity': '1',
       'identify_data': '1',
+      'handle_numbers': '1',
       'problem_analysis': '1',
       'prioritization': '1',
-      'organization': '1'
+      'organization': '4'
     },
     'manual_relational_skills_matrix': {
-      'manual_precision': '4',
-      'tool_precision': '4',
-      'respect_rules': '4',
+      'manual_precision': '1',
+      'respect_rules': '1',
+      'tool_precision': '1',
       'listen_to_others': '1',
-      'clear_expression': '4',
-      'make_understand': '4',
+      'clear_expression': '1',
+      'make_understand': '1',
       'consider_opinions': '1',
       'assert_viewpoint': '1'
     },
     'work_experience_matrix': {
       'media_exposure': '4',
-      'veterinary_experience': '4',
+      'veterinary_experience': '1',
       'breeder_experience': '1',
       'equestrian_center': '4',
       'animal_related': '1',
@@ -271,62 +264,62 @@ export const sampleSurveyResults = [
     },
     'profession_representation_matrix': {
       'treat_domestic_animals': '4',
-      'animal_euthanasia': '4',
-      'health_preservation': '1',
+      'animal_euthanasia': '1',
+      'health_preservation': '4',
       'advise_owners': '1',
-      'public_health_role': '4',
-      'pharma_industry': '4',
-      'public_sector': '1',
+      'public_health_role': '1',
+      'pharma_industry': '1',
+      'public_sector': '4',
       'business_management': '1',
       'slaughterhouse_work': '1',
-      'research': '4',
-      'wild_animal_care': '4',
-      'animal_welfare': '1',
-      'work_nights_weekends': '4'
+      'research': '1',
+      'wild_animal_care': '1',
+      'animal_welfare': '4',
+      'work_nights_weekends': '1'
     },
     'education_representation_matrix': {
-      'studies_difficult': '4',
+      'studies_difficult': '1',
       'identical_programs': '4',
-      'evaluated_on_knowledge': '4',
-      'all_species': '4',
+      'evaluated_on_knowledge': '1',
+      'all_species': '1',
       'slaughter_house': '1',
-      'mandatory_learning': '1',
+      'mandatory_learning': '4',
       'less_vacation': '4',
       'night_guards': '4',
-      'Bank holidays': '4'
+      'Bank holidays': '1'
     },
     'vocation_statements': {
       'always_veterinarian': '4',
-      'childhood_dream': '4',
+      'childhood_dream': '0',
       'only_career_choice': '0'
     },
     'stimulation_statements': {
       'like_challenge': '4',
-      'like_learning': '4',
+      'like_learning': '1',
       'like_problem_solving': '1',
       'like_variety': '1'
     },
     'animal_contact_statements': {
       'like_working_with_animals': '4',
-      'want_to_help_animals': '4',
+      'want_to_help_animals': '1',
       'animal_suffering': '1',
       'dangerous_animal': '1',
       'protect_environment': '1'
     },
     'human_contact_statements': {
-      'like_team_working': '4',
+      'like_team_working': '1',
       'enjoy_client_interaction': '4',
-      'unsatisfied_client': '1'
+      'unsatisfied_client': '4'
     },
     'social_integration_statements': {
       'want_to_contribute': '4',
-      'want_to_be_recognized': '1',
+      'want_to_be_recognized': '4',
       'want_to_integrate': '1'
     },
     'career_opportunities_statements': {
       'reasonable_income': '4',
-      'many_opportunities': '1',
-      'job_availability': '4'
+      'many_opportunities': '4',
+      'job_availability': '1'
     }
   }
 ];
@@ -704,7 +697,40 @@ export const sampleSurveyData =
           'elements': [
             {
               'type': 'matrix',
-              'name': 'common_subjects',
+              'name': 'common_subjects_premiere',
+              'title': 'Ma moyenne générale',
+              'columns': [
+                {
+                  'value': 2,
+                  'text': 'Moins de 12/20'
+                },
+                {
+                  'value': 3,
+                  'text': 'Entre 12/20 et 14/20'
+                },
+                {
+                  'value': 4,
+                  'text': 'Entre 14/20 et 16/20'
+                },
+                {
+                  'value': 5,
+                  'text': 'Plus de 16/20'
+                }
+              ],
+              'rows': [
+                {
+                  'value': 'history_geography',
+                  'text': 'En classe de première'
+                },
+                {
+                  'value': 'lvA',
+                  'text': 'En classe de terminale'
+                }
+              ]
+            },
+            {
+              'type': 'matrix',
+              'name': 'common_subjects_terminale',
               'title': 'Ma moyenne générale',
               'columns': [
                 {

@@ -7,12 +7,13 @@ import { useState} from 'react';
 import WelcomePage from './pages/WelcomePage';
 import ResultPage from './pages/ResultPage';
 import SurveyComponentPage from './components/SurveyComponentPage.jsx';
+import { decodeAndParseJson } from './helpers/utils.js';
 
 function App(props) {
   const [page, setPage] = useState('welcome');
   const [surveyResults, setSurveyResults] = useState(null);
-  const encodedJS = props.surveyDefinition.replace(/&#039;/g, "'");
-  const surveyObject = JSON.parse(encodedJS);
+  const surveyObject = decodeAndParseJson(props.surveyDefinition);
+
 
   const handleContinue = () => setPage('survey');
   const handleComplete = (survey) => {
@@ -25,7 +26,7 @@ function App(props) {
     <ThemeProvider theme={theme}>
       {page === 'welcome' && <WelcomePage onContinue={handleContinue}
                                           welcomeText={props.settings.welcomeText} welcomeTitle={props.settings.welcomeTitle} />}
-      {page === 'survey' && <SurveyComponentPage surveyDefinition={encodedJS} onComplete={handleComplete} />}
+      {page === 'survey' && <SurveyComponentPage surveyDefinition={JSON.stringify(surveyObject)} onComplete={handleComplete} />}
       {page === 'result' && <ResultPage
         onRestart={handleRestart}
         surveyResults={surveyResults}
