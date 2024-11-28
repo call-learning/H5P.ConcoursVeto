@@ -100,6 +100,7 @@
                   {
                     "name": "feedback",
                     "type": "text",
+                    "widget": "html",
                     "label": "Feedback Text",
                     "default": "Si vous avez réellement obtenu les notes que vous mentionnez..."
                   }

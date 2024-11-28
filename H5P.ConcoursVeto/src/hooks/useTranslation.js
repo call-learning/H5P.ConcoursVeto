@@ -20,7 +20,7 @@ export const useTranslations = () => {
       text = text.replace(`:${arg}`, args[arg]);
     });
 
-    return text;
+    return text.replace(/&#039;/g, "'");
   };
 
   return { translate };
