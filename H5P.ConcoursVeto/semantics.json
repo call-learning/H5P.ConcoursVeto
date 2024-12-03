@@ -57,7 +57,7 @@
               "type": "list",
               "label": "Questions Weight",
               "field": {
-                "name": "weight",
+                "name": "weight_item",
                 "type": "group",
                 "label": "Weight Item",
                 "fields": [
@@ -68,10 +68,10 @@
                     "default": "speciality1"
                   },
                   {
-                    "name": "value",
+                    "name": "weight",
                     "type": "number",
                     "label": "Weight Value",
-                    "default": 50
+                    "default": 1
                   }
                 ]
               }
@@ -92,9 +92,9 @@
                 "label": "Range",
                 "fields": [
                   {
-                    "name": "min",
+                    "name": "max",
                     "type": "number",
-                    "label": "Minimum Range",
+                    "label": "Maximum Range",
                     "default": 50
                   },
                   {
@@ -148,7 +148,7 @@
         "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
       },
       {
-        "name": "welcomeTitle",
+        "name": "welcomeText",
         "type": "text",
         "widget": "html",
         "tags": [
@@ -158,7 +158,7 @@
           "em",
           "code"
         ],
-        "label": "Welcome Page title",
+        "label": "Welcome Page text",
         "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
       }
     ]

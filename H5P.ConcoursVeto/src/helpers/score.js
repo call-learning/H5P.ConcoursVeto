@@ -1,43 +1,49 @@
 export function calculateSectionScore (results, weights, surveyDefinition) {
-  let score = 0, totalWeight = 0;
+  let score = 0, maxValues = 0;
 
   weights?.forEach((weightDef) => {
     let value;
-    const { id: key, value: weight } = weightDef;
-    const maxRange = findMaxRange(key, surveyDefinition);
-    // TODO Handle compound key like 'common_subjects_terminal.history_geography'
-    if (typeof results[key] === 'object' && results[key] !== null) {
+    const { id, weight } = weightDef;
+    // TODO Handle compound id like 'common_subjects_terminal.history_geography'
+    if (typeof results[id] === 'object' && results[id] !== null) {
       // If the result is an object, calculate the average of its values
-      const values = Object.values(results[key]);
-      value = values.length > 0 ? values.reduce((sum, val) => sum + Number.parseInt(val), 0) / values.length : 0;
+      const values = Object.values(results[id]);
+      value = values.reduce((sum, val) => sum + Number.parseInt(val), 0);
     } else {
       // If it's a direct value, use it as is
-      value = results[key] !== undefined ? results[key] : 0;
+      value = results[id] !== undefined ? results[id] : 0;
     }
 
-    score += value / maxRange * weight / 100;
-    totalWeight += weight;
+    score += value * weight;
+    maxValues += findMaxValue(id, surveyDefinition) * weight;
   });
-  return totalWeight > 0 ? (score / (totalWeight / 100)) * 100 : 0;
+  return maxValues > 0 ? (score / maxValues ) * 100 : 0;
 }
 
-function findMaxRange (key, surveyDefinition) {
-  let maxRange = MAX_DEFAULT_RANGE;
+function findMaxValue (key, surveyDefinition) {
+  let maxValue = MAX_DEFAULT_VALUE;
   // Find the max range for the question from the surveyDefinition
   surveyDefinition.pages.forEach(page => {
     page.elements.forEach(element => {
       if (element.name === key) {
-        if (element.type === 'dropdown' || element.type === 'tagbox') {
-          maxRange = Math.max(...element.choices.map(col => col.value));
+        if (element.type === 'dropdown') {
+          maxValue = Math.max(...element.choices.map(col => col.value));
+        } else if (element.type === 'tagbox') {
+          // Add all choices col.values
+          // Sort choices by value from highest to lowest
+          const choicesValues = [...element.choices].map(col => col.value);
+          choicesValues.sort((a, b) => b - a);
+          const choicesValuesRange = [...element.choices].map(col => col.value).slice(0, element.maxSelectedChoices);
+          maxValue = choicesValuesRange.reduce((sum, choice) => sum + Number.parseInt(choice), 0);
         } else if (element.type === 'matrix') {
-          maxRange = Math.max(...element.columns.map(col => col.value)) * element.rows.length;
+          maxValue = Math.max(...element.columns.map(col => col.value)) * element.rows.length;
         } else if (element.type === 'rating') {
-          maxRange = Math.max(...element.rateValues.map(col => col.value));
+          maxValue = Math.max(...element.rateValues.map(col => col.value));
         }
       }
     });
   });
-  return maxRange;
+  return maxValue;
 }
 
-const MAX_DEFAULT_RANGE = 5;
+const MAX_DEFAULT_VALUE = 5;
