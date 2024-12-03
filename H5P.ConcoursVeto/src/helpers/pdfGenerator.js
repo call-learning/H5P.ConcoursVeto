@@ -78,7 +78,7 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
     doc.setTextColor(14, 132, 123); // RGB equivalent of #0e847b
     doc.text('Obligatoire pour la confirmation d’un voeu', doc.internal.pageSize.width / 2, 40, { align: 'center' });
     doc.text('Pièce constitutive du dossier d\'admissibilité', doc.internal.pageSize.width / 2, 50, { align: 'center' });
-    doc.text('“Ecoles Nationales Vétérinaires : concours première année”', doc.internal.pageSize.width / 2, 60, { align: 'center' });
+    doc.text('“Ecoles Nationales Vétérinaires : concours commun première année”', doc.internal.pageSize.width / 2, 60, { align: 'center' });
 
     // User Information.
     doc.setFontSize(12);
@@ -95,9 +95,9 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
 
     // Confirmation Text.
     const confirmationText = [
-      "a rempli l’ensemble des éléments du questionnaire de pré-orientation vers les études",
-      "vétérinaires, a téléchargé le règlement du concours, s’est engagé à le lire et peut",
-      "poursuivre l’expression du voeu correspondant sur la plateforme Parcoursup.",
+      "a rempli l’ensemble des éléments du questionnaire de pré-orientation pour les études",
+      "vétérinaires, s'engage à lire le règlement du concours et peut poursuivre l’expression",
+      "du voeu correspondant sur la plateforme Parcoursup.",
     ];
     let yPosition = 120;
     confirmationText.forEach(line => {
@@ -110,7 +110,7 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
     doc.setFont('helvetica', 'bold');
     doc.text(`${currentDate}`, 65, 160);
 
-    doc.text("Le responsable de la gestion du concours vétérinaire post-bac", 140, 170);
+    doc.text("Le service du concours vétérinaire post-bac", 140, 170);
 
     // Footer.
     doc.setFontSize(10);
