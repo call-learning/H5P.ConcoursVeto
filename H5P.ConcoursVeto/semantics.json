@@ -17,7 +17,7 @@
           "code"
         ],
         "label": "Global Feedback",
-        "default": "<p style=\"text-align: left;\" dir=\"ltr\">Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong></p><p style=\"text-align: left;\" dir=\"ltr\">Les \"scores\" indiqués ci-dessous :</p><ul><li><span style=\"font-size: 1rem;\">sont différents du score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li><li><span style=\"font-size: 1rem;\">ne seront pas conservés, ni communiqués à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li></ul>"
+        "default": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. <strong>Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</strong></p><p>Les \"scores\" indiqués ci-dessous :</p><ul><li><span>sont différents du score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li><li><span>ne seront pas conservés, ni communiqués à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li></ul>"
       },
       {
         "name": "sections",
@@ -101,6 +101,14 @@
                     "name": "feedback",
                     "type": "text",
                     "widget": "html",
+                    "tags": [
+                      "p",
+                      "br",
+                      "strong",
+                      "em",
+                      "code",
+                      "a"
+                    ],
                     "label": "Feedback Text",
                     "default": "Si vous avez réellement obtenu les notes que vous mentionnez..."
                   }

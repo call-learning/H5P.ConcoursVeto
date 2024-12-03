@@ -50,7 +50,7 @@
     "welcomeText": "<p>Ce test a pour objectif de vous aider à évaluer vos chances de réussite au concours d’entrée aux écoles vétérinaires</p> Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles."
   },
   "feedback": {
-    "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span style=\"font-size: 1rem;\">ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span style=\"font-size: 1rem;\">ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
+    "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
     "sections": [
       {
         "title": "Vos résultats scolaires",
@@ -163,7 +163,7 @@
           },
           {
             "min": 0,
-            "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
+            "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p><p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
           }
         ]
       },
@@ -184,47 +184,47 @@
         "feedback_ranges": [
           {
             "min": 100,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">C'est bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Attention cependant, si vos notes sont insuffisantes, un autre candidat ayant fait d'autres choix mais avec de bien meilleurs notes peut vous passer devant.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Si vous avez choisi l'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours. Mais les notes obtenues dans les options ne sont pas prises en compte.<br></p>"
+            "feedback": "<p>C'est bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires.</p><p>Attention cependant, si vos notes sont insuffisantes, un autre candidat ayant fait d'autres choix mais avec de bien meilleurs notes peut vous passer devant.</p><p>Si vous avez choisi l'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours. Mais les notes obtenues dans les options ne sont pas prises en compte.<br></p>"
           },
           {
             "min": 59,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas fait de maths, ni en première, ni en terminale. Cela ne correspond pas aux recommandations des ENV. Cependant, si vos résultats sont excellents, vous pouvez toute de même réussir le concours.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">En revanche, ce sera assez dur de suivre les enseignements de maths de première année si vous êtes admis.<br></p>"
+            "feedback": "<p>Vous n'avez pas fait de maths, ni en première, ni en terminale. Cela ne correspond pas aux recommandations des ENV. Cependant, si vos résultats sont excellents, vous pouvez toute de même réussir le concours.</p><p>En revanche, ce sera assez dur de suivre les enseignements de maths de première année si vous êtes admis.<br></p>"
           },
           {
             "min": 56,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la physique-chimie en terminale.&nbsp;<span style=\"font-size: 1rem;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.</span></p>\n<p dir=\"ltr\" style=\"text-align: left;\"><span style=\"font-size: 1rem;\">Toutefois, sachez qu'en cas d'admission, vous aurez peut-être des difficultés à suivre les enseignements de physique-chimie en première année.</span></p>"
+            "feedback": "<p>Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la physique-chimie en terminale.&nbsp;<span>Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.</span></p><p><span>Toutefois, sachez qu'en cas d'admission, vous aurez peut-être des difficultés à suivre les enseignements de physique-chimie en première année.</span></p>"
           },
           {
             "min": 54,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Comme vous avez conservé deux spécialités recommandées en terminale, cela ne pénalisera pas complètement vos chances de réussir le concours, si vos notes sont suffisantes.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement des difficultés à suivre les enseignements de physique-chimie en première année.<br></p>"
+            "feedback": "<p>Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie.</p><p>Comme vous avez conservé deux spécialités recommandées en terminale, cela ne pénalisera pas complètement vos chances de réussir le concours, si vos notes sont suffisantes.</p><p>Toutefois, sachez qu'en cas d'admission, vous aurez certainement des difficultés à suivre les enseignements de physique-chimie en première année.<br></p>"
           },
           {
             "min": 50,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie. De plus, vous avez abandonné les maths en terminale.&nbsp;<span style=\"font-size: 1rem;\">Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</span></p>\n<p dir=\"ltr\"><span style=\"font-size: 1rem;\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de physique-chimie et de mathématiques en première année.</span></p><br>\n<p></p>"
+            "feedback": "<p>Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de physique-chimie. De plus, vous avez abandonné les maths en terminale.&nbsp;<span>Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</span></p><p><span>Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de physique-chimie et de mathématiques en première année.</span></p><br><p></p>"
           },
           {
             "min": 47,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas fait de maths, ni de physique-chimie. Si vos notes de spécialités sont vraiment excellentes, vous pouvez tout de même réussir le concours.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Toutefois, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de maths et de physique-chimie en première année d'études.<br></p>"
+            "feedback": "<p>Vous n'avez pas fait de maths, ni de physique-chimie. Si vos notes de spécialités sont vraiment excellentes, vous pouvez tout de même réussir le concours.</p><p>Toutefois, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de maths et de physique-chimie en première année d'études.<br></p>"
           },
           {
             "min": 45,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir=\"ltr\" style=\"text-align: left;\">En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
+            "feedback": "<p>Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p><p>Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p><p>En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
           },
           {
             "min": 43,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p>\n<p dir=\"ltr\" style=\"text-align: left;\">En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
+            "feedback": "<p>Vous avez choisi la triplette recommandée en première, c'est bien. Vous avez abandonné la SVT en terminale.</p><p>Cela ne pénalisera pas vos chances de réussir le concours, si vos notes sont suffisantes.<br></p><p>En cas d'admission, il faudra vous remettre à niveau en biologie pour pouvoir suivre mais c'est faisable sans problème.<br></p>"
           },
           {
             "min": 30,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de mathématiques. De plus, vous avez abandonné la biologie en terminale.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir=\"ltr\">Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de biologie et de mathématiques en première année.</p><br>\n<p></p>"
+            "feedback": "<p>Vous n'avez pas choisi la triplette recommandée en première. Vous n'avez pas fait de mathématiques. De plus, vous avez abandonné la biologie en terminale.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p><p>Toutefois, sachez qu'en cas d'admission, vous aurez certainement de grosses difficultés à suivre les enseignements de biologie et de mathématiques en première année.</p><br><p></p>"
           },
           {
             "min": 28,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\"></p>\n<p dir=\"ltr\">Vous n'avez pas choisi la triplette recommandée en première. Il vous manquera des notions de biologie.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p>\n<p dir=\"ltr\">Toutefois, sachez qu'en cas d'admission, vous aurez à vous mettre à niveau en biologie en première année.</p><br>\n<p></p>"
+            "feedback": "<p>Vous n'avez pas choisi la triplette recommandée en première. Il vous manquera des notions de biologie.&nbsp;Vous avez vos chances de réussir le concours, si vos notes sont excellentes.</p><p>Toutefois, sachez qu'en cas d'admission, vous aurez à vous mettre à niveau en biologie en première année.</p><br><p></p>"
           },
           {
             "min": 20,
-            "feedback": "<p dir=\"ltr\" style=\"text-align: left;\">Vous n'avez pas suivi les combinaisons de spécialités recommandées en première et en terminale.&nbsp;</p>\n<p dir=\"ltr\" style=\"text-align: left;\">Même s'il est mathématiquement possible de réussir le concours si vos notes de spécialités sont vraiment excellentes, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de première année d'études. Vous aurez besoin de vous remettre à niveau dans les matières manquantes.<br></p>"
+            "feedback": "<p>Vous n'avez pas suivi les combinaisons de spécialités recommandées en première et en terminale.&nbsp;</p><p>Même s'il est mathématiquement possible de réussir le concours si vos notes de spécialités sont vraiment excellentes, il faut être clair : ce sera difficile pour vous, en cas d'admission, de suivre les enseignements de première année d'études. Vous aurez besoin de vous remettre à niveau dans les matières manquantes.<br></p>"
           }
         ]
       }
