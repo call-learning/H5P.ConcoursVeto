@@ -55,7 +55,7 @@ export const sampleSurveyFeedback = {
       'feedback': 'Vos résultats scolaires : votre "score" global est de $scorepercent %.',
       'questions_weight': [
         {
-          'id': 'common_subjects_first',
+          'id': 'common_subjects_premiere_terminale',
           'weight': 1
         },
         {
@@ -793,12 +793,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -852,12 +852,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -915,12 +915,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -974,12 +974,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1025,11 +1025,11 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
+                  "value": "NA",
                   "text": "Ne sais pas"
                 }
               ],
@@ -1104,12 +1104,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1171,8 +1171,8 @@ export const sampleSurveyData =
                   "text": "Non"
                 },
                 {
-                  "value": "1",
-                  "text": "Peut-être"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1206,12 +1206,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1249,12 +1249,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1296,12 +1296,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1335,12 +1335,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [
@@ -1374,12 +1374,12 @@ export const sampleSurveyData =
                   "text": "Oui"
                 },
                 {
-                  "value": "1",
+                  "value": "0",
                   "text": "Non"
                 },
                 {
-                  "value": "0",
-                  "text": "Ne sais pas"
+                  "value": "NA",
+                  "text": "Ne sait pas"
                 }
               ],
               "rows": [

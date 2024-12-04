@@ -1,0 +1,123 @@
+{
+  "speciality_premiere": [
+    "4",
+    "5",
+    "3"
+  ],
+  "speciality_terminale": [
+    "5",
+    "4"
+  ],
+  "performance_specialities_first": {
+    "speciality1": 4,
+    "speciality2": 4,
+    "speciality3": 4
+  },
+  "performance_specialities_terminal": {
+    "speciality1": 5,
+    "speciality2": 5
+  },
+  "common_subjects_premiere_terminale": {
+    "history_geography": 5,
+    "lvA": 5
+  },
+  "bac_french_average": 5,
+  "work_skills_matrix": {
+    "reading_summary": "4",
+    "autonomy": "4",
+    "Noise-ambiant": "4",
+    "perseverance": "4",
+    "note_taking": "4",
+    "computer_use": "4",
+    "synthesis": "4",
+    "group_work": "4"
+  },
+  "intellectual_aptitudes_matrix": {
+    "observation": "4",
+    "focus": "4",
+    "creativity": "4",
+    "memorization": "4",
+    "handle_numbers": "4",
+    "identify_data": "4",
+    "problem_analysis": "4",
+    "prioritization": "4",
+    "organization": "4"
+  },
+  "manual_relational_skills_matrix": {
+    "manual_precision": "4",
+    "tool_precision": "4",
+    "respect_rules": "4",
+    "listen_to_others": "4",
+    "clear_expression": "4",
+    "make_understand": "4",
+    "consider_opinions": "4",
+    "assert_viewpoint": "4"
+  },
+  "work_experience_matrix": {
+    "media_exposure": "4",
+    "veterinary_experience": "4",
+    "breeder_experience": "4",
+    "equestrian_center": "4",
+    "animal_related": "4",
+    "non_animal_related": "4"
+  },
+  "profession_representation_matrix": {
+    "treat_domestic_animals": "4",
+    "animal_euthanasia": "4",
+    "health_preservation": "4",
+    "advise_owners": "4",
+    "public_health_role": "4",
+    "pharma_industry": "4",
+    "public_sector": "4",
+    "business_management": "4",
+    "slaughterhouse_work": "4",
+    "research": "4",
+    "wild_animal_care": "4",
+    "animal_welfare": "4",
+    "work_nights_weekends": "4"
+  },
+  "education_representation_matrix": {
+    "studies_difficult": "4",
+    "identical_programs": "4",
+    "evaluated_on_knowledge": "4",
+    "all_species": "4",
+    "slaughter_house": "4",
+    "mandatory_learning": "4",
+    "less_vacation": "4",
+    "night_guards": "4",
+    "Bank holidays": "4"
+  },
+  "vocation_statements": {
+    "always_veterinarian": "4",
+    "childhood_dream": "4",
+    "only_career_choice": "4"
+  },
+  "stimulation_statements": {
+    "like_challenge": "4",
+    "like_learning": "4",
+    "like_problem_solving": "4",
+    "like_variety": "4"
+  },
+  "animal_contact_statements": {
+    "like_working_with_animals": "4",
+    "want_to_help_animals": "4",
+    "animal_suffering": "4",
+    "dangerous_animal": "4",
+    "protect_environment": "4"
+  },
+  "human_contact_statements": {
+    "like_team_working": "4",
+    "enjoy_client_interaction": "4",
+    "unsatisfied_client": "4"
+  },
+  "social_integration_statements": {
+    "want_to_contribute": "4",
+    "want_to_be_recognized": "4",
+    "want_to_integrate": "4"
+  },
+  "career_opportunities_statements": {
+    "reasonable_income": "4",
+    "many_opportunities": "4",
+    "job_availability": "4"
+  }
+}

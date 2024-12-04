@@ -127,8 +127,37 @@ Le système calcule les scores pour chaque section en utilisant les réponses de
 
 ---
 
+### Tests Unitaires
+
+Pour garantir la précision des calculs, des tests automatisés couvrent des cas variés. Voici un extrait d’un test :
+
+#### Exemple : Notes Partielles pour Terminale
+
+```javascript
+results = {
+  'speciality_terminale': ['5', '0'],
+  'speciality_premiere': ['5', '3', '2']
+};
+sectionWeights = [
+  { id: 'speciality_terminale', weight: 1 },
+  { id: 'speciality_premiere', weight: 1 }
+];
+expectedScore = ((5 + 0 + 5 + 3 + 2) / 25) * 100; // 60%
+```
+
+Test :
+
+```javascript
+it("should calculate correct score - Partial marks for speciality_terminale", () => {
+  const score = calculateSectionScore(results, sectionWeights, surveyDefinition);
+  expect(score).toBeCloseTo(60, 2);
+});
+```
+
+---
+
 ## Résumé
 
-Le système permet d'analyser les réponses des utilisateurs et de leur fournir des feedbacks détaillés. Les deux fichiers JSON permettent une personnalisation complète des questions et des messages.
+Ce système robuste et testé fournit des feedbacks personnalisés en s’appuyant sur une structure de données modulaire. Les utilisateurs bénéficient ainsi d'une expérience enrichie et pertinente.
 
-Pour toute question ou assistance, contactez l'équipe technique.
+

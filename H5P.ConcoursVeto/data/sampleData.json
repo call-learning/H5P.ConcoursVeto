@@ -47,10 +47,10 @@
   ],
   "settings": {
     "welcomeTitle": "Bienvenue sur le questionnaire\n d'auto-évaluation pour le concours vétérinaire post-bac",
-    "welcomeText": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</p>."
+    "welcomeText": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même.</p><p>Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</p>"
   },
   "feedback": {
-    "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span style=\"font-size: 1rem;\">ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span style=\"font-size: 1rem;\">ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
+    "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
     "sections": [
       {
         "title": "Vos choix de spécialités",
@@ -103,7 +103,7 @@
         "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
         "questions_weight": [
           {
-            "id": "common_subjects_first",
+            "id": "common_subjects_premiere_terminale",
             "weight": 1
           },
           {
@@ -185,11 +185,11 @@
             "weight": 1
           },
           {
-            "id": "profession_representation",
+            "id": "profession_representation_matrix",
             "weight": 1
           },
           {
-            "id": "education_representation",
+            "id": "education_representation_matrix",
             "weight": 1
           }
         ],
@@ -214,5 +214,5 @@
       }
     ]
   },
-  "surveyDefinition": "{\n  \"logoPosition\": \"right\",\n  \"pages\": [\n    {\n      \"name\": \"specialities\",\n      \"elements\": [\n        {\n          \"type\": \"tagbox\",\n          \"name\": \"speciality_terminale\",\n          \"title\": \"Spécialités suivies en terminales (indiquer vos spécialités)\",\n          \"isRequired\": true,\n          \"choices\": [\n            {\n              \"value\": \"5\",\n              \"text\": \"SVT/biologie-écologie\"\n            },\n            {\n              \"value\": \"4\",\n              \"text\": \"Physique Chimie\"\n            },\n            {\n              \"value\": \"3\",\n              \"text\": \"Mathématiques\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Autres spécialités\"\n            }\n          ],\n          \"maxSelectedChoices\": 2,\n          \"minSelectedChoices\": 2\n        },\n        {\n          \"type\": \"tagbox\",\n          \"name\": \"speciality_premiere\",\n          \"title\": \"Spécialités suivies en première (indiquer vos spécialités)\",\n          \"isRequired\": true,\n          \"choices\": [\n            {\n              \"value\": \"5\",\n              \"text\": \"SVT/biologie-écologie\"\n            },\n            {\n              \"value\": \"4\",\n              \"text\": \"Physique Chimie\"\n            },\n            {\n              \"value\": \"3\",\n              \"text\": \"Mathématiques\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Autres spécialités\"\n            }\n          ],\n          \"maxSelectedChoices\": 3,\n          \"minSelectedChoices\": 3\n        }\n      ]\n    },\n    {\n      \"name\": \"speciality_performance\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"performance_specialities_first\",\n          \"title\": \"Mes résultats dans les enseignements de spécialité en première :\",\n          \"columns\": [\n            {\n              \"value\": 1,\n              \"text\": \"Moins de 12/20\"\n            },\n            {\n              \"value\": 2,\n              \"text\": \"Entre 12/20 et 14/20\"\n            },\n            {\n              \"value\": 3,\n              \"text\": \"Entre 14/20 et 16/20\"\n            },\n            {\n              \"value\": 4,\n              \"text\": \"Plus de 16/20\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"speciality1\",\n              \"text\": \"Spécialité 1\"\n            },\n            {\n              \"value\": \"speciality2\",\n              \"text\": \"Spécialité 2\"\n            },\n            {\n              \"value\": \"speciality3\",\n              \"text\": \"Spécialité 3\"\n            }\n          ]\n        },\n        {\n          \"type\": \"matrix\",\n          \"name\": \"performance_specialities_terminal\",\n          \"title\": \"Mes résultats dans les enseignements de spécialité en terminale :\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": 2,\n              \"text\": \"Moins de 12/20\"\n            },\n            {\n              \"value\": 3,\n              \"text\": \"Entre 12/20 et 14/20\"\n            },\n            {\n              \"value\": 4,\n              \"text\": \"Entre 14/20 et 16/20\"\n            },\n            {\n              \"value\": 5,\n              \"text\": \"Plus de 16/20\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"speciality1\",\n              \"text\": \"Spécialité 1\"\n            },\n            {\n              \"value\": \"speciality2\",\n              \"text\": \"Spécialité 2\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
+  "surveyDefinition": "{\n  \"logoPosition\": \"right\",\n  \"pages\": [\n    {\n      \"name\": \"specialities\",\n      \"elements\": [\n        {\n          \"type\": \"tagbox\",\n          \"name\": \"speciality_terminale\",\n          \"title\": \"Spécialités suivies en terminales (indiquer vos spécialités)\",\n          \"isRequired\": true,\n          \"choices\": [\n            {\n              \"value\": \"5\",\n              \"text\": \"SVT/biologie-écologie\"\n            },\n            {\n              \"value\": \"4\",\n              \"text\": \"Physique Chimie\"\n            },\n            {\n              \"value\": \"3\",\n              \"text\": \"Mathématiques\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Autres spécialités\"\n            }\n          ],\n          \"maxSelectedChoices\": 2,\n          \"minSelectedChoices\": 2\n        },\n        {\n          \"type\": \"tagbox\",\n          \"name\": \"speciality_premiere\",\n          \"title\": \"Spécialités suivies en première (indiquer vos spécialités)\",\n          \"isRequired\": true,\n          \"choices\": [\n            {\n              \"value\": \"5\",\n              \"text\": \"SVT/biologie-écologie\"\n            },\n            {\n              \"value\": \"4\",\n              \"text\": \"Physique Chimie\"\n            },\n            {\n              \"value\": \"3\",\n              \"text\": \"Mathématiques\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Autres spécialités\"\n            }\n          ],\n          \"maxSelectedChoices\": 3,\n          \"minSelectedChoices\": 3\n        }\n      ]\n    },  ]\n}"
 }

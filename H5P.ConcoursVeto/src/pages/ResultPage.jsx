@@ -4,6 +4,7 @@ import Section from '../components/Section';
 import { useTranslations } from '../hooks/useTranslation.js';
 import DownloadCertificateDialog from '../components/DownloadCertificateDialog.jsx';
 import WaveBackground from '../components/WaveBackground.jsx';
+import { H5PContext } from '../contexts/H5PContext.js';
 
 function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -11,8 +12,9 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
   const handleCloseDialog = () => setDialogOpen(false);
 
   const { translate } = useTranslations();
+  const { resizeAction  } = React.useContext(H5PContext);
   return (
-    <Container>
+    <Container onLoad={resizeAction}>
       <WaveBackground />
       <Box my={4}>
         <Typography variant="h4" component="h1" gutterBottom>

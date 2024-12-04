@@ -1,2 +1,2 @@
 import React from 'react';
-export const H5PContext = React.createContext([]);
+export const H5PContext = React.createContext({});
