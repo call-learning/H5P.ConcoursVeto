@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Typography, Container, Box, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import { useTranslations } from '../hooks/useTranslation.js';
-import { getAbsoluteURL } from '../helpers/utils.js';
+import { getAbsoluteURL, removeEncodedSingleQuote } from '../helpers/utils.js';
 import { H5PContext } from '../contexts/H5PContext.js';
 import WaveBackground from '../components/WaveBackground.jsx';
 
@@ -35,10 +35,10 @@ function WelcomePage({ onContinue, welcomeTitle, welcomeText }) {
       <Header sx={{py: 3}}>
         <Logo src={getAbsoluteURL("/images/logo.png", contentId)} alt="Logo"/>
         <Typography variant="h3" component="h1">
-          {welcomeTitle}
+          {removeEncodedSingleQuote(welcomeTitle)}
         </Typography>
       </Header>
-      <div dangerouslySetInnerHTML={{ __html: welcomeText }} style={{color: theme.palette.grey[900]}}/>
+      <div dangerouslySetInnerHTML={{ __html: welcomeText }} style={{color: theme.palette.grey[900], textAlign: "center"}}/>
       <Box my={4} textAlign={"center"}>
         <Button variant="contained" color="primary" onClick={onContinue}>
           {translate('continue')}

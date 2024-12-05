@@ -8,7 +8,8 @@ function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
   const [open, setOpen] = React.useState(false);
   const score = calculateSectionScore(surveyResults, sectionConfig.questions_weight,
     surveyDefinition);
-  const feedbackRange = sectionConfig.feedback_ranges.find(range => score >= range.min);
+  const feedbackRange = sectionConfig.feedback_ranges.sort((a, b) => a.max - b.max)
+    .find(range => score <= range.max);
   const feedbackText = sectionConfig.feedback.replace('$scorepercent', score.toFixed(2));
 
   return (

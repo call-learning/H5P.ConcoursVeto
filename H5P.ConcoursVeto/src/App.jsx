@@ -13,7 +13,9 @@ function App(props) {
   const [page, setPage] = useState('welcome');
   const [surveyResults, setSurveyResults] = useState(null);
   const surveyObject = decodeAndParseJson(props.surveyDefinition);
-
+  if (!surveyObject) {
+    console.log('Invalid survey definition');
+  }
 
   const handleContinue = () => setPage('survey');
   const handleComplete = (survey) => {

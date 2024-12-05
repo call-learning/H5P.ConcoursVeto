@@ -5,6 +5,7 @@ import { useTranslations } from '../hooks/useTranslation.js';
 import DownloadCertificateDialog from '../components/DownloadCertificateDialog.jsx';
 import WaveBackground from '../components/WaveBackground.jsx';
 import { H5PContext } from '../contexts/H5PContext.js';
+import { removeEncodedSingleQuote } from '../helpers/utils.js';
 
 function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -20,7 +21,7 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
         <Typography variant="h4" component="h1" gutterBottom>
           {translate('survey_results')}
         </Typography>
-        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: surveyFeedback?.global }} textAlign={'left'} my={2}/>
+        <Typography variant="body1" dangerouslySetInnerHTML={{ __html: removeEncodedSingleQuote(surveyFeedback?.global) }} textAlign={'left'} my={2}/>
         {surveyFeedback.sections.map((sectionConfig, index) => (
           <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults} surveyDefinition={surveyDefinition}/>
         ))}

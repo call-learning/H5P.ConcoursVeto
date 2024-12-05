@@ -1,0 +1,132 @@
+{
+  "l10n": [
+    {
+      "key": "back",
+      "text": "Retour"
+    },
+    {
+      "key": "survey_results",
+      "text": "Résultats de l'auto-évaluation"
+    },
+    {
+      "key": "download_certificate",
+      "text": "Télécharger l'attestation"
+    },
+    {
+      "key": "restart_survey",
+      "text": "Recommencer l'auto-évaluation"
+    },
+    {
+      "key": "generate_pdf",
+      "text": "Générer un PDF"
+    },
+    {
+      "key": "cancel",
+      "text": "Annuler"
+    },
+    {
+      "key": "confirm",
+      "text": "Confirmer"
+    },
+    {
+      "key": "firstname",
+      "text": "Prénom"
+    },
+    {
+      "key": "lastname",
+      "text": "Nom"
+    },
+    {
+      "key": "psupid",
+      "text": "Identifiant Parcoursup"
+    },
+    {
+      "key": "continue",
+      "text": "Continuer"
+    }
+  ],
+  "settings": {
+    "welcomeTitle": "Bienvenue sur le questionnaire\n d'auto-évaluation pour le concours vétérinaire post-bac",
+    "welcomeText": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même.</p>Il est spécifiquement fait pour les étudiants Français à l'étranger</p><p>Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles.</p>"
+  },
+  "feedback": {
+    "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
+    "sections": [
+      {
+        "title": "Vos aptitudes",
+        "label": "Vos aptitudes",
+        "feedback": "Vos aptitudes : votre \"score\" global est de $scorepercent %.",
+        "questions_weight": [
+          {
+            "id": "manual_relational_skills_matrix",
+            "weight": 1
+          },
+          {
+            "id": "intellectual_aptitudes_matrix",
+            "weight": 1
+          },
+          {
+            "id": "work_skills_matrix",
+            "weight": 1
+          }
+        ],
+        "feedback_ranges": [
+          {
+            "max": 100,
+            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires."
+          },
+          {
+            "max": 76,
+            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous avez des dispositions pour des études vétérinaires. Toutefois la concurrence sera rude, et il faudra travailler dur. Ce n'est pas gagné !"
+          },
+          {
+            "max": 51,
+            "feedback": "Vous avez des aptitudes, mais elles risquent d'être insuffisantes pour devenir vétérinaire."
+          },
+          {
+            "max": 0,
+            "feedback": "Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires."
+          }
+        ]
+      },
+      {
+        "title": "Vos représentations",
+        "label": "Vos représentations",
+        "feedback": "Vos représentations des études et des métiers de vétérinaire: votre \"score\" global est de $scorepercent %.",
+        "questions_weight": [
+          {
+            "id": "work_experience_matrix",
+            "weight": 1
+          },
+          {
+            "id": "profession_representation_matrix",
+            "weight": 1
+          },
+          {
+            "id": "education_representation_matrix",
+            "weight": 1
+          }
+        ],
+        "feedback_ranges": [
+          {
+            "max": 100,
+            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          },
+          {
+            "max": 75,
+            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent peuvent être affinées, mais vous vous approchez déjà de la réalité. Nous vous recommandons d'y consacrer un peu de temps si vous êtes admissibles aux entretiens oraux.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          },
+          {
+            "max": 50,
+            "feedback": "Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d'information en consultant le site de l'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires."
+          },
+          {
+            "max": 0,
+            "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
+          }
+        ]
+      }
+    ]
+  },
+  "surveyDefinition": "{\n  \"logoPosition\": \"right\",\n  \"pages\": [\n    {\n      \"name\": \"work_skills\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"work_skills_matrix\",\n          \"title\": \"J'évalue mes compétences au travail ...\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"reading_summary\",\n              \"text\": \"Je travaille sans être stimulé-e.\"\n            },\n            {\n              \"value\": \"autonomy\",\n              \"text\": \"Je travaille régulièrement et de façon autonome\"\n            },\n            {\n              \"value\": \"Noise-ambiant\",\n              \"text\": \"Je sais m'extraire des bruits ambiants pour rester concentré-e.\"\n            },\n            {\n              \"value\": \"perseverance\",\n              \"text\": \"Je suis persévérant-e.\"\n            },\n            {\n              \"value\": \"note_taking\",\n              \"text\": \"Je sais prendre des notes en séance.\"\n            },\n            {\n              \"value\": \"computer_use\",\n              \"text\": \"Je sais utiliser un ordinateur pour des applications bureautiques.\"\n            },\n            {\n              \"value\": \"synthesis\",\n              \"text\": \"Je sais réaliser un travail de synthèse.\"\n            },\n            {\n              \"value\": \"group_work\",\n              \"text\": \"Je travaille efficacement en groupe.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"intellectual_aptitudes\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"intellectual_aptitudes_matrix\",\n          \"title\": \"J'évalue mes qualités ...\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"observation\",\n              \"text\": \"Je suis observateur/observatrice.\"\n            },\n            {\n              \"value\": \"focus\",\n              \"text\": \"Je me concentre facilement sur un problème.\"\n            },\n            {\n              \"value\": \"creativity\",\n              \"text\": \"Je suis créatif/créative.\"\n            },\n            {\n              \"value\": \"memorization\",\n              \"text\": \"J'apprends facilement par coeur.\"\n            },\n            {\n              \"value\": \"handle_numbers\",\n              \"text\": \"Je calcule rapidement et sans erreur.\"\n            },\n            {\n              \"value\": \"identify_data\",\n              \"text\": \"J'identifie rapidement les données importantes et inutiles d'un problème.\"\n            },\n            {\n              \"value\": \"problem_analysis\",\n              \"text\": \"Je sais problématiser une demande.\"\n            },\n            {\n              \"value\": \"prioritization\",\n              \"text\": \"Je hiérachise les priorités.\"\n            },\n            {\n              \"value\": \"organization\",\n              \"text\": \"Je sais m'organiser.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"manual_relational_skills\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"manual_relational_skills_matrix\",\n          \"title\": \"J'évalue mes compétences manuelles et relationnelles\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"manual_precision\",\n              \"text\": \"Je sais réaliser un travail précis avec mes mains.\"\n            },\n            {\n              \"value\": \"tool_precision\",\n              \"text\": \"Je sais réaliser un travail précis avec des outils.\"\n            },\n            {\n              \"value\": \"respect_rules\",\n              \"text\": \"Je respecte les consignes et les règles lorsque je suis en groupe.\"\n            },\n            {\n              \"value\": \"listen_to_others\",\n              \"text\": \"Je sais écouter l'avis des autres.\"\n            },\n            {\n              \"value\": \"clear_expression\",\n              \"text\": \"Je m'exprime clairement.\"\n            },\n            {\n              \"value\": \"make_understand\",\n              \"text\": \"Je sais me faire comprendre.\"\n            },\n            {\n              \"value\": \"consider_opinions\",\n              \"text\": \"J'accepte les idées des autres.\"\n            },\n            {\n              \"value\": \"assert_viewpoint\",\n              \"text\": \"J'ose exprimer et partager mes idées.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"work_experience\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"work_experience_matrix\",\n          \"title\": \"Mon expérience du monde du travail avec les animaux.\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"media_exposure\",\n              \"text\": \"Je connais le monde vétérinaire au travers des médias.\"\n            },\n            {\n              \"value\": \"veterinary_experience\",\n              \"text\": \"J'ai déjà suivi un vétérinaire dans son travail quotidien.\"\n            },\n            {\n              \"value\": \"breeder_experience\",\n              \"text\": \"J'ai une expérience de travail chez un éleveur.\"\n            },\n            {\n              \"value\": \"equestrian_center\",\n              \"text\": \"Je participe régulièrement aux soins des chevaux/poneys dans mon centre équestre.\"\n            },\n            {\n              \"value\": \"animal_related\",\n              \"text\": \"J'ai une expérience de travail dans une  structure en rapport avec l'animal (SPA ...).\"\n            },\n            {\n              \"value\": \"non_animal_related\",\n              \"text\": \"J'ai une expérience de travail dans une  structure en lien avec la santé animale (recherche, industrie ...).\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"profession_representation\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"profession_representation_matrix\",\n          \"title\": \"En tant que vétérinaire, je pourrai être amené-e à ...\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sais pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"treat_domestic_animals\",\n              \"text\": \"Soigner des animaux domestiques.\"\n            },\n            {\n              \"value\": \"animal_euthanasia\",\n              \"text\": \"Euthanasier des animaux domestiques.\"\n            },\n            {\n              \"value\": \"health_preservation\",\n              \"text\": \"Préserver la santé des élevages.\"\n            },\n            {\n              \"value\": \"advise_owners\",\n              \"text\": \"Conseiller les propriétaires d'animaux.\"\n            },\n            {\n              \"value\": \"public_health_role\",\n              \"text\": \"Préserver  la santé publique.\"\n            },\n            {\n              \"value\": \"pharma_industry\",\n              \"text\": \"Travailler dans l'industrie pharmaceutique.\"\n            },\n            {\n              \"value\": \"public_sector\",\n              \"text\": \"Travailler dans la fonction publique.\"\n            },\n            {\n              \"value\": \"business_management\",\n              \"text\": \"Participer à la gestion d'une entreprise vétérinaire.\"\n            },\n            {\n              \"value\": \"slaughterhouse_work\",\n              \"text\": \"Travailler dans un abattoir.\"\n            },\n            {\n              \"value\": \"research\",\n              \"text\": \"Faire de la recherche.\"\n            },\n            {\n              \"value\": \"wild_animal_care\",\n              \"text\": \"Soigner des animaux sauvages.\"\n            },\n            {\n              \"value\": \"animal_welfare\",\n              \"text\": \"M'investir dans le bien-être animal.\"\n            },\n            {\n              \"value\": \"work_nights_weekends\",\n              \"text\": \"Participer au développement durable et à la transition écologique.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"education_representation\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"education_representation_matrix\",\n          \"title\": \"Au sujet des études vétérinaires ...\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"studies_difficult\",\n              \"text\": \"Les études sont longues et exigent beaucoup de travail.\"\n            },\n            {\n              \"value\": \"identical_programs\",\n              \"text\": \"Le programme et le niveau sont identiques dans les quatre écoles nationales vétérinaires.\"\n            },\n            {\n              \"value\": \"evaluated_on_knowledge\",\n              \"text\": \"Les étudiants sont évalués selon leurs connaissances, leurs savoir-faire et leurs savoir-être.\"\n            },\n            {\n              \"value\": \"all_species\",\n              \"text\": \"Les études portent obligatoirement sur toutes les espèces animales.\"\n            },\n            {\n              \"value\": \"slaughter_house\",\n              \"text\": \"Pendant les études, des visites et/ou des stages en abattoir sont obligatoires.\"\n            },\n            {\n              \"value\": \"mandatory_learning\",\n              \"text\": \"Les études comprennent des apprentissages obligatoires qui pourraient ne pas me correspondre.\"\n            },\n            {\n              \"value\": \"less_vacation\",\n              \"text\": \"J'aurai moins de vacances.\"\n            },\n            {\n              \"value\": \"night_guards\",\n              \"text\": \"Il faudra parfois que je réalise des gardes de nuit.\"\n            },\n            {\n              \"value\": \"Bank holidays\",\n              \"text\": \"Il faudra parfois que je travaille pendant les jours fériés.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"vocation\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"vocation_statements\",\n          \"title\": \"Pourquoi souhaitez-vous devenir vétérinaire ?\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"always_veterinarian\",\n              \"text\": \"J'ai toujours voulu devenir vétérinaire.\"\n            },\n            {\n              \"value\": \"childhood_dream\",\n              \"text\": \"C'est un métier pour lequel je me sens préparé-e.\"\n            },\n            {\n              \"value\": \"only_career_choice\",\n              \"text\": \"C'est le seul métier que j'envisage d'exercer.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"stimulation\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"stimulation_statements\",\n          \"title\": \"Vétérinaire est un métier stimulant. Indiquez quelles sont les  affirmations qui vous correspondent ...\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"like_challenge\",\n              \"text\": \"J'aime le défi que représente le travail de vétérinaire.\"\n            },\n            {\n              \"value\": \"like_learning\",\n              \"text\": \"J'aime apprendre de nouvelles choses.\"\n            },\n            {\n              \"value\": \"like_problem_solving\",\n              \"text\": \"J'aime résoudre des problèmes.\"\n            },\n            {\n              \"value\": \"like_variety\",\n              \"text\": \"J'aime la diversité des activités vétérinaires.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"animal_contact\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"animal_contact_statements\",\n          \"title\": \"Concernant le contact avec les animaux, comment vous positionnez-vous ?\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"like_working_with_animals\",\n              \"text\": \"J'aime travailler avec des animaux.\"\n            },\n            {\n              \"value\": \"want_to_help_animals\",\n              \"text\": \"Je veux aider les animaux.\"\n            },\n            {\n              \"value\": \"animal_suffering\",\n              \"text\": \"Je vais être confronté-e à la souffrance animale.\"\n            },\n            {\n              \"value\": \"dangerous_animal\",\n              \"text\": \"Je peux être blessé-e lors de la manipulation d’animaux agressifs ou dangereux.\"\n            },\n            {\n              \"value\": \"protect_environment\",\n              \"text\": \"Je veux protéger la faune sauvage.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"human_contact\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"human_contact_statements\",\n          \"title\": \"Concernant le contact humain, comment vous positionnez-vous ?\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"like_team_working\",\n              \"text\": \"J'aime le travail en équipe.\"\n            },\n            {\n              \"value\": \"enjoy_client_interaction\",\n              \"text\": \"J'aime interagir avec des clients, des éleveurs.\"\n            },\n            {\n              \"value\": \"unsatisfied_client\",\n              \"text\": \"Je peux être confronté-e à des clients mécontents.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"social_integration\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"social_integration_statements\",\n          \"title\": \"Vétérinaire et société.  Indiquez ce que vous pensez des affirmations suivantes :\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"want_to_contribute\",\n              \"text\": \"Un vétérinaire contribue au développement de  la société.\"\n            },\n            {\n              \"value\": \"want_to_be_recognized\",\n              \"text\": \"Un vétérinaire est reconnu dans la société.\"\n            },\n            {\n              \"value\": \"want_to_integrate\",\n              \"text\": \"Un vétérinaire participe à l'action collective.\"\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"name\": \"career_opportunities\",\n      \"elements\": [\n        {\n          \"type\": \"matrix\",\n          \"name\": \"career_opportunities_statements\",\n          \"title\": \"Les opportunités de carrière. Indiquez ce que vous pensez des affirmations suivantes :\",\n          \"isRequired\": true,\n          \"columns\": [\n            {\n              \"value\": \"4\",\n              \"text\": \"Oui\"\n            },\n            {\n              \"value\": \"0\",\n              \"text\": \"Non\"\n            },\n            {\n              \"value\": \"NA\",\n              \"text\": \"Ne sait pas\"\n            }\n          ],\n          \"rows\": [\n            {\n              \"value\": \"reasonable_income\",\n              \"text\": \"Ce métier fournit un revenu raisonnable.\"\n            },\n            {\n              \"value\": \"many_opportunities\",\n              \"text\": \"Un vétérinaire peut avoir de nombreuses opportunités de carrière.\"\n            },\n            {\n              \"value\": \"job_availability\",\n              \"text\": \"Dans ce métier, il est facile de trouver un emploi.\"\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}"
+}
