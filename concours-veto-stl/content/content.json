@@ -53,9 +53,9 @@
     "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
     "sections": [
       {
-        "title": "Vos choix de spécialités",
-        "label": "Vos choix de spécialités",
-        "feedback": "Vos choix de spécialités: votre \"score\" global est de $scorepercent %.",
+        "title": "Votre profil STL",
+        "label": "Votre profil STL",
+        "feedback": "Votre profil STL : votre \"score\" global est de $scorepercent %.",
         "questions_weight": [
           {
             "id": "speciality_terminale",
@@ -69,31 +69,11 @@
         "feedback_ranges": [
           {
             "max": 100,
-            "feedback": "<p>C'est très bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires. Mais, il faudra également avoir de très bonnes notes pour être admissible : c'est un concours !  Si vous avez choisi l'option Maths complémentaires, vous serez mieux armé pour suivre les enseignements de première année si vous réussissez au concours.</p>"
+            "feedback": "<p>Votre profil est solide en biologie moléculaire, génétique et microbiologie pratique. Grâce aux enseignements de spécialité, vous maîtrisez les techniques de pointe usuelles au Laboratoire. Ces compétences s'alignent directement sur celles attendues chez un vétérinaire.  Ce profil nécessitera toutefois un renforcement en physique-chimie.</p>"
           },
           {
-            "max": 96,
-            "feedback": "<p>C'est très bien. Vos choix correspondent exactement à ceux qui ont été recommandés par les écoles vétérinaires. Mais, il faudra également avoir de très bonnes notes pour être admissible : c'est un concours !</p>"
-          },
-          {
-            "max": 88,
-            "feedback": "<p>Vos choix ne correspondent pas exactement à ceux qui ont été recommandés par les écoles vétérinaires en classe de première. Néanmoins, vous avez toutes vos chances ! Mais, il faudra également avoir de très bonnes notes pour être admissible : c'est un concours !</p> "
-          },
-          {
-            "max": 66,
-            "feedback": "<p>Vos choix ne correspondent pas exactement à ceux qui ont été recommandés par les écoles vétérinaires. Mais, si vous avez de très bonnes notes, vous avez toutes vos chances.  Attention, le niveau de scientifique attendu est assez élevé. Des révisions seront peut-être nécessaires si vous êtes admis.</p>"
-          },
-          {
-            "max": 50,
-            "feedback": "<p>Vos choix ne correspondent pas exactement à ceux qui ont été recommandés par les écoles vétérinaires. Mais si vous avez d'excellentes notes, vous pourrez peut-être être admissible. Attention, le niveau scientifique requis en première année est équivalent à celui d'une classe BCPST.</p>"
-          },
-          {
-            "max": 45,
-            "feedback": "<p>Vos choix ne correspondent pas exactement à ceux qui ont été recommandés par les écoles vétérinaires. Mais si vous avez d'excellentes notes, vous pourrez peut-être être admissible. Attention, le niveau scientifique requis en première année est équivalent à celui d'une classe BCPST.</p>"
-          },
-          {
-            "max": 44,
-            "feedback": "<p>Vous n'avez pas suivi les recommandations des écoles nationales vétérinaires. Votre niveau scientifique sera insuffisant pour suivre sereinement une première année d'étude dans les ENV</p>"
+            "max": 60,
+            "feedback": "<p>Vous êtes à l'aise dans le domaine de la physique-chimie appliquée au Laboratoire, c'st très bien et cela correspond à des compétences qui seront développées au cours de la formation vétérinaire. Toutefois, ce profil demandera une remise à niveau en biologie.</p>"
           }
         ]
       },
@@ -117,98 +97,28 @@
           {
             "id": "bac_french_average",
             "weight": 1
+          },
+          {
+            "id": "bac_maths_average",
+            "weight": 1
           }
         ],
         "feedback_ranges": [
           {
             "max": 100,
-            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous semblez bien armé(e) pour aborder des études vétérinaires. Attention cependant, pour le concours, le dossier scolaire comptera pour beaucoup pour la phase d’admissibilité aux entretiens oraux. Vous serez donc nombreux à avoir d’excellentes notes !"
+            "feedback": "Vos résultats scolaires sont excellents, n'hésitez pas à participer au concours vétérinaire post-bac. Croyez en votre potentiel et préparez votre candidature avec ambition !"
           },
           {
             "max": 80,
-            "feedback": "Si vous avez réellement obtenu les notes que vous mentionnez, vous avez des dispositions. Toutefois la concurrence sera rude, et il faut espérer que vos notes ont encore pu s’améliorer pendant le deuxième semestre de terminale. Le dossier scolaire comptera en effet pour beaucoup pour la phase d’admissibilité. Il y aura donc de nombreux candidats à avoir d’excellentes notes!"
-          },
-          {
-            "max": 60,
-            "feedback": "Selon votre dossier scolaire, vous avez des notes moyennes qui pourraient être insuffisantes pour devenir vétérinaire."
+            "feedback": "Vos résultats scolaires sont de bons à très bons et vous avez vos chances. Attention, le principe fondamental d’un concours repose sur la sélection et le classement des candidats en fonction d’un nombre de places limité et votre note absolue importe moins que votre position par rapport aux autres. Les résultats dépendront donc du niveau des candidatures."
           },
           {
             "max": 20,
-            "feedback": "Selon votre dossier scolaire, vous ne semblez pas suffisamment armé(e) avoir de réelles chances d'aborder des études vétérinaires."
-          }
-        ]
-      },
-      {
-        "title": "Vos aptitudes",
-        "label": "Vos aptitudes",
-        "feedback": "Vos aptitudes : votre \"score\" global est de $scorepercent %.",
-        "questions_weight": [
-          {
-            "id": "manual_relational_skills_matrix",
-            "weight": 1
+            "feedback": "Vos résultats seront probablement insuffisants pour suivre un cursus vétérinaire très exigent. Nous vous encourageons à bien réfléchir à votre projet professionnel."
           },
           {
-            "id": "intellectual_aptitudes_matrix",
-            "weight": 1
-          },
-          {
-            "id": "work_skills_matrix",
-            "weight": 1
-          }
-        ],
-        "feedback_ranges": [
-          {
-            "max": 100,
-            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires."
-          },
-          {
-            "max": 76,
-            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous avez des dispositions pour des études vétérinaires. Toutefois la concurrence sera rude, et il faudra travailler dur. Ce n'est pas gagné !"
-          },
-          {
-            "max": 51,
-            "feedback": "Vous avez des aptitudes, mais elles risquent d'être insuffisantes pour devenir vétérinaire."
-          },
-          {
-            "max": 0,
-            "feedback": "Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires."
-          }
-        ]
-      },
-      {
-        "title": "Vos représentations",
-        "label": "Vos représentations",
-        "feedback": "Vos représentations des études et des métiers de vétérinaire: votre \"score\" global est de $scorepercent %.",
-        "questions_weight": [
-          {
-            "id": "work_experience_matrix",
-            "weight": 1
-          },
-          {
-            "id": "profession_representation_matrix",
-            "weight": 1
-          },
-          {
-            "id": "education_representation_matrix",
-            "weight": 1
-          }
-        ],
-        "feedback_ranges": [
-          {
-            "max": 100,
-            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
-          },
-          {
-            "max": 75,
-            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent peuvent être affinées, mais vous vous approchez déjà de la réalité. Nous vous recommandons d'y consacrer un peu de temps si vous êtes admissibles aux entretiens oraux.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
-          },
-          {
-            "max": 50,
-            "feedback": "Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d'information en consultant le site de l'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires."
-          },
-          {
-            "max": 0,
-            "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
+            "max": 10,
+            "feedback": "Vos résultats sont insuffisants pour candidater au concours post-bac. Nous vous invitons et vous encourageons à bien réfléchir à votre projet universitaire."
           }
         ]
       }
