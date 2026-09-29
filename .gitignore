@@ -7,3 +7,8 @@ npm-debug.log*
 *.zip
 /temp
 /libraries
+# CocoIndex Code (ccc)
+/.cocoindex_code/
+openspec/
+.opencode
+originaldata/
