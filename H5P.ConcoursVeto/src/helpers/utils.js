@@ -27,11 +27,15 @@
  * @return {T[]}
  */
 export function getAbsoluteURL (path, contentId) {
-  let H5P = window.H5P || {};
-  if (H5P.getPath === undefined) {
-    return path;
+  const H5P = window.H5P || {};
+  const normalizedPath = path.replace(/^\/+/, '');
+  if (typeof H5P.getPath === 'function') {
+    return H5P.getPath(normalizedPath, contentId);
   }
-  return H5P.getPath(path, contentId);
+  if (typeof H5P.getContentPath === 'function') {
+    return `${H5P.getContentPath(contentId)}/${normalizedPath}`;
+  }
+  return normalizedPath;
 }
 
 /**

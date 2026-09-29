@@ -33,7 +33,7 @@ function WelcomePage({ onContinue, welcomeTitle, welcomeText }) {
       <WaveBackground />
 
       <Header sx={{py: 3}}>
-        <Logo src={getAbsoluteURL("/images/logo.png", contentId)} alt="Logo"/>
+        <Logo src={getAbsoluteURL("images/logo.png", contentId)} alt="Logo"/>
         <Typography variant="h3" component="h1">
           {removeEncodedSingleQuote(welcomeTitle)}
         </Typography>

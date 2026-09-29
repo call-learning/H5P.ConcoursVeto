@@ -6,20 +6,26 @@ import { getAbsoluteURL } from './utils.js';
  *
  * @param url
  * @param callback
+ * @param onError
  */
-export function loadImageAsBase64(url, callback) {
+export function loadImageAsBase64(url, callback, onError = () => {}) {
   const img = new Image();
   img.crossOrigin = 'anonymous';
-  img.src = url;
   img.onload = () => {
-    const canvas = document.createElement('canvas');
-    canvas.width = img.width;
-    canvas.height = img.height;
-    const ctx = canvas.getContext('2d');
-    ctx.drawImage(img, 0, 0);
-    const dataURL = canvas.toDataURL('image/jpeg');
-    callback(dataURL);
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      const dataURL = canvas.toDataURL('image/jpeg');
+      callback(dataURL);
+    } catch (error) {
+      onError(error);
+    }
   };
+  img.onerror = onError;
+  img.src = url;
 }
 
 /**
@@ -56,15 +62,17 @@ export function getCurrentDateTime() {
  * @param contentId
  */
 export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentId) {
-  const imagePath = getAbsoluteURL('/images/background-cert.jpg', contentId);
-  loadImageAsBase64(imagePath, (backgroundImage) => {
+  const imagePath = getAbsoluteURL('images/background-cert.jpg', contentId);
+  const createPDF = (backgroundImage) => {
     // Create a jsPDF document in landscape mode
     const doc = new jsPDF('landscape');
     const currentDate = getCurrentDateTime();
     const uniqueKey = generateUniqueKey(firstName, lastName, pSupId);
 
     // Add Background Image
-    doc.addImage(backgroundImage, 'JPEG', 0, 0, doc.internal.pageSize.width, doc.internal.pageSize.height);
+    if (backgroundImage) {
+      doc.addImage(backgroundImage, 'JPEG', 0, 0, doc.internal.pageSize.width, doc.internal.pageSize.height);
+    }
 
     // Header Title.
     doc.setFontSize(30);
@@ -129,5 +137,9 @@ export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentI
     doc.save(`Attestation_${firstName}_${lastName}.pdf`);
 
     onClose();
-  });
+  };
+
+  // The certificate must still be downloadable if the optional background
+  // image cannot be loaded (for example when the hosting platform blocks it).
+  loadImageAsBase64(imagePath, createPDF, () => createPDF());
 }
