@@ -1,0 +1,452 @@
+{
+  "source": {
+    "workbook": "Feedback.xlsx",
+    "sheets": [
+      "GEN",
+      "STAV",
+      "STL"
+    ],
+    "hemiSud": "Uses the shared GEN aptitude and representation feedback configuration; no Hemi-Sud workbook sheet exists.",
+    "boundaryConvention": "Feedback ranges are sorted by ascending max; the first range where score <= max is selected."
+  },
+  "contentPaths": {
+    "gen": "concours-veto/content/content.json",
+    "hemi-sud": "concours-veto-hemi-sud/content/content.json",
+    "stav": "concours-veto-stav/content/content.json",
+    "stl": "concours-veto-stl/content/content.json"
+  },
+  "cases": {
+    "gen": [
+      {
+        "name": "specialities-full",
+        "section": "Vos choix de spécialités",
+        "answers": {
+          "speciality_terminale": [
+            "5",
+            "4"
+          ],
+          "speciality_premiere": [
+            "5",
+            "4",
+            "3"
+          ]
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "specialities-total-19",
+        "section": "Vos choix de spécialités",
+        "answers": {
+          "speciality_terminale": [
+            "5",
+            "4"
+          ],
+          "speciality_premiere": [
+            "5",
+            "3",
+            "2"
+          ]
+        },
+        "expectedPercentage": 90.4761904762,
+        "expectedFeedbackMax": 96
+      },
+      {
+        "name": "specialities-total-18",
+        "section": "Vos choix de spécialités",
+        "answers": {
+          "speciality_terminale": [
+            "5",
+            "3"
+          ],
+          "speciality_premiere": [
+            "5",
+            "3",
+            "2"
+          ]
+        },
+        "expectedPercentage": 85.7142857143,
+        "expectedFeedbackMax": 89
+      },
+      {
+        "name": "specialities-total-10",
+        "section": "Vos choix de spécialités",
+        "answers": {
+          "speciality_terminale": [
+            "5",
+            "0"
+          ],
+          "speciality_premiere": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "expectedPercentage": 47.619047619,
+        "expectedFeedbackMax": 48
+      },
+      {
+        "name": "school-results-full-with-french-and-maths",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 5,
+            "speciality2": 5,
+            "speciality3": 5
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 5,
+            "speciality2": 5
+          },
+          "bac_french_average": 5,
+          "bac_maths_average": 5
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "school-results-partial-with-french-and-maths",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 3,
+            "speciality2": 3,
+            "speciality3": 3
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 3,
+            "speciality2": 3
+          },
+          "bac_french_average": 3,
+          "bac_maths_average": 1
+        },
+        "expectedPercentage": 64.4444444444,
+        "expectedFeedbackMax": 80
+      },
+      {
+        "name": "aptitudes-zero",
+        "section": "Vos aptitudes",
+        "answers": {
+          "manual_relational_skills_matrix": {
+            "manual_precision": 0,
+            "tool_precision": 0,
+            "respect_rules": 0,
+            "listen_to_others": 0,
+            "clear_expression": 0,
+            "make_understand": 0,
+            "consider_opinions": 0,
+            "assert_viewpoint": 0
+          },
+          "intellectual_aptitudes_matrix": {
+            "observation": 0,
+            "focus": 0,
+            "creativity": 0,
+            "memorization": 0,
+            "handle_numbers": 0,
+            "identify_data": 0,
+            "problem_analysis": 0,
+            "prioritization": 0,
+            "organization": 0
+          },
+          "work_skills_matrix": {
+            "reading_summary": 0,
+            "autonomy": 0,
+            "Noise-ambiant": 0,
+            "perseverance": 0,
+            "note_taking": 0,
+            "computer_use": 0,
+            "synthesis": 0,
+            "group_work": 0
+          }
+        },
+        "expectedPercentage": 0,
+        "expectedFeedbackMax": 0
+      },
+      {
+        "name": "representations-full",
+        "section": "Vos représentations",
+        "answers": {
+          "work_experience_matrix": {
+            "media_exposure": 4,
+            "veterinary_experience": 4,
+            "breeder_experience": 4,
+            "equestrian_center": 4,
+            "animal_related": 4,
+            "non_animal_related": 4
+          },
+          "profession_representation_matrix": {
+            "treat_domestic_animals": 4,
+            "animal_euthanasia": 4,
+            "health_preservation": 4,
+            "advise_owners": 4,
+            "public_health_role": 4,
+            "pharma_industry": 4,
+            "public_sector": 4,
+            "business_management": 4,
+            "slaughterhouse_work": 4,
+            "research": 4,
+            "wild_animal_care": 4,
+            "animal_welfare": 4,
+            "work_nights_weekends": 4
+          },
+          "education_representation_matrix": {
+            "studies_difficult": 4,
+            "identical_programs": 4,
+            "evaluated_on_knowledge": 4,
+            "all_species": 4,
+            "slaughter_house": 4,
+            "mandatory_learning": 4,
+            "less_vacation": 4,
+            "night_guards": 4,
+            "Bank holidays": 4
+          }
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      }
+    ],
+    "hemi-sud": [
+      {
+        "name": "aptitudes-full-shared-gen-feedback",
+        "section": "Vos aptitudes",
+        "answers": {
+          "manual_relational_skills_matrix": {
+            "manual_precision": 4,
+            "tool_precision": 4,
+            "respect_rules": 4,
+            "listen_to_others": 4,
+            "clear_expression": 4,
+            "make_understand": 4,
+            "consider_opinions": 4,
+            "assert_viewpoint": 4
+          },
+          "intellectual_aptitudes_matrix": {
+            "observation": 4,
+            "focus": 4,
+            "creativity": 4,
+            "memorization": 4,
+            "handle_numbers": 4,
+            "identify_data": 4,
+            "problem_analysis": 4,
+            "prioritization": 4,
+            "organization": 4
+          },
+          "work_skills_matrix": {
+            "reading_summary": 4,
+            "autonomy": 4,
+            "Noise-ambiant": 4,
+            "perseverance": 4,
+            "note_taking": 4,
+            "computer_use": 4,
+            "synthesis": 4,
+            "group_work": 4
+          }
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "representations-zero-shared-gen-feedback",
+        "section": "Vos représentations",
+        "answers": {
+          "work_experience_matrix": {
+            "media_exposure": 0,
+            "veterinary_experience": 0,
+            "breeder_experience": 0,
+            "equestrian_center": 0,
+            "animal_related": 0,
+            "non_animal_related": 0
+          },
+          "profession_representation_matrix": {
+            "treat_domestic_animals": 0,
+            "animal_euthanasia": 0,
+            "health_preservation": 0,
+            "advise_owners": 0,
+            "public_health_role": 0,
+            "pharma_industry": 0,
+            "public_sector": 0,
+            "business_management": 0,
+            "slaughterhouse_work": 0,
+            "research": 0,
+            "wild_animal_care": 0,
+            "animal_welfare": 0,
+            "work_nights_weekends": 0
+          },
+          "education_representation_matrix": {
+            "studies_difficult": 0,
+            "identical_programs": 0,
+            "evaluated_on_knowledge": 0,
+            "all_species": 0,
+            "slaughter_house": 0,
+            "mandatory_learning": 0,
+            "less_vacation": 0,
+            "night_guards": 0,
+            "Bank holidays": 0
+          }
+        },
+        "expectedPercentage": 0,
+        "expectedFeedbackMax": 0
+      }
+    ],
+    "stav": [
+      {
+        "name": "profile-full",
+        "section": "Votre domaine technologique",
+        "answers": {
+          "speciality_terminale": [
+            "5"
+          ],
+          "speciality_premiere": [
+            "5"
+          ]
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "profile-zero",
+        "section": "Votre domaine technologique",
+        "answers": {
+          "speciality_terminale": [
+            "0"
+          ],
+          "speciality_premiere": [
+            "0"
+          ]
+        },
+        "expectedPercentage": 0,
+        "expectedFeedbackMax": 20
+      },
+      {
+        "name": "school-results-partial",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 3,
+            "speciality2": 3,
+            "speciality3": 3
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 3,
+            "speciality2": 3
+          },
+          "bac_french_average": 3,
+          "bac_maths_average": 1
+        },
+        "expectedPercentage": 64.4444444444,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "school-results-exactly-60",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 3,
+            "speciality2": 3,
+            "speciality3": 3
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 3,
+            "speciality2": 3
+          },
+          "bac_french_average": 1,
+          "bac_maths_average": 1
+        },
+        "expectedPercentage": 60,
+        "expectedFeedbackMax": 60
+      }
+    ],
+    "stl": [
+      {
+        "name": "profile-full",
+        "section": "Votre profil STL",
+        "answers": {
+          "speciality_terminale": [
+            "5"
+          ],
+          "speciality_premiere": [
+            "5"
+          ]
+        },
+        "expectedPercentage": 100,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "profile-physics-chemistry-only",
+        "section": "Votre profil STL",
+        "answers": {
+          "speciality_terminale": [
+            "3"
+          ],
+          "speciality_premiere": [
+            "3"
+          ]
+        },
+        "expectedPercentage": 60,
+        "expectedFeedbackMax": 60
+      },
+      {
+        "name": "school-results-partial",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 3,
+            "speciality2": 3,
+            "speciality3": 3
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 3,
+            "speciality2": 3
+          },
+          "bac_french_average": 3,
+          "bac_maths_average": 1
+        },
+        "expectedPercentage": 64.4444444444,
+        "expectedFeedbackMax": 100
+      },
+      {
+        "name": "school-results-exactly-60",
+        "section": "Vos résultats scolaires",
+        "answers": {
+          "common_subjects_premiere_terminale": {
+            "history_geography": 5,
+            "lvA": 5
+          },
+          "performance_specialities_first": {
+            "speciality1": 3,
+            "speciality2": 3,
+            "speciality3": 3
+          },
+          "performance_specialities_terminal": {
+            "speciality1": 3,
+            "speciality2": 3
+          },
+          "bac_french_average": 1,
+          "bac_maths_average": 1
+        },
+        "expectedPercentage": 60,
+        "expectedFeedbackMax": 60
+      }
+    ]
+  }
+}

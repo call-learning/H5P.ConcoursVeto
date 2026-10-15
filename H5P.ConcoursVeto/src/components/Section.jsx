@@ -3,13 +3,13 @@ import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SummarySection from './SummarySection.jsx';
 import { calculateSectionScore } from '../helpers/score.js';
+import { selectFeedbackRange } from '../helpers/feedback.js';
 
 function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
   const [open, setOpen] = React.useState(false);
   const score = calculateSectionScore(surveyResults, sectionConfig.questions_weight,
     surveyDefinition);
-  const feedbackRange = sectionConfig.feedback_ranges.sort((a, b) => a.max - b.max)
-    .find(range => score <= range.max);
+  const feedbackRange = selectFeedbackRange(score, sectionConfig.feedback_ranges);
   return (
     <Box mb={3}>
       <Card>
