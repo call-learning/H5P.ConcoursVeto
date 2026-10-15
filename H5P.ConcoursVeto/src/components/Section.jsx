@@ -10,8 +10,6 @@ function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
     surveyDefinition);
   const feedbackRange = sectionConfig.feedback_ranges.sort((a, b) => a.max - b.max)
     .find(range => score <= range.max);
-  const feedbackText = sectionConfig.feedback.replace('$scorepercent', score.toFixed(2));
-
   return (
     <Box mb={3}>
       <Card>
@@ -19,7 +17,7 @@ function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
           <Box display="flex" alignItems="center">
             <Typography variant="h6">{sectionConfig.title}</Typography>
           </Box>
-          <SummarySection feedbackText={feedbackText} feedbackRange={feedbackRange?.feedback}/>
+          <SummarySection feedbackRange={feedbackRange?.feedback}/>
         </CardContent>
       </Card>
     </Box>
