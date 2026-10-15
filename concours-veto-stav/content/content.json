@@ -129,6 +129,80 @@
             "feedback": "Vos résultats sont insuffisants pour candidater au concours post-bac. Nous vous invitons et vous encourageons à bien réfléchir à votre projet universitaire."
           }
         ]
+      },
+      {
+        "title": "Vos aptitudes",
+        "label": "Vos aptitudes",
+        "feedback": "Vos aptitudes : votre \"score\" global est de $scorepercent %.",
+        "questions_weight": [
+          {
+            "id": "manual_relational_skills_matrix",
+            "weight": 1
+          },
+          {
+            "id": "intellectual_aptitudes_matrix",
+            "weight": 1
+          },
+          {
+            "id": "work_skills_matrix",
+            "weight": 1
+          }
+        ],
+        "feedback_ranges": [
+          {
+            "max": 100,
+            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous semblez bien armé(e) pour tenter des études vétérinaires."
+          },
+          {
+            "max": 76,
+            "feedback": "Si vous avez répondu sincèrement, en votre âme et conscience, selon ce que vous êtes et non pas selon ce qu'il faudrait être pour devenir vétérinaire, vous avez des dispositions pour des études vétérinaires. Toutefois la concurrence sera rude, et il faudra travailler dur. Ce n'est pas gagné !"
+          },
+          {
+            "max": 51,
+            "feedback": "Vous avez des aptitudes, mais elles risquent d'être insuffisantes pour devenir vétérinaire."
+          },
+          {
+            "max": 0,
+            "feedback": "Vous ne semblez pas suffisamment armé(e) pour poursuivre vers des études vétérinaires."
+          }
+        ]
+      },
+      {
+        "title": "Vos représentations",
+        "label": "Vos représentations",
+        "feedback": "Vos représentations des études et des métiers de vétérinaire: votre \"score\" global est de $scorepercent %.",
+        "questions_weight": [
+          {
+            "id": "work_experience_matrix",
+            "weight": 1
+          },
+          {
+            "id": "profession_representation_matrix",
+            "weight": 1
+          },
+          {
+            "id": "education_representation_matrix",
+            "weight": 1
+          }
+        ],
+        "feedback_ranges": [
+          {
+            "max": 100,
+            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent sont assez proches de la réalité. Vous pouvez conforter vos positions en consultant le <a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          },
+          {
+            "max": 75,
+            "feedback": "<p>Vos représentations des métiers de vétérinaire et des études qui y conduisent peuvent être affinées, mais vous vous approchez déjà de la réalité. Nous vous recommandons d'y consacrer un peu de temps si vous êtes admissibles aux entretiens oraux.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.</p>"
+          },
+          {
+            "max": 50,
+            "feedback": "Vous avez raison sur certains points, mais vous vous faites des idées fausses pour d'autres. Renseignez-vous davantage... Vous pouvez trouver des éléments d'information en consultant le site de l'Ordre des vétérinaires, et les sites web des écoles nationales vétérinaires."
+          },
+          {
+            "max": 0,
+            "feedback": "<p>Renseignez-vous davantage sur les études et les métiers de vétérinaire : vos représentations sont assez éloignées de la réalité.&nbsp;Vous pouvez trouver des éléments d'information en consultant le&nbsp;<a href=\"https://www.veterinaire.fr/la-profession/devenir-veterinaire/les-metiers-veterinaires.html\" target=\"_blank\">site de l'Ordre des vétérinaires</a>, et les sites web des écoles nationales vétérinaires.<br></p>\n<p>Voir aussi sur ce site <a href=\"https://concours-veto-postbac.fr/local/mcms/index.php?p=etudes-veterinaires\" target=\"_blank\">la page présentant les études vétérinaires</a>.</p>"
+          }
+        ]
       }
     ]
   },
