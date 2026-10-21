@@ -1,5 +1,5 @@
 import { jsPDF } from 'jspdf';
-import { getAbsoluteURL } from './utils.js';
+import { getLibraryAssetURL } from './utils.js';
 
 /**
  * Load an image from a URL and convert it to a base64 string.
@@ -61,8 +61,8 @@ export function getCurrentDateTime() {
  * @param onClose
  * @param contentId
  */
-export function handleDownloadPDF(firstName, lastName, pSupId, onClose, contentId) {
-  const imagePath = getAbsoluteURL('images/background-cert.jpg', contentId);
+export function handleDownloadPDF(firstName, lastName, pSupId, onClose, library) {
+  const imagePath = getLibraryAssetURL('dist/images/background-cert.jpg', library);
   const createPDF = (backgroundImage) => {
     // Create a jsPDF document in landscape mode
     const doc = new jsPDF('landscape');

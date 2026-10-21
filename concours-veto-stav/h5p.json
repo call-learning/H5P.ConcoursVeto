@@ -13,7 +13,7 @@
   "preloadedDependencies": [
     {
       "machineName": "H5P.ConcoursVeto",
-      "majorVersion": 1,
+       "majorVersion": 2,
       "minorVersion": 0
     },
     {

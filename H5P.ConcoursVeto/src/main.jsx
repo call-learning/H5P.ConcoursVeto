@@ -6,6 +6,7 @@ import { H5PContext } from './contexts/H5PContext';
 import App from './App.jsx';
 
 let H5P = window.H5P || {};
+const CURRENT_LIBRARY = 'H5P.ConcoursVeto 2.0';
 H5P.ConcoursVeto = class {
   /**
    * @param {Object}        params.l10n
@@ -27,7 +28,7 @@ H5P.ConcoursVeto = class {
         <TranslationsContext.Provider value={params.l10n}>
           <H5PContext.Provider value={{
             contentId: contentId,
-            currentLibrary: params.library,
+            currentLibrary: CURRENT_LIBRARY,
             saveState: this.save.bind(this),
             finishAction: this.finish.bind(this),
             startAction: this.start.bind(this),

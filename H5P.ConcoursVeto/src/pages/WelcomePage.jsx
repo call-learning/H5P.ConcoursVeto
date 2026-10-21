@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Typography, Container, Box, useTheme } from '@mui/material';
 import { styled } from '@mui/system';
 import { useTranslations } from '../hooks/useTranslation.js';
-import { getAbsoluteURL, removeEncodedSingleQuote } from '../helpers/utils.js';
+import { getLibraryAssetURL, removeEncodedSingleQuote } from '../helpers/utils.js';
 import { H5PContext } from '../contexts/H5PContext.js';
 import WaveBackground from '../components/WaveBackground.jsx';
 
@@ -26,14 +26,14 @@ const Logo = styled('img')({
 
 function WelcomePage({ onContinue, welcomeTitle, welcomeText }) {
   const { translate } = useTranslations();
-  const { contentId } = React.useContext(H5PContext);
+  const { currentLibrary } = React.useContext(H5PContext);
   const theme = useTheme();
   return (
     <Container>
       <WaveBackground />
 
       <Header sx={{py: 3}}>
-        <Logo src={getAbsoluteURL("images/logo.png", contentId)} alt="Logo"/>
+        <Logo src={getLibraryAssetURL('dist/images/logo.png', currentLibrary)} alt="Logo"/>
         <Typography variant="h3" component="h1">
           {removeEncodedSingleQuote(welcomeTitle)}
         </Typography>

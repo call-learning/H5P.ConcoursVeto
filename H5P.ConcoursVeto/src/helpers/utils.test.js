@@ -1,4 +1,4 @@
-import { getAbsoluteURL, decodeAndParseJson, removeEncodedSingleQuote } from './utils';
+import { getAbsoluteURL, getLibraryAssetURL, decodeAndParseJson, removeEncodedSingleQuote } from './utils';
 describe('getAbsoluteURL', () => {
   beforeAll(() => {
     // Mock the H5P object on the window
@@ -17,6 +17,16 @@ describe('getAbsoluteURL', () => {
     const path = 'some/path';
     const contentId = 123;
     expect(getAbsoluteURL(path, contentId)).toBe(`absolute/${path}/${contentId}`);
+  });
+});
+
+describe('getLibraryAssetURL', () => {
+  it('should return the library asset URL using H5P.getLibraryPath', () => {
+    window.H5P = {
+      getLibraryPath: jest.fn(library => `libraries/${library}`)
+    };
+    expect(getLibraryAssetURL('dist/images/logo.png', 'H5P.ConcoursVeto 2.0'))
+      .toBe('libraries/H5P.ConcoursVeto-2.0/dist/images/logo.png');
   });
 });
 

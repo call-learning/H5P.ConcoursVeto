@@ -39,6 +39,32 @@ export function getAbsoluteURL (path, contentId) {
 }
 
 /**
+ * Get the URL for an asset bundled with this H5P library.
+ *
+ * Library assets are installed reliably by H5P hosts, whereas content assets
+ * may be filtered by host-specific content storage policies.
+ *
+ * @param {string} path Relative path inside the library.
+ * @param {string} library Library identifier, for example H5P.ConcoursVeto 2.0.
+ * @returns {string}
+ */
+export function getLibraryAssetURL(path, library) {
+  const H5P = window.H5P || {};
+  const integration = window.H5PIntegration || {};
+  const normalizedPath = path.replace(/^\/+/, '');
+  if (library) {
+    const libraryIdentifier = library.replace(/\s+/g, '-');
+    if (typeof H5P.getLibraryPath === 'function') {
+      return `${H5P.getLibraryPath(libraryIdentifier)}/${normalizedPath}`;
+    }
+    if (integration.url) {
+      return `${integration.url}/libraries/${libraryIdentifier}/${normalizedPath}`;
+    }
+  }
+  return normalizedPath;
+}
+
+/**
  * Load an image from a URL and convert it to a base64 string.
  *
  * @param input

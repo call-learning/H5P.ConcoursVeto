@@ -1,10 +1,10 @@
 {
   "title": "Questionnaire for Concours Véto PostBac",
   "description": "Questionnaire for Concours Véto PostBac",
-  "majorVersion": 1,
+  "majorVersion": 2,
   "minorVersion": 0,
-  "patchVersion": 61,
-  "author": "CALL Learning 2024 (laurent@call-learning.fr)",
+  "patchVersion": 4,
+  "author": "CALL Learning 2026 (laurent@call-learning.fr)",
   "license": "MIT",
   "machineName": "H5P.ConcoursVeto",
   "fullscreen": 1,

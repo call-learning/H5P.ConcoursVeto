@@ -10,7 +10,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
   const [psupId, setPsupId] = useState('');
   const [confirmed, setConfirmed] = useState(false);
   const { translate } = useTranslations();
-  const {contentId} =  useContext(H5PContext);
+  const { currentLibrary } = useContext(H5PContext);
   const handleConfirm = () => {
     if (firstName && lastName && psupId) {
       setConfirmed(true);
@@ -54,7 +54,7 @@ function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
             {translate('confirm')}
           </Button>
         ) : (
-          <Button onClick={() => handleDownloadPDF(firstName, lastName, psupId, onClose, contentId)} color="primary">
+          <Button onClick={() => handleDownloadPDF(firstName, lastName, psupId, onClose, currentLibrary)} color="primary">
             {translate('download_certificate')}
           </Button>
         )}
