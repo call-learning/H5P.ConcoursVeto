@@ -24,7 +24,7 @@ Le système repose sur deux fichiers JSON :
     {
       "title": "Vos Spécialités",
       "label": "Spécialités",
-      "feedback": "Votre score global pour les spécialités est de $scorepercent%.",
+      "feedback": "Vos spécialités : voici votre bilan global.",
       "questions_weight": [
         { "id": "speciality_terminale", "weight": 1 },
         { "id": "speciality_premiere", "weight": 1 }
@@ -49,7 +49,7 @@ Le système repose sur deux fichiers JSON :
 - `sections` : Liste des sections à évaluer.
     - `title` : Titre de la section.
     - `label` : Nom affiché pour la section.
-    - `feedback` : Message général contenant `$scorepercent` pour afficher le score en pourcentage.
+    - `feedback` : Message de configuration de la section. Il n'est pas affiché sur la page des résultats : ce sont les feedbacks des plages (`feedback_ranges`) que les étudiants voient.
     - `questions_weight` : Liste des questions avec leurs poids dans le calcul.
     - `feedback_ranges` : Plages de scores avec feedbacks associés.
 

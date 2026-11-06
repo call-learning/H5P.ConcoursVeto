@@ -2,12 +2,12 @@
  * Sample data for testing
  */
 export const sampleSurveyFeedback = {
-  "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"scores\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent pas au score qui servira de base pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
+  "global": "<p>Ce questionnaire a pour seule vocation de vous aider à réfléchir sur vous-même. Il ne prétend en rien avoir une vocation prédictive précise sur vos chances de succès à un concours d'entrée aux écoles vétérinaires et lors de vos études éventuelles. Les \"retours\" indiqués ci-dessous :</p>\n<ul>\n    <li><span>ne correspondent en rien aux critères utilisés pour déterminer le classement d'admissibilité aux épreuves du concours ;</span></li>\n    <li><span>ne sont en aucun cas des notes et ne seront pas conservés ni fournis à qui que ce soit. Ils ne seront pas mentionnés sur l'attestation que vous téléverserez dans Parcoursup.</span></li>\n</ul>",
     "sections": [
     {
       "title": "Vos choix de spécialités",
       "label": "Vos choix de spécialités",
-      "feedback": "Vos choix de spécialités: votre \"score\" global est de $scorepercent %.",
+      "feedback": "Vos choix de spécialités: voici votre bilan global.",
       "questions_weight": [
         {
           "id": "speciality_terminale",
@@ -52,7 +52,7 @@ export const sampleSurveyFeedback = {
     {
       "title": "Vos résultats scolaires",
       "label": "Vos résultats scolaires",
-      "feedback": "Vos résultats scolaires : votre \"score\" global est de $scorepercent %.",
+      "feedback": "Vos résultats scolaires : voici votre bilan global.",
       "questions_weight": [
         {
           "id": "common_subjects_premiere_terminale",
@@ -93,7 +93,7 @@ export const sampleSurveyFeedback = {
     {
       "title": "Vos aptitudes",
       "label": "Vos aptitudes",
-      "feedback": "Vos aptitudes : votre \"score\" global est de $scorepercent %.",
+      "feedback": "Vos aptitudes : voici votre bilan global.",
       "questions_weight": [
         {
           "id": "manual_relational_skills_matrix",
@@ -130,7 +130,7 @@ export const sampleSurveyFeedback = {
     {
       "title": "Vos représentations",
       "label": "Vos représentations",
-      "feedback": "Vos représentations des études et des métiers de vétérinaire: votre \"score\" global est de $scorepercent %.",
+      "feedback": "Vos représentations des études et des métiers de vétérinaire: voici votre bilan global.",
       "questions_weight": [
         {
           "id": "work_experience_matrix",
