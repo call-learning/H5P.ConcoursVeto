@@ -156,6 +156,13 @@
         ],
         "label": "Welcome Page text",
         "default": "Bienvenue sur le\nTest d’auto-positionnement pour le concours Véto."
+      },
+      {
+        "name": "certificateEnabled",
+        "type": "boolean",
+        "label": "Enable certificate",
+        "description": "When checked, students can download a certificate (PDF) after completing the questionnaire.",
+        "default": true
       }
     ]
   },

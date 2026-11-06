@@ -33,7 +33,8 @@ function App(props) {
         onRestart={handleRestart}
         surveyResults={surveyResults}
         surveyDefinition={surveyObject}
-        surveyFeedback={props.feedback}/>}
+        surveyFeedback={props.feedback}
+        certificateEnabled={props.settings.certificateEnabled}/>} 
     </ThemeProvider>
   );
 }

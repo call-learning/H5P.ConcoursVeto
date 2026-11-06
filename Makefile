@@ -3,11 +3,11 @@
 ZIP_COMMAND=zip
 TEMP_DIR := $(shell mktemp -d)
 
-.PHONY: concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl h5p-concoursveto-libs.h5p
+.PHONY: concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl concours-connaissance-metiers h5p-concoursveto-libs.h5p
 
-all: concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl
+all: concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl concours-connaissance-metiers
 
-concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl: %: H5P.ConcoursVeto h5p-concoursveto-libs.h5p
+concours-veto concours-veto-hemi-sud concours-veto-stav concours-veto-stl concours-connaissance-metiers: %: H5P.ConcoursVeto h5p-concoursveto-libs.h5p
 	# Now build the activities.
 	mkdir ${TEMP_DIR}/h5p-$*
 	cp -r $*/content ${TEMP_DIR}/h5p-$*

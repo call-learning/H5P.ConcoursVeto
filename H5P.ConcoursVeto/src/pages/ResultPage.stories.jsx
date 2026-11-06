@@ -83,3 +83,12 @@ LongFeedbackSection.args = {
   surveyFeedback: longFeedbackSectionFeedback,
   surveyDefinition: sampleSurveyData[1],
 };
+
+export const CertificateDisabled = Template.bind({});
+CertificateDisabled.args = {
+  onRestart: action('Restart Survey'),
+  surveyResults: sampleSurveyResults[2],
+  surveyFeedback: sampleSurveyFeedback,
+  surveyDefinition: sampleSurveyData[1],
+  certificateEnabled: false,
+};

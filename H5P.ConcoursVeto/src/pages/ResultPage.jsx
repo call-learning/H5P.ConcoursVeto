@@ -7,10 +7,11 @@ import WaveBackground from '../components/WaveBackground.jsx';
 import { H5PContext } from '../contexts/H5PContext.js';
 import { removeEncodedSingleQuote } from '../helpers/utils.js';
 
-function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition }) {
+function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition, certificateEnabled }) {
   const [dialogOpen, setDialogOpen] = useState(false);
   const handleOpenDialog = () => setDialogOpen(true);
   const handleCloseDialog = () => setDialogOpen(false);
+  const showCertificate = certificateEnabled !== false;
 
   const { translate } = useTranslations();
   const { resizeAction  } = React.useContext(H5PContext);
@@ -26,18 +27,22 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
           <Section key={index} sectionConfig={sectionConfig} surveyResults={surveyResults} surveyDefinition={surveyDefinition}/>
         ))}
         <Box mt={2} display="flex" justifyContent="center">
-          <Button variant="contained" color="primary" onClick={handleOpenDialog}>
-            {translate('download_certificate')}
-          </Button>
+          {showCertificate && (
+            <Button variant="contained" color="primary" onClick={handleOpenDialog}>
+              {translate('download_certificate')}
+            </Button>
+          )}
           <Button variant="outlined" color="secondary" onClick={onRestart} style={{ marginLeft: '10px' }}>
             {translate('restart_survey')}
           </Button>
         </Box>
       </Box>
-      <DownloadCertificateDialog
-        open={dialogOpen}
-        onClose={handleCloseDialog}
-      />
+      {showCertificate && (
+        <DownloadCertificateDialog
+          open={dialogOpen}
+          onClose={handleCloseDialog}
+        />
+      )}
     </Container>
   );
 }
