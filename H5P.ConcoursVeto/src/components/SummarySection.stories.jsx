@@ -1,4 +1,3 @@
-import React from 'react';
 import SummarySection from './SummarySection';
 import { sampleSurveyFeedback } from '../helpers/testData.js';
 

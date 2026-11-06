@@ -1,4 +1,3 @@
-import React from 'react';
 import 'material-design-icons/iconfont/material-icons.css';
 import { createRoot } from 'react-dom/client';
 import { TranslationsContext } from './contexts/TranslationsContext';
@@ -12,7 +11,7 @@ H5P.ConcoursVeto = class {
    * @param {Object}        params.l10n
    * @constructor
    */
-  constructor (params, contentId, extras) {
+  constructor (params, contentId) {
 
     H5P.EventDispatcher.call(this);
     Object.setPrototypeOf(H5P.ConcoursVeto.prototype, H5P.EventDispatcher.prototype);

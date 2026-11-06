@@ -1,5 +1,4 @@
 // src/pages/WelcomePage.stories.jsx
-import React from 'react';
 import WelcomePage from './WelcomePage';
 
 export default {

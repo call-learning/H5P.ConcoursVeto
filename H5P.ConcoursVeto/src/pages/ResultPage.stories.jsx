@@ -1,5 +1,4 @@
 // ResultPage.stories.js
-import React from 'react';
 import ResultPage from './ResultPage';
 import { action } from '@storybook/addon-actions';
 import { Container } from '@mui/material';

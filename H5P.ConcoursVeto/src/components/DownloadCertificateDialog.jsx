@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Dialog, DialogActions, DialogContent, DialogTitle, TextField, Button } from '@mui/material';
 import { useTranslations } from '../hooks/useTranslation.js';
 import { handleDownloadPDF } from '../helpers/pdfGenerator.js';
 import { H5PContext } from '../contexts/H5PContext.js';
 
-function DownloadCertificateDialog({ open, onClose, surveyFeedback }) {
+function DownloadCertificateDialog({ open, onClose }) {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [psupId, setPsupId] = useState('');

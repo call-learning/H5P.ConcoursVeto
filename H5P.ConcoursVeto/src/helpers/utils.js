@@ -80,7 +80,7 @@ export function decodeAndParseJson(input) {
   // Parse the JSON
   try {
     return JSON.parse(removeEncodedSingleQuote(decodedString));
-  } catch (error) {
+  } catch {
     return null;
   }
 }

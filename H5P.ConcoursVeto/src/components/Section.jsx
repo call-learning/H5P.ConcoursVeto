@@ -1,12 +1,9 @@
-import React from 'react';
-import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Box, Card, CardContent, Typography } from '@mui/material';
 import SummarySection from './SummarySection.jsx';
 import { calculateSectionScore } from '../helpers/score.js';
 import { selectFeedbackRange } from '../helpers/feedback.js';
 
 function Section ({ sectionConfig, surveyResults, surveyDefinition }) {
-  const [open, setOpen] = React.useState(false);
   const score = calculateSectionScore(surveyResults, sectionConfig.questions_weight,
     surveyDefinition);
   const feedbackRange = selectFeedbackRange(score, sectionConfig.feedback_ranges);

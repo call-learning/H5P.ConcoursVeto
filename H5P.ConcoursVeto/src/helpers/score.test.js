@@ -1,6 +1,6 @@
 // Import the function to test and the test data
 import { calculateSectionScore } from './score.js';
-import { sampleSurveyResults, sampleSurveyData } from './testData.js';
+import { sampleSurveyData } from './testData.js';
 
 describe('calculateSectionScore Specialite', () => {
   const surveyDefinition = sampleSurveyData[1]; // Use surveyData[1]

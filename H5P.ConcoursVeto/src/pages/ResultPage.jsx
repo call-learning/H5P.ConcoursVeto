@@ -37,7 +37,6 @@ function ResultPage({ onRestart, surveyResults, surveyFeedback, surveyDefinition
       <DownloadCertificateDialog
         open={dialogOpen}
         onClose={handleCloseDialog}
-        surveyFeedback={surveyFeedback}
       />
     </Container>
   );

@@ -8,7 +8,7 @@ var H5PIntegration = {};
 H5P.t = function (key, vars) {
   return '[' + key + (vars? ':' + JSON.stringify(vars): '') + ']';
 } // Emulate translation function
-H5P.getPath = function (srcpath, contentId) {
+H5P.getPath = function (srcpath) {
   return srcpath;
 }
 H5PIntegration.siteUrl='/';

@@ -1,5 +1,4 @@
 // src/stories/ResultPage.stories.jsx
-import React from 'react';
 import App from './App.jsx'
 import { action } from '@storybook/addon-actions';
 import { Container } from '@mui/material';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { TranslationsContext } from '../src/contexts/TranslationsContext';
 import sampleData from '../data/sampleData.json';
 

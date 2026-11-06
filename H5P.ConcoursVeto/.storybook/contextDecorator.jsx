@@ -1,4 +1,3 @@
-import React from 'react';
 import { H5PContext } from '../src/contexts/H5PContext';
 const contextDecorator = storyFn => (
   <H5PContext.Provider value={{
